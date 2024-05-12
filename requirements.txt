@@ -2,14 +2,9 @@
 -e .
 
 # external requirements
-click
 flake8
 numpy
 matplotlib
-scipy
 ipykernel
 torch
-torchvision
-seaborn
 setuptools
-scikit-learn

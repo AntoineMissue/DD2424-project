@@ -18,7 +18,6 @@ Recommended install (virtual env)
 ```
 python3 -m venv venv
 source venv/bin/activate
-
 pip install -r requirements.txt
 ```
 
@@ -26,8 +25,7 @@ pip install -r requirements.txt
 ```
 python -m venv venv
 .\venv\Scripts\activate.bat
-
-pip install -r requirements.txt
+.\venv\Scripts\python.exe -m pip install -r .\requirements.txt
 ```
 
 ### Training the RNN model
