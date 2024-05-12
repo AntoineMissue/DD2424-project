@@ -1,0 +1,138 @@
+Step: 0
+         * Smooth loss: 104.7395
+----------------------------------------------------------------------------------------------------
+Synthetized sequence: 
+3JidfACG
+;!mbq   pulRkcmhCIH,CeMKjvZxZkbijDpcgr:b GpmAKF,u:A;z:RKCuGqPJl
+-!vZZOwYIAYUuifCdFXCzFM :f,YhPVUfatimdW.gVvaJ;i.FMzPhsKNrVmjBdiSam,;sx:. wdKkAGNOxDyskxgCicIacn&PhtL&FShS!h&    C'APu
+OR:vgoiDdJMm;r
+----------------------------------------------------------------------------------------------------
+Step: 1000
+         * Smooth loss: 78.6256
+Step: 2000
+         * Smooth loss: 64.5869
+Step: 3000
+         * Smooth loss: 58.4805
+Step: 4000
+         * Smooth loss: 55.5415
+Step: 5000
+         * Smooth loss: 54.0370
+----------------------------------------------------------------------------------------------------
+Synthetized sequence: 
+e thy ambarst the bioc! pr'douw, that, ambory hentliinch a herd to this I you lither the rare thet to in sle ir
+Saye
+Toprotatoon serat so defour, it in thank andthe thies,
+Tare oweand;
+Aodoy, hiut, bo
+----------------------------------------------------------------------------------------------------
+Step: 6000
+         * Smooth loss: 53.0272
+Step: 7000
+         * Smooth loss: 52.9224
+Step: 8000
+         * Smooth loss: 52.2240
+Step: 9000
+         * Smooth loss: 51.7543
+Step: 10000
+         * Smooth loss: 51.0985
+----------------------------------------------------------------------------------------------------
+Synthetized sequence: 
+s Sar antersin voth whe him you' ip conese,
+Ay, far you
+Sty hower a apall thear doconespain thee diconst ot you with hat sirle, bars
+When for mend
+Your, lagatangll?
+He cour are, Juplet, atthor not; bi
+----------------------------------------------------------------------------------------------------
+^CTraceback (most recent call last):
+  File "/Users/eloidieme/dev/python-projects/pytorch_lstm/src/nlpProject/rnn_baseline.py", line 291, in <module>
+    rnn.run(5, 2, save = True, figpath="./reports/figures/test_run.png")
+  File "/Users/eloidieme/dev/python-projects/pytorch_lstm/src/nlpProject/rnn_baseline.py", line 271, in run
+    losses = self.train_adagrad(batch_size, n_epochs, T, save)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eloidieme/dev/python-projects/pytorch_lstm/src/nlpProject/rnn_baseline.py", line 147, in train_adagrad
+    A_train, H_train, P_train, hts = self.forward(X_train, hprev)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eloidieme/dev/python-projects/pytorch_lstm/src/nlpProject/rnn_baseline.py", line 51, in forward
+    pt = F.softmax(ot, dim=0)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eloidieme/dev/python-projects/pytorch_lstm/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 1855, in softmax
+    def softmax(input: Tensor, dim: Optional[int] = None, _stacklevel: int = 3, dtype: Optional[DType] = None) -> Tensor:
+    
+KeyboardInterrupt
+
+(venv) Air-de-Eloi :: dev/python-projects/pytorch_lstm ‹main*› % python src/nlpProject/rnn_baseline.py              130 ↵
+Step: 0
+         * Smooth loss: 104.7403
+----------------------------------------------------------------------------------------------------
+Synthetized sequence: 
+hkWwzIMsF'e
+:,UODiydfUqKAwen jUaDsMoYOwwQ!yxODnsYM$3FLE     l?jsMfrJOAkFSoFvOsu3WNfIppOHQ$ZiZmFfaksD?wBgaDtvDlzEYUFwzsphd
+JWCSPI JA;pk:sGFtjo:    dJZhR?,$Z:SR;,S.HRRQzE:$
+fFsFcmp
+;rABIMUiQ.i'HsaF        EoMC,OeIFvB
+----------------------------------------------------------------------------------------------------
+Step: 1000
+         * Smooth loss: 79.6014
+Step: 2000
+         * Smooth loss: 66.0934
+Step: 3000
+         * Smooth loss: 60.0331
+Step: 4000
+         * Smooth loss: 56.9538
+Step: 5000
+         * Smooth loss: 55.3609
+----------------------------------------------------------------------------------------------------
+Synthetized sequence: 
+ it fow vr thow with thoted live talo, stond hot, ourmy'bcines thateat gedini, fre lere t wnourt pise gints.
+
+MARDY, lercesiailg an thit rout thes the rere, or;
+Srcingied un opre bathine whis the tSil
+----------------------------------------------------------------------------------------------------
+Step: 6000
+         * Smooth loss: 54.3521
+Step: 7000
+         * Smooth loss: 54.0306
+Step: 8000
+         * Smooth loss: 53.2558
+Step: 9000
+         * Smooth loss: 52.7410
+Step: 10000
+         * Smooth loss: 52.4170
+----------------------------------------------------------------------------------------------------
+Synthetized sequence: 
+ings, serrugh farltosbaksecon:
+Your uslf vir:
+C whef lobly, jeith encome dieg got, is bun the tould be wirte, paar is inctold now vis wered iserane
+And Ege.
+
+MENENIUS:
+Nown of loove yfreyor arrour, y 
+----------------------------------------------------------------------------------------------------
+Step: 11000
+         * Smooth loss: 52.2127
+Step: 12000
+         * Smooth loss: 51.6622
+Step: 13000
+         * Smooth loss: 51.1615
+Step: 14000
+         * Smooth loss: 50.5269
+Step: 15000
+         * Smooth loss: 50.0360
+----------------------------------------------------------------------------------------------------
+Synthetized sequence: 
+an mence has theirilidstill young, is fere
+
+LEALTING I'l defureedear ape
+Hath herencten an My whak, is hingtaing;
+Freenceds:
+Luve pplact.
+OLI:
+Nok by isitelld do madey,
+She say I weingard I se best wi
+----------------------------------------------------------------------------------------------------
+Step: 16000
+         * Smooth loss: 49.9477
+Step: 17000
+         * Smooth loss: 49.4536
+Time elapsed (5 samples per batch, 2 epochs): 76.81 seconds.
