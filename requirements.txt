@@ -1,0 +1,10 @@
+# local package
+-e .
+
+# external requirements
+flake8
+numpy
+matplotlib
+ipykernel
+torch
+setuptools
