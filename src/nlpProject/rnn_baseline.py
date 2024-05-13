@@ -152,9 +152,9 @@ class RNN:
                 self.params[k] -= (self.learning_rate/torch.sqrt(ms[k] + self.epsilon)) * grads_clamped[k]
 
             if step == 0:
-                smooth_loss = loss
+                smooth_loss = loss.item()
             else:
-                smooth_loss = 0.999*smooth_loss + 0.001*loss
+                smooth_loss = 0.999*smooth_loss + 0.001*loss.item()
             losses.append(smooth_loss)
 
             if step % 1000 == 0:

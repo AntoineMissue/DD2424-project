@@ -1,10 +1,10 @@
 import torch
-import torch.nn as nn
 import matplotlib.pyplot as plt
 
 from nlpProject.one_layer_lstm import LSTM1
 from nlpProject.make_data import DataMaker
 from nlpProject.utils import compute_loss
+from nlpProject.inference import synthesize_seq_lstm1
 
 def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learning_rate, fig_savepath = None):
     losses = []
@@ -46,6 +46,16 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
         if step % 1000 == 0:
             print(f"Step: {step}")
             print(f"\t * Smooth loss: {smooth_loss:.4f}")
+        if step % 5000 == 0:
+            _, s_syn = synthesize_seq_lstm1(model, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 200)
+            print("-" * 100)
+            print(f"Synthesized sequence: \n{s_syn}")
+            print("-" * 100)
+        if step % 100000 == 0 and step > 0:
+            _, s_lsyn = synthesize_seq_lstm1(model, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 1000)
+            print("-" * 100)
+            print(f"Long synthesized sequence: \n{s_lsyn}")
+            print("-" * 100)
 
         step += 1
         e += batch_size * seq_length
@@ -61,10 +71,13 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
     plt.figure()
     plt.plot(losses)
     plt.xlabel('Steps')
-    plt.ylabel('Loss')
+    plt.ylabel('Smooth loss')
     plt.title(f'eta: {learning_rate} - seq_len: {seq_length} - m: {hidden_size} - epochs: {n_epochs} - batch_size: {batch_size}')
     plt.grid(True)
     if fig_savepath:
         plt.savefig(fig_savepath)
     else:
         plt.show()
+
+if __name__ == '__main__':
+    train_lstm1('./data/shakespeare.txt', 5, 100, 25, 2, 0.01, './reports/figures/lstm_1_layer_test')

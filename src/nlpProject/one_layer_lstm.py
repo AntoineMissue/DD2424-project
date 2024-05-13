@@ -24,7 +24,7 @@ class LSTM1(nn.Module):
         self.fc = nn.Linear(hidden_size, output_size, dtype=torch.double)
 
     def forward(self, X, init_states=None):
-        batch_size = X.size(2)
+        _, seq_len, batch_size = X.size()
         hidden_seq = []
 
         if init_states is None:
@@ -33,7 +33,7 @@ class LSTM1(nn.Module):
         else:
             h_t, c_t = init_states
 
-        for t in range(self.seq_len):
+        for t in range(seq_len):
             x_t = X[:, t, :]
 
             f_t = torch.sigmoid(self.Wf @ x_t + self.Uf @ h_t + self.bf[:, None])
@@ -46,7 +46,7 @@ class LSTM1(nn.Module):
             hidden_seq.append(h_t)
 
         hidden_seq = torch.cat(hidden_seq, dim=1)
-        hidden_seq = hidden_seq.reshape(self.hidden_size, self.seq_len, batch_size)
+        hidden_seq = hidden_seq.reshape(self.hidden_size, seq_len, batch_size)
         output = self.fc(hidden_seq.permute(2, 1, 0)).permute(2, 1, 0)
         P = torch.softmax(output, dim = 0)
         return P, (h_t, c_t)

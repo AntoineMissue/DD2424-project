@@ -5,7 +5,7 @@ def compute_loss(Y, P):
     batch_size = Y.shape[2]
     log_probs = torch.log(P)
     cross_entropy = -torch.sum(Y * log_probs)
-    loss = cross_entropy.item() / batch_size
+    loss = cross_entropy / batch_size
     return loss
 
 def process_word(word):
