@@ -187,7 +187,14 @@ class RNN:
 
         if save:
             with open(Path(f'./models/RNN/rnn_adagrad_{time.time()}.pickle'), 'wb') as handle:
-                pickle.dump(self.params, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                pickle.dump({
+                    **self.params, 
+                    'book_fname': self.book_fname, 
+                    'hidden_size': self.hidden_size, 
+                    'learning_rate': self.learning_rate, 
+                    'epsilon': self.epsilon, 
+                    'seq_length': self.seq_length
+                    }, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
         logger.info("End of AdaGrad training.")
 
@@ -268,7 +275,14 @@ class RNN:
 
         if save:
             with open(Path(f'./models/RNN/rnn_adam_{time.time()}.pickle'), 'wb') as handle:
-                pickle.dump(self.params, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                pickle.dump({
+                    **self.params, 
+                    'book_fname': self.book_fname, 
+                    'hidden_size': self.hidden_size, 
+                    'learning_rate': self.learning_rate, 
+                    'epsilon': self.epsilon, 
+                    'seq_length': self.seq_length
+                    }, handle, protocol=pickle.HIGHEST_PROTOCOL)
         
         logger.info("End of Adam training.")
         
