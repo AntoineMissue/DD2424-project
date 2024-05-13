@@ -1,15 +1,27 @@
-import pickle
 import torch
+import torch.nn.functional as F
+import numpy as np
 from pathlib import Path
+import pickle
+import time
+import os
+
 from nlpProject.make_data import DataMaker
 from nlpProject.rnn_baseline import RNN
+from nlpProject.utils import get_metrics_n, get_bleu
 
-def rnn_generate(rnn_filename, book_fname = './data/shakespeare.txt', hidden_size = 100, seq_length = 25, first_char = ' ', length = 1000, T = 1.0):
-    data_maker = DataMaker(book_fname)
+def rnn_generate(rnn_filename, first_char = ' ', length = 10000, T = 1.0):
     with open(Path(f'./models/RNN/{rnn_filename}'), 'rb') as handle:
-        params = pickle.load(handle)
-    test_rnn = RNN(hidden_size=hidden_size, seq_length=seq_length, data_path=book_fname)
-    test_rnn.params = params
+        rnn_dict = pickle.load(handle)
+        data_maker = DataMaker(rnn_dict['book_fname'])
+    test_rnn = RNN(hidden_size=rnn_dict['hidden_size'], seq_length=rnn_dict['seq_length'], data_path=rnn_dict['book_fname'])
+    test_rnn.params = {
+        'W': rnn_dict['W'], 
+        'U': rnn_dict['U'],
+        'V': rnn_dict['V'],
+        'b': rnn_dict['b'],
+        'c': rnn_dict['c']
+    }
     x_input = data_maker.encode_string(first_char)
     _, s_t = test_rnn.synthetize_seq(
         torch.zeros((test_rnn.hidden_size, 1), dtype=torch.double), 
@@ -18,4 +30,4 @@ def rnn_generate(rnn_filename, book_fname = './data/shakespeare.txt', hidden_siz
     return sequence
 
 if __name__ == '__main__':
-    print(rnn_generate('rnn_adagrad_test.pickle', length=10000))
+    print(rnn_generate('rnn_adagrad_test.pickle'))
