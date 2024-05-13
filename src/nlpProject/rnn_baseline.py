@@ -16,7 +16,8 @@ class RNN:
         self.learning_rate = learning_rate  # learning rate
         self.epsilon = epsilon  # for AdaGrad/Adam
         self.seq_length = seq_length  # length of input sequences used during training
-        self.data_maker = DataMaker(data_path)
+        self.book_fname = data_path
+        self.data_maker = DataMaker(self.book_fname)
         self.book_data, self.input_size, self.char_to_ind, self.ind_to_char = self.data_maker.make_charmap()
 
         ## Parameters
@@ -187,7 +188,14 @@ class RNN:
 
         if save:
             with open(Path(f'./models/RNN/rnn_adagrad_{time.time()}.pickle'), 'wb') as handle:
-                pickle.dump(self.params, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                pickle.dump({
+                    **self.params, 
+                    'book_fname': self.book_fname, 
+                    'hidden_size': self.hidden_size, 
+                    'learning_rate': self.learning_rate, 
+                    'epsilon': self.epsilon, 
+                    'seq_length': self.seq_length
+                    }, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
         logger.info("End of AdaGrad training.")
 
@@ -232,10 +240,10 @@ class RNN:
 
             for k in ms.keys():
                 ms[k] = beta_1*ms[k] + (1 - beta_1)*grads_clamped[k]
-                vs[k] = beta_2*vs[k] + (1 - self.beta_2)*(grads_clamped[k]**2)
+                vs[k] = beta_2*vs[k] + (1 - beta_2)*(grads_clamped[k]**2)
                 m_hat = ms[k]/(1 - beta_1**(step+1))
                 v_hat = vs[k]/(1 - beta_2**(step+1))
-                RNN[k] -= (self.learning_rate/torch.sqrt(v_hat + self.epsilon))*m_hat
+                self.params[k] -= (self.learning_rate/torch.sqrt(v_hat + self.epsilon))*m_hat
 
             if step == 0:
                 smooth_loss = loss
@@ -268,7 +276,14 @@ class RNN:
 
         if save:
             with open(Path(f'./models/RNN/rnn_adam_{time.time()}.pickle'), 'wb') as handle:
-                pickle.dump(self.params, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                pickle.dump({
+                    **self.params, 
+                    'book_fname': self.book_fname, 
+                    'hidden_size': self.hidden_size, 
+                    'learning_rate': self.learning_rate, 
+                    'epsilon': self.epsilon, 
+                    'seq_length': self.seq_length
+                    }, handle, protocol=pickle.HIGHEST_PROTOCOL)
         
         logger.info("End of Adam training.")
         
