@@ -298,7 +298,7 @@ class RNN:
         plt.plot(losses)
         plt.xlabel('Steps')
         plt.ylabel('Smooth loss')
-        plt.title(f'eta: {self.learning_rate} - seq_length: {self.seq_length} - hidden_size: {self.hidden_size} - n_epochs: {n_epochs} - batch_size: {batch_size}')
+        plt.title(f'eta: {self.learning_rate} - seq_len: {self.seq_length} - m: {self.hidden_size} - epochs: {n_epochs} - batch_size: {batch_size}')
         plt.grid(True)
         if figure_filename:
             plt.savefig(Path(f"./reports/figures/{figure_filename}"))
