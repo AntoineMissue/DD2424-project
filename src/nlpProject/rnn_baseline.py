@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 from nlpProject.make_data import DataMaker
+from nlpProject.utils import compute_loss
 from nlpProject import logger
 
 class RNN:
@@ -85,13 +86,6 @@ class RNN:
         grads = {'U': dU, 'W': dW, 'V': dV, 'c': dc, 'b': db}
         grads_clamped = {k: torch.clamp(v, min=-5.0, max=5.0) for (k,v) in grads.items()}
         return grads, grads_clamped
-    
-    def compute_loss(self, Y, P):
-        batch_size = Y.shape[2]
-        log_probs = torch.log(P)
-        cross_entropy = -torch.sum(Y * log_probs)
-        loss = cross_entropy.item() / batch_size
-        return loss
 
     def synthetize_seq(self, h0, x0, n, T = 1):
         t, ht, xt = 0, h0, x0
@@ -150,7 +144,7 @@ class RNN:
             Y_train = torch.stack(Y_batch, dim=2)  # shape: (K, seq_length, n_batch)
 
             A_train, H_train, P_train, hts = self.forward(X_train, hprev)
-            loss = self.compute_loss(Y_train, P_train)
+            loss = compute_loss(Y_train, P_train)
             grads, grads_clamped = self.backward(X_train, Y_train, A_train, H_train, P_train, hprev)
 
             for k in ms.keys():
@@ -235,7 +229,7 @@ class RNN:
             Y_train = torch.stack(Y_batch, dim=2)  # shape: (input_size, seq_length, n_batch)
 
             A_train, H_train, P_train, hts = self.forward(X_train, hprev)
-            loss = self.compute_loss(Y_train, P_train)
+            loss = compute_loss(Y_train, P_train)
             grads, grads_clamped = self.backward(X_train, Y_train, A_train, H_train, P_train, hprev)
 
             for k in ms.keys():
