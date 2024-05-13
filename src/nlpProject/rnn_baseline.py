@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 from nlpProject.make_data import DataMaker
+from nlpProject.utils import compute_loss
 from nlpProject import logger
 
 class RNN:
@@ -85,13 +86,6 @@ class RNN:
         grads = {'U': dU, 'W': dW, 'V': dV, 'c': dc, 'b': db}
         grads_clamped = {k: torch.clamp(v, min=-5.0, max=5.0) for (k,v) in grads.items()}
         return grads, grads_clamped
-    
-    def compute_loss(self, Y, P):
-        batch_size = Y.shape[2]
-        log_probs = torch.log(P)
-        cross_entropy = -torch.sum(Y * log_probs)
-        loss = cross_entropy.item() / batch_size
-        return loss
 
     def synthetize_seq(self, h0, x0, n, T = 1):
         t, ht, xt = 0, h0, x0
@@ -150,7 +144,7 @@ class RNN:
             Y_train = torch.stack(Y_batch, dim=2)  # shape: (K, seq_length, n_batch)
 
             A_train, H_train, P_train, hts = self.forward(X_train, hprev)
-            loss = self.compute_loss(Y_train, P_train)
+            loss = compute_loss(Y_train, P_train)
             grads, grads_clamped = self.backward(X_train, Y_train, A_train, H_train, P_train, hprev)
 
             for k in ms.keys():
@@ -158,9 +152,9 @@ class RNN:
                 self.params[k] -= (self.learning_rate/torch.sqrt(ms[k] + self.epsilon)) * grads_clamped[k]
 
             if step == 0:
-                smooth_loss = loss
+                smooth_loss = loss.item()
             else:
-                smooth_loss = 0.999*smooth_loss + 0.001*loss
+                smooth_loss = 0.999*smooth_loss + 0.001*loss.item()
             losses.append(smooth_loss)
 
             if step % 1000 == 0:
@@ -235,7 +229,7 @@ class RNN:
             Y_train = torch.stack(Y_batch, dim=2)  # shape: (input_size, seq_length, n_batch)
 
             A_train, H_train, P_train, hts = self.forward(X_train, hprev)
-            loss = self.compute_loss(Y_train, P_train)
+            loss = compute_loss(Y_train, P_train)
             grads, grads_clamped = self.backward(X_train, Y_train, A_train, H_train, P_train, hprev)
 
             for k in ms.keys():
@@ -304,7 +298,7 @@ class RNN:
         plt.plot(losses)
         plt.xlabel('Steps')
         plt.ylabel('Smooth loss')
-        plt.title(f'eta: {self.learning_rate} - seq_length: {self.seq_length} - hidden_size: {self.hidden_size} - n_epochs: {n_epochs} - batch_size: {batch_size}')
+        plt.title(f'eta: {self.learning_rate} - seq_len: {self.seq_length} - m: {self.hidden_size} - epochs: {n_epochs} - batch_size: {batch_size}')
         plt.grid(True)
         if figure_filename:
             plt.savefig(Path(f"./reports/figures/{figure_filename}"))

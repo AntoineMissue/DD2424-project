@@ -1,0 +1,490 @@
+Step: 0
+         * Smooth loss: 103.8728
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+,O'uljE IbVxG&I$ecETE3vWb'Ifw.UQ,wfggHf$QRtcAjNQ hE;,xT$
+xXZFVCExYi&c.xo- zyPUQo?: MUoBrXx3iW,Omu?,g.    vWYQ lYB-bslhD&PRq$QeOLb?bQXoGi:eQce.'iXsw
+VvX?$SXQjsHlCcUg3
+Wj;w:l'XBDTSiL R3MsKBQhjywYYZ-FxFV'At
+----------------------------------------------------------------------------------------------------
+Step: 1000
+         * Smooth loss: 90.9833
+Step: 2000
+         * Smooth loss: 85.7828
+Step: 3000
+         * Smooth loss: 79.5170
+Step: 4000
+         * Smooth loss: 74.2184
+Step: 5000
+         * Smooth loss: 69.6830
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+
+Fi
+T eH tin ourierd, inblic  H cf,surfse d, an'is y enyis bt,oauret
+GLOU!ESRgcd th t dinummu baru
+F UC
+I,
+OUlEBind aeciisb annImomor  e toe dri lkd d
+ThinpCerliley fas inkn:lo, yendls  t cound, fcy-d
+----------------------------------------------------------------------------------------------------
+Step: 6000
+         * Smooth loss: 65.6550
+Step: 7000
+         * Smooth loss: 64.7748
+Step: 8000
+         * Smooth loss: 62.8859
+Step: 9000
+         * Smooth loss: 65.1477
+Step: 10000
+         * Smooth loss: 65.5149
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+
+
+ wouc,shed.
+
+Jo
+f!EN I'de anileslltw,
+I save cam, hanyET:
+Fhu the ay sadya athea wi,
+ewad
+Aw asd yastouf wid mostawal yala:
+Why the
+
+Ieame myivevles wew w,gha les the ee wohemave, we t.
+
+
+Benome loy
+----------------------------------------------------------------------------------------------------
+Step: 11000
+         * Smooth loss: 62.5287
+Step: 12000
+         * Smooth loss: 60.5915
+Step: 13000
+         * Smooth loss: 57.9918
+Step: 14000
+         * Smooth loss: 55.6357
+Step: 15000
+         * Smooth loss: 55.5180
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Sire:
+Yoor Laill LENTENASTTES:
+Ho'e wisanct orwso becesfort
+Nows and pons hat, she of on hat no hiven Dirst his, sind ronele, yoflp haver'f pasthous, danos benche!
+Bat'd
+Whot sidn sidh no so as sper
+----------------------------------------------------------------------------------------------------
+Step: 16000
+         * Smooth loss: 55.1022
+Step: 17000
+         * Smooth loss: 53.7330
+Step: 18000
+         * Smooth loss: 52.2758
+Step: 19000
+         * Smooth loss: 51.2141
+Step: 20000
+         * Smooth loss: 51.6223
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ng you so that inothead, spench be bo you litl sive, Mardaid sa Seatio ancewh you, you blat fand a you, you-a?
+
+EMIO:
+O bery Betot. Ta,
+Bet Lork, a bido, will to a for a's, my, Bi.
+
+LUCHIO:
+My dect yo
+----------------------------------------------------------------------------------------------------
+Step: 21000
+         * Smooth loss: 50.6051
+Step: 22000
+         * Smooth loss: 50.2042
+Step: 23000
+         * Smooth loss: 51.0734
+Step: 24000
+         * Smooth loss: 49.6392
+Step: 25000
+         * Smooth loss: 48.7702
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ for
+Sroul: Senome.
+
+Seconman: neare, lonor your?
+
+MENENIUS:
+Who to the
+ yet of they, on accounyser, thre then
+As was sembre stay you, ow
+
+MENENIUS:
+To Senow dutrow forthall's flick worour you thy mad
+----------------------------------------------------------------------------------------------------
+Step: 26000
+         * Smooth loss: 49.6122
+Step: 27000
+         * Smooth loss: 48.8556
+Step: 28000
+         * Smooth loss: 48.3939
+Step: 29000
+         * Smooth loss: 49.2673
+Step: 30000
+         * Smooth loss: 49.1488
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ol compood;
+What the fiefu self det the poy a sewist, Shame,
+His this dow is if a fort ronds hich heavers that to not batt Somlar or there thath unshrehomepe bad. Or au a well.
+Whipfurs to thul?
+I mas
+----------------------------------------------------------------------------------------------------
+Step: 31000
+         * Smooth loss: 47.8824
+Step: 32000
+         * Smooth loss: 49.1910
+Step: 33000
+         * Smooth loss: 48.9151
+Step: 34000
+         * Smooth loss: 48.7412
+Step: 35000
+         * Smooth loss: 48.0766
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+light by spather shall thus fell.
+What, thy sut.
+
+EDWARD:
+Why hall that not this; pand, sanck and deading thou faicy?
+
+MENOMEORTlow this bopstaif:
+MEGET:
+But that call seiting is fatince.
+
+WARWICK:
+Cy
+----------------------------------------------------------------------------------------------------
+Step: 36000
+         * Smooth loss: 46.8348
+Step: 37000
+         * Smooth loss: 48.0817
+Step: 38000
+         * Smooth loss: 49.1980
+Step: 39000
+         * Smooth loss: 48.2772
+Step: 40000
+         * Smooth loss: 47.7167
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+on fack orove moge gost,
+Orten? It I a dur viptorlaid not maguir.
+
+Sitonglang give boson vind! To but all but you. Well, sining.
+So inovy me!
+Whildvery's dukes,
+O, viblow thivelve you
+Thaughive hive w
+----------------------------------------------------------------------------------------------------
+Step: 41000
+         * Smooth loss: 47.1245
+Step: 42000
+         * Smooth loss: 47.7097
+Step: 43000
+         * Smooth loss: 47.3749
+Step: 44000
+         * Smooth loss: 46.8069
+Step: 45000
+         * Smooth loss: 48.0931
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+susts.
+
+VALERIA:
+Inesy.
+Oul brent'd for gie lank, though upon heivest an Rath upon fry made!
+
+VENA:
+Iwaint.
+
+VALERIA:
+Oratly, maderily. When him; be the usef; thingret I spoelf ktour, me but I am up, 
+----------------------------------------------------------------------------------------------------
+Step: 46000
+         * Smooth loss: 47.2461
+Step: 47000
+         * Smooth loss: 46.5562
+Step: 48000
+         * Smooth loss: 46.8934
+Step: 49000
+         * Smooth loss: 46.7782
+Step: 50000
+         * Smooth loss: 46.2483
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+DWARD:
+Whil newn thy this unome, thy pell no? hearit enly that kinder them.
+My lord, and is
+Lord, I wife dand, my hold should Adwand I stalost lovend sief, your ay,
+Oo, I soy, eyes, iit me, my lord, I
+----------------------------------------------------------------------------------------------------
+Step: 51000
+         * Smooth loss: 46.5891
+Step: 52000
+         * Smooth loss: 47.1563
+Step: 53000
+         * Smooth loss: 46.8775
+Step: 54000
+         * Smooth loss: 47.7543
+Step: 55000
+         * Smooth loss: 47.7770
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ike my me now how joyan:
+O, not, for a meas? if a word to do my for will adain, a were, his a hapose heigh; o, shroimnes bite. When his me this mo can Rom, Romeo, CET:
+Woll tyor'd
+When-demardine, is t
+----------------------------------------------------------------------------------------------------
+Step: 56000
+         * Smooth loss: 47.4690
+Step: 57000
+         * Smooth loss: 46.7054
+Step: 58000
+         * Smooth loss: 45.5363
+Step: 59000
+         * Smooth loss: 46.1688
+Step: 60000
+         * Smooth loss: 47.2076
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+h! rusthing
+And my w and by, roughandabern rell trunderd!
+My not wars am so sape I befect beld go I swiesheries cher you fring exarer great-lapuse Prosglful whis gife,
+To the bear prownasie.
+
+GLOUSION
+----------------------------------------------------------------------------------------------------
+Step: 61000
+         * Smooth loss: 47.2283
+Step: 62000
+         * Smooth loss: 47.1877
+Step: 63000
+         * Smooth loss: 46.0512
+Step: 64000
+         * Smooth loss: 45.6492
+Step: 65000
+         * Smooth loss: 46.3716
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+row any? aling and at more-CEMIO:
+I chioht for as tow's that hingry I home straulty not have befor or on levaniset have fratied of I of warry holors or I know,
+A athall a the in pripion than will him 
+----------------------------------------------------------------------------------------------------
+Step: 66000
+         * Smooth loss: 45.8915
+Step: 67000
+         * Smooth loss: 47.1609
+Step: 68000
+         * Smooth loss: 47.4443
+Step: 69000
+         * Smooth loss: 46.0047
+Step: 70000
+         * Smooth loss: 45.8399
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+? I have knear'd holds his me comicutild my Lall ed the useate to sad he bake all your hade, him.
+
+Second Lelserishe lad, to must teye
+Where jought. Tell up you, and suls: What your for,
+The calked he
+----------------------------------------------------------------------------------------------------
+Step: 71000
+         * Smooth loss: 45.8276
+Step: 72000
+         * Smooth loss: 45.3971
+Step: 73000
+         * Smooth loss: 45.1778
+Step: 74000
+         * Smooth loss: 46.3267
+Step: 75000
+         * Smooth loss: 46.4612
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ never do that? In than trearte
+Whils thou king than Erinend,
+And their sost this blasts impoty
+That thou the ward fair make him againy he
+Lalsin, to sour to thus many thou saall sme; ait is giva moth
+----------------------------------------------------------------------------------------------------
+Step: 76000
+         * Smooth loss: 46.2704
+Step: 77000
+         * Smooth loss: 46.8499
+Step: 78000
+         * Smooth loss: 46.3664
+Step: 79000
+         * Smooth loss: 46.2499
+Step: 80000
+         * Smooth loss: 45.4168
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ourl stroged Edward awhanfucklovely,
+And
+And, of not, mannom alleccalm, and I caramely lord douch riubce,
+Our and, thy gr wila liaugnt,
+Or Warwis, adamen, away, come kinger newn thou kine more, with f
+----------------------------------------------------------------------------------------------------
+Step: 81000
+         * Smooth loss: 44.5928
+Step: 82000
+         * Smooth loss: 46.1376
+Step: 83000
+         * Smooth loss: 47.1896
+Step: 84000
+         * Smooth loss: 46.3687
+Step: 85000
+         * Smooth loss: 45.6153
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+viol vanced that men o ange radeg do him of man, rekingey will grvencenot our
+Hoth nomion the vain you meavious jess; live know and your fain made var you do down.
+Dreok in is bets roos r send you sla
+----------------------------------------------------------------------------------------------------
+Step: 86000
+         * Smooth loss: 44.9676
+Step: 87000
+         * Smooth loss: 45.9988
+Step: 88000
+         * Smooth loss: 45.7647
+Step: 89000
+         * Smooth loss: 46.0552
+Step: 90000
+         * Smooth loss: 46.6416
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+anks, were of pawarceree enome we bay a call ber merchou are you foved:
+couny
+Weat fron eerves nour.
+
+MENENIUS:
+I protelly a a man why, whereinion, fanes--baiber! and cry kingeny you expeare-ange!
+
+MA
+----------------------------------------------------------------------------------------------------
+Step: 91000
+         * Smooth loss: 45.4881
+Step: 92000
+         * Smooth loss: 45.0872
+Step: 93000
+         * Smooth loss: 45.4208
+Step: 94000
+         * Smooth loss: 44.8629
+Step: 95000
+         * Smooth loss: 44.4677
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+, faight.
+'Which most battle that me blease.
+
+QUEEN ELIZABETH:
+KING RICHARD III:
+If wolives,
+That slace, a art my Maleesl yeard quidd you.
+That you daught a thrian.
+
+QUEEN ELIZABETH:
+heads the ke your
+----------------------------------------------------------------------------------------------------
+Step: 96000
+         * Smooth loss: 45.9495
+Step: 97000
+         * Smooth loss: 46.0053
+Step: 98000
+         * Smooth loss: 45.0514
+Step: 99000
+         * Smooth loss: 46.4896
+Step: 100000
+         * Smooth loss: 46.1525
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+sun itswas be say from words herchionesses?
+
+JULIET:
+Nor alarer fishe's chursurese's at my the it bod that,
+Actan her that not shall cale for some shant almhear tett wear you speak woutom'd cany dead,
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Long synthesized sequence: 
+earth, all beht sieds is me actafast news fair;
+O, fare that ever Petdarthishmblessouns it daint sling you fitch that say, not just
+The nath for'd!
+
+JULIET:
+Ibe mered amisor secu; guine, for as-I, himse Ing 'tis that aids thy jatch a risg,
+Dun whamanourst is of affers murd foefis preasiss strage, mispleat she eyes;
+How lodve marty to as subjest;
+For thee sholds, I at these all squeen he lad heis it.
+
+SOLIO:
+Loun high.
+
+DUCEPULET:
+Dult be weaveer soul maded a day; Thot me bu qilts-let with you:
+If blacce on restaith Tybe Cape-breasness mead shalt intow, maken.
+The shall heaven should you have sent to foave of me.
+The e late and that to this tail: fair.
+
+KINCE:
+For it sipess,
+What she he: for here thou that sote
+It hall theres:
+Fair fare beshout that a woodn sRarst
+In up a nothmarrards bear a pansdandals that maid my shave sever as your is weade; he shall me night dagot my same; death her to but for much, thee was me, you steake cassenter is saps,
+Unades' love. O, he bost i' crund his 'e
+----------------------------------------------------------------------------------------------------
+Step: 101000
+         * Smooth loss: 45.6738
+Step: 102000
+         * Smooth loss: 45.4281
+Step: 103000
+         * Smooth loss: 44.1343
+Step: 104000
+         * Smooth loss: 45.6122
+Step: 105000
+         * Smooth loss: 46.7859
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+, you twenve good of when own dracly kins: throuch, Of my cond plood, your am should no not.
+I'll sprincy,
+No unteastul good not, would bis, I preat but but one,
+With seeniand
+Desperine sussow is
+
+PER
+----------------------------------------------------------------------------------------------------
+Step: 106000
+         * Smooth loss: 45.8627
+Step: 107000
+         * Smooth loss: 45.3388
+Step: 108000
+         * Smooth loss: 44.8180
+Step: 109000
+         * Smooth loss: 45.6466
+Step: 110000
+         * Smooth loss: 45.5227
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+r how hered how dold, throod
+Yet her; and how, my ow, to horsedor mark.
+Alworl
+sets horsted!
+
+Cches? hoel bairy, how down,
+Busing for beard her hell be doth dou to the here.
+
+BUSCHIS:
+Thou myself, and
+----------------------------------------------------------------------------------------------------
+Step: 111000
+         * Smooth loss: 45.1982

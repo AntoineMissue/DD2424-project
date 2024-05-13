@@ -1,5 +1,4 @@
 import torch
-import torch.nn.functional as F
 import numpy as np
 from pathlib import Path
 import pickle
@@ -9,6 +8,35 @@ import os
 from nlpProject.make_data import DataMaker
 from nlpProject.rnn_baseline import RNN
 from nlpProject.utils import get_metrics_n, get_bleu
+
+def synthesize_seq_lstm1(model, h_t, c_t, x0, length = 1000):
+    indexes = []
+    with torch.no_grad():
+        data_maker = DataMaker()
+        x_input = x0.reshape(-1, 1, 1)
+        t = 0
+        while t < length:
+            P, (h_t, c_t) = model(x_input, (h_t, c_t))
+            CP = torch.cumsum(P, dim=0)
+            a = torch.rand(1)
+            ixs = torch.where(CP - a > 0)
+            ii = ixs[0][0].item()
+            indexes.append(ii)
+            xt = torch.zeros((x_input.size(0), 1, 1), dtype=torch.double)
+            xt[ii, 0, 0] = 1
+            x_input = xt
+            t += 1
+        Y = []
+        for idx in indexes:
+            oh = [0]*x_input.size(0)
+            oh[idx] = 1
+            Y.append(oh)
+        Y = torch.tensor(Y).t()
+        s = ''
+        for i in range(Y.shape[1]):
+            idx = torch.where(Y[:, i] == 1)[0].item()
+            s += data_maker.ind_to_char[idx]
+    return Y, s
 
 def rnn_generate(rnn_filename, first_char = ' ', length = 10000, T = 1.0):
     with open(Path(f'./models/RNN/{rnn_filename}'), 'rb') as handle:
