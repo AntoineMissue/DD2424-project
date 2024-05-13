@@ -232,10 +232,10 @@ class RNN:
 
             for k in ms.keys():
                 ms[k] = beta_1*ms[k] + (1 - beta_1)*grads_clamped[k]
-                vs[k] = beta_2*vs[k] + (1 - self.beta_2)*(grads_clamped[k]**2)
+                vs[k] = beta_2*vs[k] + (1 - beta_2)*(grads_clamped[k]**2)
                 m_hat = ms[k]/(1 - beta_1**(step+1))
                 v_hat = vs[k]/(1 - beta_2**(step+1))
-                RNN[k] -= (self.learning_rate/torch.sqrt(v_hat + self.epsilon))*m_hat
+                self.params[k] -= (self.learning_rate/torch.sqrt(v_hat + self.epsilon))*m_hat
 
             if step == 0:
                 smooth_loss = loss
