@@ -16,7 +16,8 @@ class RNN:
         self.learning_rate = learning_rate  # learning rate
         self.epsilon = epsilon  # for AdaGrad/Adam
         self.seq_length = seq_length  # length of input sequences used during training
-        self.data_maker = DataMaker(data_path)
+        self.book_fname = data_path
+        self.data_maker = DataMaker(self.book_fname)
         self.book_data, self.input_size, self.char_to_ind, self.ind_to_char = self.data_maker.make_charmap()
 
         ## Parameters

@@ -39,7 +39,10 @@ def get_metrics_n(book_path, output_path, n):
             correct += 1
     precision = (correct / len(output_ngrams))*100
     recall = (correct / len(book_ngrams))*100
-    f_measure = (precision * recall)/((precision + recall)/2)
+    if precision + recall > 1e-8:
+        f_measure = (precision * recall)/((precision + recall)/2)
+    else:
+        f_measure = 0
     return precision, recall, f_measure
 
 def get_bleu(book_path, output_path):

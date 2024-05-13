@@ -29,5 +29,34 @@ def rnn_generate(rnn_filename, first_char = ' ', length = 10000, T = 1.0):
     sequence = first_char + s_t
     return sequence
 
+def rnn_metrics(rnn_filename, book_path, grams = 1, length = 10000, T = 1.0, clean = True):
+    text = rnn_generate(rnn_filename, length = length, T = T)
+    generated_fpath = f'./reports/logs/generated_text_{time.time()}.txt'
+    with open(generated_fpath, 'w+') as text_file:
+        text_file.write(text)
+    prec, rec, fm = get_metrics_n(book_path, generated_fpath, grams)
+    bleu = get_bleu(book_path, generated_fpath)
+    if clean:
+        os.remove(generated_fpath)
+    return prec, rec, fm, bleu
+
+def rnn_evaluation(rnn_filename, book_path, tries = 10, length = 10000, T = 1.0, clean = True):
+    precs, recs, fms, bleus = [], [], [], []
+    for i in range(tries):
+        current_prec, current_rec, current_fm, current_bleu = rnn_metrics(rnn_filename, book_path, grams = 1, length = length, T = T, clean = clean)
+        precs.append(current_prec)
+        recs.append(current_rec)
+        fms.append(current_fm)
+        bleus.append(current_bleu)
+        print(f'Try {i+1} - Precision: {current_prec:.2f}% - Recall: {current_rec:.2f}% - F-measure: {current_fm:.2f}% - BLEU: {current_bleu:.2f}%')
+    precs, recs, fms, bleus = np.array(precs), np.array(recs), np.array(fms), np.array(bleus)
+    mean_prec, mean_rec, mean_fm, mean_bleu, std_prec, std_rec, std_fm, std_bleu = precs.mean(), recs.mean(), fms.mean(), bleus.mean(), precs.std(), recs.std(), fms.std(), bleus.std()
+    return {'precision': precs, 'recall': recs, 'fmeasure': fms, 'bleu': bleus}, {'precision': mean_prec, 'recall': mean_rec, 'fmeasure': mean_fm, 'bleu': mean_bleu}, {'precision': std_prec, 'recall': std_rec, 'fmeasure': std_fm, 'bleu': std_bleu}
+    
 if __name__ == '__main__':
-    print(rnn_generate('rnn_adagrad_test.pickle'))
+    pcts, mean, std = rnn_evaluation('rnn_adagrad_test.pickle', './data/shakespeare.txt')
+    
+    print(f"Precision - Mean: {mean['precision']:.2f}% ; Standard deviation: {std['precision']:.2f}%")
+    print(f"Recall - Mean: {mean['recall']:.2f}% ; Standard deviation: {std['recall']:.2f}%")
+    print(f"F-measure - Mean: {mean['fmeasure']:.2f}% ; Standard deviation: {std['fmeasure']:.2f}%")
+    print(f"BLEU - Mean: {mean['bleu']:.2f}% ; Standard deviation: {std['bleu']:.2f}%")
