@@ -107,12 +107,12 @@ def compare(data_path, lstm1_filename, rnn_filename, tries = 10):
     print(f"Evaluating the RNN model...")
     _, mean, std = model_evaluation(data_path, "rnn",rnn_filename, tries)
 
-    print("---------------------------------------------------")
+    print("----------------------------------------------------")
     print(f"Precision - Mean: {mean['precision']:.2f}% ; Standard deviation: {std['precision']:.2f}%")
     print(f"Recall - Mean: {mean['recall']:.2f}% ; Standard deviation: {std['recall']:.2f}%")
     print(f"F-measure - Mean: {mean['fmeasure']:.2f}% ; Standard deviation: {std['fmeasure']:.2f}%")
     print(f"BLEU - Mean: {mean['bleu']:.2f}% ; Standard deviation: {std['bleu']:.2f}%")
-    print("---------------------------------------------------")
+    print("----------------------------------------------------")
     
     print(f"Evaluating the LSTM model...")
     _, mean, std = model_evaluation(data_path, "lstm1", lstm1_filename, tries)
@@ -122,9 +122,9 @@ def compare(data_path, lstm1_filename, rnn_filename, tries = 10):
     print(f"Recall - Mean: {mean['recall']:.2f}% ; Standard deviation: {std['recall']:.2f}%")
     print(f"F-measure - Mean: {mean['fmeasure']:.2f}% ; Standard deviation: {std['fmeasure']:.2f}%")
     print(f"BLEU - Mean: {mean['bleu']:.2f}% ; Standard deviation: {std['bleu']:.2f}%")
-    print("---------------------------------------------------")
+    print("----------------------------------------------------")
     
 if __name__ == '__main__':
     data_path = './data/shakespeare.txt'
 
-    compare(data_path, "lstm_1_layer_test", "rnn_adagrad_test.pickle", tries = 3)
+    compare(data_path, "lstm1_256_100_1_64_0.001.pt", "rnn_adagrad_test.pickle", tries = 3)
