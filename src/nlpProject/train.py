@@ -12,7 +12,7 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
     smooth_loss = 0
     data_maker = DataMaker(data_path)
     data, input_size, _, _ = data_maker.make_charmap()
-    model = LSTM1(input_size, seq_length, hidden_size, input_size)
+    model = LSTM1(input_size, hidden_size, input_size)
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     h_prev, c_prev = (torch.zeros(model.hidden_size, batch_size, dtype=torch.double),
                       torch.zeros(model.hidden_size, batch_size, dtype=torch.double))
@@ -47,12 +47,12 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
             print(f"Step: {step}")
             print(f"\t * Smooth loss: {smooth_loss:.4f}")
         if step % 5000 == 0:
-            _, s_syn = synthesize_seq_lstm1(model, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 200)
+            _, s_syn = synthesize_seq_lstm1(model, data_path, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 200)
             print("-" * 100)
             print(f"Synthesized sequence: \n{s_syn}")
             print("-" * 100)
         if step % 100000 == 0 and step > 0:
-            _, s_lsyn = synthesize_seq_lstm1(model, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 1000)
+            _, s_lsyn = synthesize_seq_lstm1(model, data_path, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 1000)
             print("-" * 100)
             print(f"Long synthesized sequence: \n{s_lsyn}")
             print("-" * 100)
