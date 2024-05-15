@@ -1,5 +1,17 @@
 from pathlib import Path
 import torch
+from torch.utils.data import TensorDataset, DataLoader
+
+def make_dataloader(data_maker, seq_len, batch_size, shuffle = False):
+    data = data_maker.encode_string(data_maker.book_data).t()
+    X, Y = data[:-1, :], data[1:, :]
+    n_chars, n_features = X.shape
+    n_samples = n_chars // seq_len
+    X_trunc, Y_trunc = X[:n_samples * seq_len], Y[:n_samples * seq_len]
+    X_resh, Y_resh = X_trunc.view(n_samples, seq_len, n_features), Y_trunc.view(n_samples, seq_len, n_features)
+    dataset = TensorDataset(X_resh, Y_resh)
+    dataloader = DataLoader(dataset, batch_size, shuffle, drop_last=True)
+    return dataloader
 
 def compute_loss(Y, P):
     batch_size = Y.shape[2]
