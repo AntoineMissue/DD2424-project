@@ -76,7 +76,7 @@ def rnn_generate(rnn_filename, first_char = ' ', length = 10000, T = 1.0):
     sequence = first_char + s_t
     return sequence
 
-def model_metrics(data_path, model_code, model_filename,grams = 1, length = 10000, T = 1.0, clean = True):
+def model_metrics(data_path, validation_path, model_code, model_filename,grams = 1, length = 10000, T = 1.0, clean = True):
     if model_code == "lstm1":
         text = lstm1_generate(model_filename, data_path, length=length, T = T)
     elif model_code == "rnn":
@@ -84,16 +84,16 @@ def model_metrics(data_path, model_code, model_filename,grams = 1, length = 1000
     generated_fpath = f'./reports/logs/generated_text_{time.time()}.txt'
     with open(generated_fpath, 'w+') as text_file:
         text_file.write(text)
-    prec, rec, fm = get_metrics_n(data_path, generated_fpath, grams)
-    bleu = get_bleu(data_path, generated_fpath)
+    prec, rec, fm = get_metrics_n(validation_path, generated_fpath, grams)
+    bleu = get_bleu(validation_path, generated_fpath)
     if clean:
         os.remove(generated_fpath)
     return prec, rec, fm, bleu
 
-def model_evaluation(data_path, model_code, model_filename, tries = 10, length = 10000, T = 1.0, clean = True):
+def model_evaluation(data_path, validation_path, model_code, model_filename, tries = 10, length = 10000, T = 1.0, clean = True):
     precs, recs, fms, bleus = [], [], [], []
     for i in range(tries):
-        current_prec, current_rec, current_fm, current_bleu = model_metrics(data_path, model_code, model_filename, grams = 1, length = length, T = T, clean = clean)
+        current_prec, current_rec, current_fm, current_bleu = model_metrics(data_path, validation_path, model_code, model_filename, grams = 1, length = length, T = T, clean = clean)
         precs.append(current_prec)
         recs.append(current_rec)
         fms.append(current_fm)
@@ -103,9 +103,9 @@ def model_evaluation(data_path, model_code, model_filename, tries = 10, length =
     mean_prec, mean_rec, mean_fm, mean_bleu, std_prec, std_rec, std_fm, std_bleu = precs.mean(), recs.mean(), fms.mean(), bleus.mean(), precs.std(), recs.std(), fms.std(), bleus.std()
     return {'precision': precs, 'recall': recs, 'fmeasure': fms, 'bleu': bleus}, {'precision': mean_prec, 'recall': mean_rec, 'fmeasure': mean_fm, 'bleu': mean_bleu}, {'precision': std_prec, 'recall': std_rec, 'fmeasure': std_fm, 'bleu': std_bleu}
 
-def compare(data_path, lstm1_filename, rnn_filename, tries = 10):
+def compare(data_path, validation_path, lstm1_filename, rnn_filename, tries = 10):
     print(f"Evaluating the RNN model...")
-    _, mean, std = model_evaluation(data_path, "rnn",rnn_filename, tries)
+    _, mean, std = model_evaluation(data_path, validation_path, "rnn",rnn_filename, tries)
 
     print("----------------------------------------------------")
     print(f"Precision - Mean: {mean['precision']:.2f}% ; Standard deviation: {std['precision']:.2f}%")
@@ -115,7 +115,7 @@ def compare(data_path, lstm1_filename, rnn_filename, tries = 10):
     print("----------------------------------------------------")
     
     print(f"Evaluating the LSTM model...")
-    _, mean, std = model_evaluation(data_path, "lstm1", lstm1_filename, tries)
+    _, mean, std = model_evaluation(data_path, validation_path, "lstm1", lstm1_filename, tries)
     
     print("----------------------------------------------------")
     print(f"Precision - Mean: {mean['precision']:.2f}% ; Standard deviation: {std['precision']:.2f}%")
@@ -126,7 +126,8 @@ def compare(data_path, lstm1_filename, rnn_filename, tries = 10):
     
 if __name__ == '__main__':
     data_path = './data/shakespeare.txt'
+    validation_path = './data/shakespeare_220k.txt'
 
-    compare(data_path, "lstm1_256_100_100_64_0.001.pt", "rnn_adam_256_100_100_64_0.001.pickle", tries = 3)
+    compare(data_path, validation_path, "lstm1_256_100_100_64_0.001.pt", "rnn_adam_256_100_100_64_0.001.pickle", tries = 3)
     #model_metrics(data_path, "lstm1", "lstm1_256_100_100_64_0.001.pt", grams = 1, length = 10000, T = 0.7, clean = False)
     #model_metrics(data_path, "rnn", "rnn_adam_256_100_100_64_0.001.pickle", grams = 1, length = 10000, T = 0.7, clean = False)
