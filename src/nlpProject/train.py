@@ -8,7 +8,7 @@ from nlpProject.make_data import DataMaker
 from nlpProject.utils import compute_loss, make_dataloader
 from nlpProject.inference import synthesize_seq_lstm1
 
-def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learning_rate, synth_interval = 5, fig_savepath = None):
+def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learning_rate, synth_interval = 5, model_savepath = None, fig_savepath = None):
     losses = []
     step = 0
     smooth_loss = 0
@@ -48,18 +48,21 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
 
         print(f"\t * Smooth loss: {smooth_loss:.4f}")
         if (epoch + 1) % synth_interval == 0:
-            _, s_syn = synthesize_seq_lstm1(model, data_path, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 200)
+            _, s_syn = synthesize_seq_lstm1(model, data_maker, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 200)
             print("-" * 100)
             print(f"Synthesized sequence: \n{s_syn}")
             print("-" * 100)
 
     end_time = time.time()
-    _, s_lsyn = synthesize_seq_lstm1(model, data_path, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 5000)
+    _, s_lsyn = synthesize_seq_lstm1(model, data_maker, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 5000)
     print("-" * 100)
     print(f"Benchmark synthesized sequence: \n{s_lsyn}")
     print("-" * 100)
     print(f'No. of steps: {step + 1}.')
     print(f'Time elapsed ({batch_size} samples per batch, {n_epochs} epochs): {(end_time - start_time):.1f} seconds.')
+
+    if model_savepath:
+        torch.save(model.state_dict(), model_savepath)
 
     plt.figure()
     plt.plot(losses)
@@ -73,11 +76,18 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
         plt.show()
 
 if __name__ == '__main__':
+    import cProfile, pstats
+    profiler = cProfile.Profile()
+    profiler.enable()
     train_lstm1(data_path='./data/shakespeare.txt', 
-                n_epochs=50, 
+                n_epochs=3, 
                 hidden_size=256, 
                 seq_length=100, 
                 batch_size=64, 
                 learning_rate=0.001,
                 synth_interval=5,
-                fig_savepath= './reports/figures/lstm_1_layer_test')
+                model_savepath='./models/LSTM/lstm_1_layer_test',
+                fig_savepath='./reports/figures/lstm_1_layer_test')
+    profiler.disable()
+    stats = pstats.Stats(profiler).sort_stats('tottime')
+    stats.print_stats()

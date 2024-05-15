@@ -7,16 +7,16 @@ import os
 
 from nlpProject.make_data import DataMaker
 from nlpProject.rnn_baseline import RNN
+from nlpProject.one_layer_lstm import LSTM1
 from nlpProject.utils import get_metrics_n, get_bleu
 
-def synthesize_seq_lstm1(model, data_path, h_t, c_t, x0, length = 1000):
+def synthesize_seq_lstm1(model, data_maker, h_t, c_t, x0, length = 1000, T = 1.0):
     indexes = []
     with torch.no_grad():
-        data_maker = DataMaker(data_path)
         x_input = x0.reshape(-1, 1, 1)
         t = 0
         while t < length:
-            P, (h_t, c_t) = model(x_input, (h_t, c_t))
+            P, (h_t, c_t) = model(x_input, (h_t, c_t), T)
             CP = torch.cumsum(P, dim=0)
             a = torch.rand(1)
             ixs = torch.where(CP - a > 0)
@@ -38,6 +38,25 @@ def synthesize_seq_lstm1(model, data_path, h_t, c_t, x0, length = 1000):
             s += data_maker.ind_to_char[idx]
     return Y, s
 
+def lstm1_generate(lstm_filename, data_path, first_char = ' ', length = 10000, T = 1.0):
+    data_maker = DataMaker(data_path)
+    state_dict = torch.load(Path(f'./models/LSTM/{lstm_filename}'))
+    input_size, hidden_size = state_dict["Wf"].size()[1], state_dict["Wf"].size()[0]
+    model = LSTM1(input_size, hidden_size, input_size)
+    model.load_state_dict(state_dict)
+    model.eval()
+    x_input = data_maker.encode_string(first_char)
+    _, s_t = synthesize_seq_lstm1(
+        model, 
+        data_maker, 
+        torch.zeros(hidden_size, 1, dtype=torch.double), 
+        torch.zeros(hidden_size, 1, dtype=torch.double), 
+        x_input, 
+        length, 
+        T)
+    sequence = first_char + s_t
+    return sequence
+        
 def rnn_generate(rnn_filename, first_char = ' ', length = 10000, T = 1.0):
     with open(Path(f'./models/RNN/{rnn_filename}'), 'rb') as handle:
         rnn_dict = pickle.load(handle)
@@ -57,21 +76,24 @@ def rnn_generate(rnn_filename, first_char = ' ', length = 10000, T = 1.0):
     sequence = first_char + s_t
     return sequence
 
-def rnn_metrics(rnn_filename, book_path, grams = 1, length = 10000, T = 1.0, clean = True):
-    text = rnn_generate(rnn_filename, length = length, T = T)
+def model_metrics(data_path, model_code, model_filename,grams = 1, length = 10000, T = 1.0, clean = True):
+    if model_code == "lstm1":
+        text = lstm1_generate(model_filename, data_path, length=length, T = T)
+    elif model_code == "rnn":
+        text = rnn_generate(model_filename, length=length, T = T)
     generated_fpath = f'./reports/logs/generated_text_{time.time()}.txt'
     with open(generated_fpath, 'w+') as text_file:
         text_file.write(text)
-    prec, rec, fm = get_metrics_n(book_path, generated_fpath, grams)
-    bleu = get_bleu(book_path, generated_fpath)
+    prec, rec, fm = get_metrics_n(data_path, generated_fpath, grams)
+    bleu = get_bleu(data_path, generated_fpath)
     if clean:
         os.remove(generated_fpath)
     return prec, rec, fm, bleu
 
-def rnn_evaluation(rnn_filename, book_path, tries = 10, length = 10000, T = 1.0, clean = True):
+def model_evaluation(data_path, model_code, model_filename, tries = 10, length = 10000, T = 1.0, clean = True):
     precs, recs, fms, bleus = [], [], [], []
     for i in range(tries):
-        current_prec, current_rec, current_fm, current_bleu = rnn_metrics(rnn_filename, book_path, grams = 1, length = length, T = T, clean = clean)
+        current_prec, current_rec, current_fm, current_bleu = model_metrics(data_path, model_code, model_filename, grams = 1, length = length, T = T, clean = clean)
         precs.append(current_prec)
         recs.append(current_rec)
         fms.append(current_fm)
@@ -80,11 +102,29 @@ def rnn_evaluation(rnn_filename, book_path, tries = 10, length = 10000, T = 1.0,
     precs, recs, fms, bleus = np.array(precs), np.array(recs), np.array(fms), np.array(bleus)
     mean_prec, mean_rec, mean_fm, mean_bleu, std_prec, std_rec, std_fm, std_bleu = precs.mean(), recs.mean(), fms.mean(), bleus.mean(), precs.std(), recs.std(), fms.std(), bleus.std()
     return {'precision': precs, 'recall': recs, 'fmeasure': fms, 'bleu': bleus}, {'precision': mean_prec, 'recall': mean_rec, 'fmeasure': mean_fm, 'bleu': mean_bleu}, {'precision': std_prec, 'recall': std_rec, 'fmeasure': std_fm, 'bleu': std_bleu}
-    
-if __name__ == '__main__':
-    pcts, mean, std = rnn_evaluation('rnn_adagrad_test.pickle', './data/shakespeare.txt')
-    
+
+def compare(data_path, lstm1_filename, rnn_filename, tries = 10):
+    print(f"Evaluating the RNN model...")
+    _, mean, std = model_evaluation(data_path, "rnn",rnn_filename, tries)
+
+    print("---------------------------------------------------")
     print(f"Precision - Mean: {mean['precision']:.2f}% ; Standard deviation: {std['precision']:.2f}%")
     print(f"Recall - Mean: {mean['recall']:.2f}% ; Standard deviation: {std['recall']:.2f}%")
     print(f"F-measure - Mean: {mean['fmeasure']:.2f}% ; Standard deviation: {std['fmeasure']:.2f}%")
     print(f"BLEU - Mean: {mean['bleu']:.2f}% ; Standard deviation: {std['bleu']:.2f}%")
+    print("---------------------------------------------------")
+    
+    print(f"Evaluating the LSTM model...")
+    _, mean, std = model_evaluation(data_path, "lstm1", lstm1_filename, tries)
+    
+    print("----------------------------------------------------")
+    print(f"Precision - Mean: {mean['precision']:.2f}% ; Standard deviation: {std['precision']:.2f}%")
+    print(f"Recall - Mean: {mean['recall']:.2f}% ; Standard deviation: {std['recall']:.2f}%")
+    print(f"F-measure - Mean: {mean['fmeasure']:.2f}% ; Standard deviation: {std['fmeasure']:.2f}%")
+    print(f"BLEU - Mean: {mean['bleu']:.2f}% ; Standard deviation: {std['bleu']:.2f}%")
+    print("---------------------------------------------------")
+    
+if __name__ == '__main__':
+    data_path = './data/shakespeare.txt'
+
+    compare(data_path, "lstm_1_layer_test", "rnn_adagrad_test.pickle", tries = 3)

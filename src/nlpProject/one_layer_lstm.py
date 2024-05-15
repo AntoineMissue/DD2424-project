@@ -29,7 +29,7 @@ class LSTM1(nn.Module):
             if len(param.shape) > 1:
                 nn.init.xavier_normal_(param)
 
-    def forward(self, X, init_states=None):
+    def forward(self, X, init_states=None, T = 1.0):
         _, seq_len, batch_size = X.size()
         hidden_seq = []
 
@@ -54,5 +54,5 @@ class LSTM1(nn.Module):
         hidden_seq = torch.cat(hidden_seq, dim=1)
         hidden_seq = hidden_seq.reshape(self.hidden_size, seq_len, batch_size)
         output = self.fc(hidden_seq.permute(2, 1, 0)).permute(2, 1, 0)
-        P = torch.softmax(output, dim = 0)
+        P = torch.softmax(output/T, dim = 0)
         return P, (h_t, c_t)
