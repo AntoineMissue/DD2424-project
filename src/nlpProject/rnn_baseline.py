@@ -279,5 +279,5 @@ if __name__ == '__main__':
         'learning_rate': 0.001,
         }
     rnn = RNN(**params)
-    rnn.run(64, 50, 5, optimizer="adam", save = True, figure_filename=f"run_{time.time()}.png")
+    rnn.run(64, 100, 5, optimizer="adam", save = True, figure_filename=f"run_{time.time()}.png")
 ###############

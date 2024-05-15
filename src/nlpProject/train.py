@@ -78,7 +78,7 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
 if __name__ == '__main__':
     params = {
         'data_path': './data/shakespeare.txt',
-        'n_epochs': 50,
+        'n_epochs': 100,
         'hidden_size': 256,
         'seq_length': 100,
         'batch_size': 64,

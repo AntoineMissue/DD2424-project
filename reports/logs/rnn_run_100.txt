@@ -1,0 +1,447 @@
+Epoch 1/100 - Step 1
+	 * Smooth loss: 405.5651
+Epoch 2/100 - Step 175
+	 * Smooth loss: 389.4256
+Epoch 3/100 - Step 349
+	 * Smooth loss: 367.7923
+Epoch 4/100 - Step 523
+	 * Smooth loss: 346.4175
+Epoch 5/100 - Step 697
+	 * Smooth loss: 326.5740
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+iy wire, bele? 'oo fis tige;
+Un, and beis wher sed marod, mann thisgdataa
+Yor poout.
+
+CECCICIAO:
+Bois the wish,
+
+Sall ofame usto the nim
+he pand
+
+For sYef ceace
+Cncenctiba bpan? hougganpt.
+
+CIAUEN:
+It
+----------------------------------------------------------------------------------------------------
+Epoch 6/100 - Step 871
+	 * Smooth loss: 308.5276
+Epoch 7/100 - Step 1045
+	 * Smooth loss: 292.2489
+Epoch 8/100 - Step 1219
+	 * Smooth loss: 277.6124
+Epoch 9/100 - Step 1393
+	 * Smooth loss: 264.4675
+Epoch 10/100 - Step 1567
+	 * Smooth loss: 252.6703
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+: Berauly his; bloth rey
+To be onee con ong tion woow thee which triend know faurachurt fouth shallet you wartaterrisa, forment. In: I'll herr madter that with tirow, I poirstirs and not this diast be
+----------------------------------------------------------------------------------------------------
+Epoch 11/100 - Step 1741
+	 * Smooth loss: 242.1037
+Epoch 12/100 - Step 1915
+	 * Smooth loss: 232.6366
+Epoch 13/100 - Step 2089
+	 * Smooth loss: 224.1674
+Epoch 14/100 - Step 2263
+	 * Smooth loss: 216.6068
+Epoch 15/100 - Step 2437
+	 * Smooth loss: 209.8586
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ what Bows to watreft mine ale thought Kith that prequist buth a will,
+And in chust.
+
+AUCOLY:
+Bith's oke mine.
+
+PATRSCUY:
+Hinr fair the our you heort.
+
+VIAMIO:
+'ty, Ahatll, at su--hank and plaiesio,
+W
+----------------------------------------------------------------------------------------------------
+Epoch 16/100 - Step 2611
+	 * Smooth loss: 203.8445
+Epoch 17/100 - Step 2785
+	 * Smooth loss: 198.4697
+Epoch 18/100 - Step 2959
+	 * Smooth loss: 193.6723
+Epoch 19/100 - Step 3133
+	 * Smooth loss: 189.3833
+Epoch 20/100 - Step 3307
+	 * Smooth loss: 185.5677
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+
+The durion maring.
+
+WARDINI:
+'Tis hath seartlesser napurs.
+
+TRANdO:
+O, sir, tur bouns' foust in.
+
+ROMEENCA:
+Put few twal fair.
+
+IABELLIO:
+Is griat in youss in her
+'way brother.
+
+GREMBELE:
+Bust cay sa
+----------------------------------------------------------------------------------------------------
+Epoch 21/100 - Step 3481
+	 * Smooth loss: 182.1365
+Epoch 22/100 - Step 3655
+	 * Smooth loss: 179.0733
+Epoch 23/100 - Step 3829
+	 * Smooth loss: 176.3128
+Epoch 24/100 - Step 4003
+	 * Smooth loss: 173.8374
+Epoch 25/100 - Step 4177
+	 * Smooth loss: 171.6044
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Is the dost thou doghing earngers and thou are part.
+The thoubreast of Romery.
+
+BIONDERLABE:
+Al onper make.
+
+ERCALUS:
+You swore dirreast knew a fies of chade which's cheet
+Inden's mold have knither?
+----------------------------------------------------------------------------------------------------
+Epoch 26/100 - Step 4351
+	 * Smooth loss: 169.5772
+Epoch 27/100 - Step 4525
+	 * Smooth loss: 167.7521
+Epoch 28/100 - Step 4699
+	 * Smooth loss: 166.0950
+Epoch 29/100 - Step 4873
+	 * Smooth loss: 164.5907
+Epoch 30/100 - Step 5047
+	 * Smooth loss: 163.2255
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+A very then unto repire of the instry
+Capund'd wear spokens and most tenerd.
+Constid Reilting Knoold off not the kind provice
+Of sake extour plaitly.
+
+BIONCESTERCANUS:
+Hawe know her inshalt h the fi
+----------------------------------------------------------------------------------------------------
+Epoch 31/100 - Step 5221
+	 * Smooth loss: 161.9711
+Epoch 32/100 - Step 5395
+	 * Smooth loss: 160.8258
+Epoch 33/100 - Step 5569
+	 * Smooth loss: 159.7837
+Epoch 34/100 - Step 5743
+	 * Smooth loss: 158.8354
+Epoch 35/100 - Step 5917
+	 * Smooth loss: 157.9471
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ you may, tell Shill not thou ha! 'Bod dugbary him,
+And greaths shade we havours
+Agen to him, hat live zed life, the tome.
+
+PEORIO:
+No kind a, I prison thy father with sbuze it thee our crowns it.
+
+PE
+----------------------------------------------------------------------------------------------------
+Epoch 36/100 - Step 6091
+	 * Smooth loss: 157.1309
+Epoch 37/100 - Step 6265
+	 * Smooth loss: 156.3807
+Epoch 38/100 - Step 6439
+	 * Smooth loss: 155.6796
+Epoch 39/100 - Step 6613
+	 * Smooth loss: 155.0273
+Epoch 40/100 - Step 6787
+	 * Smooth loss: 154.4118
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+The master spore of that I though the gree or thee to then. Come, my gares! they not the teeple injudies.
+
+HERKY VINCENTIO:
+Am.
+Nasty with up thep should best
+well, you
+HAR IUCENo; being
+Marries; wh
+----------------------------------------------------------------------------------------------------
+Epoch 41/100 - Step 6961
+	 * Smooth loss: 153.8394
+Epoch 42/100 - Step 7135
+	 * Smooth loss: 153.2969
+Epoch 43/100 - Step 7309
+	 * Smooth loss: 152.8140
+Epoch 44/100 - Step 7483
+	 * Smooth loss: 152.3554
+Epoch 45/100 - Step 7657
+	 * Smooth loss: 151.9116
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+; and whurtous roan
+well, sirce and med need his looks
+Prove maruse, call the tell! be loss;
+And with's nato.
+
+KAPHINGS:
+And repose not the ruds,
+Hast by on the witune danger sirs
+And but the staupian
+----------------------------------------------------------------------------------------------------
+Epoch 46/100 - Step 7831
+	 * Smooth loss: 151.4980
+Epoch 47/100 - Step 8005
+	 * Smooth loss: 151.1125
+Epoch 48/100 - Step 8179
+	 * Smooth loss: 150.7297
+Epoch 49/100 - Step 8353
+	 * Smooth loss: 150.3664
+Epoch 50/100 - Step 8527
+	 * Smooth loss: 150.0207
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ Servent rissee,' witons dall:
+Mint Buckinght for
+I deral fortty Marcies
+Not selves, thyet blunst offrer thou nurses e'rr
+an heerf
+To things that say how them.
+
+First Lood to stride on wilt,
+But, I ca
+----------------------------------------------------------------------------------------------------
+Epoch 51/100 - Step 8701
+	 * Smooth loss: 149.7133
+Epoch 52/100 - Step 8875
+	 * Smooth loss: 149.4043
+Epoch 53/100 - Step 9049
+	 * Smooth loss: 149.1086
+Epoch 54/100 - Step 9223
+	 * Smooth loss: 148.8405
+Epoch 55/100 - Step 9397
+	 * Smooth loss: 148.5663
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ given heward her fright came to time: mire I dost;
+And witnist their that seifer should of London
+
+CAMILLO:
+Good dand of commend this mount:
+Well, she.
+
+PAULINA:
+Now: who pred in my
+Aubtices: why her
+----------------------------------------------------------------------------------------------------
+Epoch 56/100 - Step 9571
+	 * Smooth loss: 148.3127
+Epoch 57/100 - Step 9745
+	 * Smooth loss: 148.0620
+Epoch 58/100 - Step 9919
+	 * Smooth loss: 147.8175
+Epoch 59/100 - Step 10093
+	 * Smooth loss: 147.5834
+Epoch 60/100 - Step 10267
+	 * Smooth loss: 147.3628
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ yiely him one
+bunchesence: in his
+hed so she. Signior Warwick'd thou sleep;
+And when I am harm nor sil to one of her love! let like kindness, sirpared and forthous,
+To Mabablable curslest needled tew
+----------------------------------------------------------------------------------------------------
+Epoch 61/100 - Step 10441
+	 * Smooth loss: 147.1583
+Epoch 62/100 - Step 10615
+	 * Smooth loss: 146.9538
+Epoch 63/100 - Step 10789
+	 * Smooth loss: 146.7493
+Epoch 64/100 - Step 10963
+	 * Smooth loss: 146.5550
+Epoch 65/100 - Step 11137
+	 * Smooth loss: 146.3811
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ Edward go the terriol it asster reof,
+I press to him.
+
+Plow
+Plauses; who is next
+To London, or empatiefs
+and pressing;
+Traitor, please your fire.
+A mayou this,
+The gods, small loubleth father:
+Though
+----------------------------------------------------------------------------------------------------
+Epoch 66/100 - Step 11311
+	 * Smooth loss: 146.2414
+Epoch 67/100 - Step 11485
+	 * Smooth loss: 146.0929
+Epoch 68/100 - Step 11659
+	 * Smooth loss: 145.9438
+Epoch 69/100 - Step 11833
+	 * Smooth loss: 145.7963
+Epoch 70/100 - Step 12007
+	 * Smooth loss: 145.6388
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Gard I wold erou.
+
+TYRGOUSTIS:
+Your lawing, let him heard the Auforcur wonken of life, thou.
+
+LORD good resuged.
+
+PETRUCHIO:
+Why grief when you
+doth thrown to subthenot. Good my blood,
+When has I ca
+----------------------------------------------------------------------------------------------------
+Epoch 71/100 - Step 12181
+	 * Smooth loss: 145.4958
+Epoch 72/100 - Step 12355
+	 * Smooth loss: 145.3494
+Epoch 73/100 - Step 12529
+	 * Smooth loss: 145.1976
+Epoch 74/100 - Step 12703
+	 * Smooth loss: 145.0605
+Epoch 75/100 - Step 12877
+	 * Smooth loss: 144.9267
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Whoplined with the with her, if eacledent,
+Brave agen friend we shall straitors, frow, think gand of this throishion by y he dread:
+Which, to-mar's 'tis triffices.
+What is shamel
+Of whose fearful to
+----------------------------------------------------------------------------------------------------
+Epoch 76/100 - Step 13051
+	 * Smooth loss: 144.8161
+Epoch 77/100 - Step 13225
+	 * Smooth loss: 144.6966
+Epoch 78/100 - Step 13399
+	 * Smooth loss: 144.5622
+Epoch 79/100 - Step 13573
+	 * Smooth loss: 144.4231
+Epoch 80/100 - Step 13747
+	 * Smooth loss: 144.3149
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+, all: my ot murd.
+
+LUCENTIO:
+With a lorves for or do?
+
+BAPTISTA:
+Well, I would be my what he hath such no strabkle's angrant more throw-shy would crown and newly against me the wand.
+
+MIRANDA:
+Where 
+----------------------------------------------------------------------------------------------------
+Epoch 81/100 - Step 13921
+	 * Smooth loss: 144.1884
+Epoch 82/100 - Step 14095
+	 * Smooth loss: 144.0775
+Epoch 83/100 - Step 14269
+	 * Smooth loss: 143.9535
+Epoch 84/100 - Step 14443
+	 * Smooth loss: 143.8460
+Epoch 85/100 - Step 14617
+	 * Smooth loss: 143.7442
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+All din from thy mother:
+Peet; what dost colde?
+This is the stroke and this yours may make him or, Altoy head? What's, as? did he must eppecia. Will's winter hat ever
+Provery's guarate none
+That dre
+----------------------------------------------------------------------------------------------------
+Epoch 86/100 - Step 14791
+	 * Smooth loss: 143.6322
+Epoch 87/100 - Step 14965
+	 * Smooth loss: 143.5275
+Epoch 88/100 - Step 15139
+	 * Smooth loss: 143.4118
+Epoch 89/100 - Step 15313
+	 * Smooth loss: 143.2911
+Epoch 90/100 - Step 15487
+	 * Smooth loss: 143.1835
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Ay lose live!
+A very it?
+
+TRANIO:
+I will not should do her give my moann;
+Prof?
+
+GRUMIO:
+What news me tender thy frish of my wicked
+JUcult Gellorg thy and mine commandatom, live my adverse please ba
+----------------------------------------------------------------------------------------------------
+Epoch 91/100 - Step 15661
+	 * Smooth loss: 143.0955
+Epoch 92/100 - Step 15835
+	 * Smooth loss: 143.0017
+Epoch 93/100 - Step 16009
+	 * Smooth loss: 142.9038
+Epoch 94/100 - Step 16183
+	 * Smooth loss: 142.8213
+Epoch 95/100 - Step 16357
+	 * Smooth loss: 142.7588
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Yes lived like your executionable wrongr me:
+
+KING EDWARD IV:
+Beshipl alve yet not fir thy brother in nukuler. These head, thou hast vengeance: best be the hence
+Bifide, not not remember with
+The na
+----------------------------------------------------------------------------------------------------
+Epoch 96/100 - Step 16531
+	 * Smooth loss: 142.6787
+Epoch 97/100 - Step 16705
+	 * Smooth loss: 142.5965
+Epoch 98/100 - Step 16879
+	 * Smooth loss: 142.5194
+Epoch 99/100 - Step 17053
+	 * Smooth loss: 142.4681
+Epoch 100/100 - Step 17227
+	 * Smooth loss: 142.3868
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ Richard yet: Fring me?
+
+Pail such a name of thou armstur will, beat's
+Deed you, this humbly I
+And on the present, had ip! Said the ompenday you, yey; bound off not charm,
+And while the store.
+
+ISABEL
+----------------------------------------------------------------------------------------------------
+Time elapsed (64 samples per batch, 100 epochs): 1520.3 seconds.
