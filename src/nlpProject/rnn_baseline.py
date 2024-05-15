@@ -1,12 +1,13 @@
 import pickle
 import time
 import torch
+import tqdm
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 from pathlib import Path
 
 from nlpProject.make_data import DataMaker
-from nlpProject.utils import compute_loss
+from nlpProject.utils import compute_loss, make_dataloader
 from nlpProject import logger
 
 class RNN:
@@ -26,7 +27,7 @@ class RNN:
         self.b = torch.zeros((self.hidden_size, 1), dtype=torch.double, device=self.device)
         self.c = torch.zeros((self.input_size, 1), dtype=torch.double, device=self.device)
         # weight matrices
-        sig = 0.01
+        sig = 2/(self.hidden_size + self.input_size)
         self.U = torch.normal(0.0, sig, (self.hidden_size, self.input_size), dtype=torch.double, device=self.device)
         self.W = torch.normal(0.0, sig, (self.hidden_size, self.hidden_size), dtype=torch.double, device=self.device)
         self.V = torch.normal(0.0, sig, (self.input_size, self.hidden_size), dtype=torch.double, device=self.device)
@@ -116,12 +117,12 @@ class RNN:
             s += self.ind_to_char[idx]
         return Y, s
     
-    def train_adagrad(self, batch_size, n_epochs, T = 1, save = False):
+    def train_adagrad(self, batch_size, n_epochs, synth_interval = 5, T = 1, save = False):
         logger.info("Start of AdaGrad training.")
-        e, step, epoch = 0, 0, 0
+        step = 0
         smooth_loss = 0
         losses = []
-        hprev = torch.zeros((self.hidden_size, batch_size), dtype=torch.double)
+        dataloader = make_dataloader(self.data_maker, self.seq_length, batch_size)
 
         mb = torch.zeros_like(self.params['b'], dtype=torch.double)
         mc = torch.zeros_like(self.params['c'], dtype=torch.double)
@@ -130,56 +131,38 @@ class RNN:
         mW = torch.zeros_like(self.params['W'], dtype=torch.double)
         ms = {'b': mb, 'c': mc, 'U': mU, 'V': mV, 'W': mW}
 
-        while epoch < n_epochs:
-            X_batch = []
-            Y_batch = []
-            for b in range(batch_size):
-                start_index = e + b * self.seq_length
-                X_chars = self.book_data[start_index:(start_index + self.seq_length)]
-                Y_chars = self.book_data[(start_index + 1):(start_index + self.seq_length + 1)]
-                X_batch.append(self.data_maker.encode_string(X_chars))
-                Y_batch.append(self.data_maker.encode_string(Y_chars))
+        for epoch in range(n_epochs):
+            print(f"Epoch {epoch+1}/{n_epochs} - Step {step + 1}")
+            hprev = torch.zeros((self.hidden_size, batch_size), dtype=torch.double)
 
-            X_train = torch.stack(X_batch, dim=2)  # shape: (K, seq_length, n_batch)
-            Y_train = torch.stack(Y_batch, dim=2)  # shape: (K, seq_length, n_batch)
+            for X_train, Y_train in tqdm.tqdm(dataloader, desc="Processing batches"):
+                X_train = X_train.permute(2, 1, 0)
+                Y_train = Y_train.permute(2, 1, 0)
 
-            A_train, H_train, P_train, hts = self.forward(X_train, hprev)
-            loss = compute_loss(Y_train, P_train)
-            grads, grads_clamped = self.backward(X_train, Y_train, A_train, H_train, P_train, hprev)
+                A_train, H_train, P_train, hts = self.forward(X_train, hprev)
+                loss = compute_loss(Y_train, P_train)
+                grads, grads_clamped = self.backward(X_train, Y_train, A_train, H_train, P_train, hprev)
 
-            for k in ms.keys():
-                ms[k] += grads_clamped[k]**2
-                self.params[k] -= (self.learning_rate/torch.sqrt(ms[k] + self.epsilon)) * grads_clamped[k]
+                for k in ms.keys():
+                    ms[k] += grads_clamped[k]**2
+                    self.params[k] -= (self.learning_rate/torch.sqrt(ms[k] + self.epsilon)) * grads_clamped[k]
 
-            if step == 0:
-                smooth_loss = loss.item()
-            else:
-                smooth_loss = 0.999*smooth_loss + 0.001*loss.item()
-            losses.append(smooth_loss)
+                if step == 0:
+                    smooth_loss = loss.item()
+                else:
+                    smooth_loss = 0.999*smooth_loss + 0.001*loss.item()
+                losses.append(smooth_loss)
 
-            if step % 1000 == 0:
-                print(f"Step: {step}")
-                print(f"\t * Smooth loss: {smooth_loss:.4f}")
-            if step % 5000 == 0:
-                _, s_syn = self.synthetize_seq(hprev[:, 0:1], X_train[:, 0, 0], 200, T)
-                print("-" * 100)
-                print(f"Synthetized sequence: \n{s_syn}")
-                print("-" * 100)
-            if step % 100000 == 0 and step > 0:
-                _, s_lsyn = self.synthetize_seq(hprev[:, 0:1], X_train[:, 0, 0], 1000, T)
-                print("-" * 100)
-                print(f"Long synthetized sequence: \n{s_lsyn}")
-                print("-" * 100)
-
-            step += 1
-            e += batch_size * self.seq_length
-            if e > len(self.book_data) - batch_size * self.seq_length:
-                e = 0
-                epoch += 1
-                hprev = torch.zeros((self.hidden_size, batch_size), dtype=torch.double)
-            else:
+                step += 1
                 hprev = hts
 
+            print(f"\t * Smooth loss: {smooth_loss:.4f}")
+            if (epoch + 1) % synth_interval == 0:
+                _, s_syn = self.synthetize_seq(hprev[:, 0:1], X_train[:, 0, 0], 200, T)
+                print("-" * 100)
+                print(f"Synthesized sequence: \n{s_syn}")
+                print("-" * 100)
+                
         if save:
             with open(Path(f'./models/RNN/rnn_adagrad_{time.time()}.pickle'), 'wb') as handle:
                 pickle.dump({
@@ -195,12 +178,12 @@ class RNN:
 
         return losses
 
-    def train_adam(self, batch_size, n_epochs, beta_1 = 0.9, beta_2 = 0.999, T = 1, save = False):
+    def train_adam(self, batch_size, n_epochs, synth_interval = 5, beta_1 = 0.9, beta_2 = 0.999, T = 1, save = False):
         logger.info("Start of Adam training.")
-        e, step, epoch = 0, 0, 0
+        step = 0
         smooth_loss = 0
         losses = []
-        hprev = torch.zeros((self.hidden_size, batch_size), dtype=torch.double)
+        dataloader = make_dataloader(self.data_maker, self.seq_length, batch_size)
 
         mb = torch.zeros_like(self.params['b'], dtype=torch.float)
         vb = torch.zeros_like(self.params['b'], dtype=torch.float)
@@ -215,58 +198,40 @@ class RNN:
         ms = {'b': mb, 'c': mc, 'U': mU, 'V': mV, 'W': mW}
         vs = {'b': vb, 'c': vc, 'U': vU, 'V': vV, 'W': vW}
 
-        while epoch < n_epochs:
-            X_batch = []
-            Y_batch = []
-            for b in range(batch_size):
-                start_index = e + b * self.seq_length
-                X_chars = self.book_data[start_index:(start_index + self.seq_length)]
-                Y_chars = self.book_data[(start_index + 1):(start_index + self.seq_length + 1)]
-                X_batch.append(self.data_maker.encode_string(X_chars))
-                Y_batch.append(self.data_maker.encode_string(Y_chars))
+        for epoch in range(n_epochs):
+            print(f"Epoch {epoch+1}/{n_epochs} - Step {step + 1}")
+            hprev = torch.zeros((self.hidden_size, batch_size), dtype=torch.double)
 
-            X_train = torch.stack(X_batch, dim=2)  # shape: (input_size, seq_length, n_batch)
-            Y_train = torch.stack(Y_batch, dim=2)  # shape: (input_size, seq_length, n_batch)
+            for X_train, Y_train in tqdm.tqdm(dataloader, desc="Processing batches"):
+                X_train = X_train.permute(2, 1, 0)
+                Y_train = Y_train.permute(2, 1, 0)
 
-            A_train, H_train, P_train, hts = self.forward(X_train, hprev)
-            loss = compute_loss(Y_train, P_train)
-            grads, grads_clamped = self.backward(X_train, Y_train, A_train, H_train, P_train, hprev)
+                A_train, H_train, P_train, hts = self.forward(X_train, hprev)
+                loss = compute_loss(Y_train, P_train)
+                grads, grads_clamped = self.backward(X_train, Y_train, A_train, H_train, P_train, hprev)
 
-            for k in ms.keys():
-                ms[k] = beta_1*ms[k] + (1 - beta_1)*grads_clamped[k]
-                vs[k] = beta_2*vs[k] + (1 - beta_2)*(grads_clamped[k]**2)
-                m_hat = ms[k]/(1 - beta_1**(step+1))
-                v_hat = vs[k]/(1 - beta_2**(step+1))
-                self.params[k] -= (self.learning_rate/torch.sqrt(v_hat + self.epsilon))*m_hat
+                for k in ms.keys():
+                    ms[k] = beta_1*ms[k] + (1 - beta_1)*grads_clamped[k]
+                    vs[k] = beta_2*vs[k] + (1 - beta_2)*(grads_clamped[k]**2)
+                    m_hat = ms[k]/(1 - beta_1**(step+1))
+                    v_hat = vs[k]/(1 - beta_2**(step+1))
+                    self.params[k] -= (self.learning_rate/torch.sqrt(v_hat + self.epsilon))*m_hat
 
-            if step == 0:
-                smooth_loss = loss
-            else:
-                smooth_loss = 0.999*smooth_loss + 0.001*loss
-            losses.append(smooth_loss)
+                if step == 0:
+                    smooth_loss = loss
+                else:
+                    smooth_loss = 0.999*smooth_loss + 0.001*loss
+                losses.append(smooth_loss)
 
-            if step % 1000 == 0:
-                print(f"Step: {step}")
-                print(f"\t * Smooth loss: {smooth_loss:.4f}")
-            if step % 5000 == 0:
+                step += 1
+                hprev = hts
+
+            print(f"\t * Smooth loss: {smooth_loss:.4f}")
+            if (epoch + 1) % synth_interval == 0:
                 _, s_syn = self.synthetize_seq(hprev[:, 0:1], X_train[:, 0, 0], 200, T)
                 print("-" * 100)
-                print(f"Synthetized sequence: \n{s_syn}")
+                print(f"Synthesized sequence: \n{s_syn}")
                 print("-" * 100)
-            if step % 100000 == 0 and step > 0:
-                _, s_lsyn = self.synthetize_seq(hprev[:, 0:1], X_train[:, 0, 0], 1000, T)
-                print("-" * 100)
-                print(f"Long synthetized sequence: \n{s_lsyn}")
-                print("-" * 100)
-
-            step += 1
-            e += batch_size * self.seq_length
-            if e > len(self.book_data) - batch_size * self.seq_length:
-                e = 0
-                epoch += 1
-                hprev = torch.zeros((self.hidden_size, batch_size), dtype=torch.double)
-            else:
-                hprev = hts
 
         if save:
             with open(Path(f'./models/RNN/rnn_adam_{time.time()}.pickle'), 'wb') as handle:
@@ -283,12 +248,12 @@ class RNN:
         
         return losses
             
-    def run(self, batch_size, n_epochs, T = 1, optimizer = "adagrad", save = False, figure_filename = None):
+    def run(self, batch_size, n_epochs, synth_interval = 5, T = 1, optimizer = "adagrad", save = False, figure_filename = None):
         start_time = time.time()
         if optimizer == "adagrad":
-            losses = self.train_adagrad(batch_size, n_epochs, T, save)
+            losses = self.train_adagrad(batch_size, n_epochs, synth_interval = synth_interval, T = T, save = save)
         elif optimizer == "adam":
-            losses = self.train_adam(batch_size, n_epochs, T = T, save = save)
+            losses = self.train_adam(batch_size, n_epochs, synth_interval = synth_interval, T = T, save = save)
         else:
             logger.error("Unknown optimizer passed.")
             raise ValueError("Unknown optimizer")
@@ -307,6 +272,12 @@ class RNN:
         
 ### TRAINING ###
 if __name__ == '__main__':
-    rnn = RNN()
-    rnn.run(5, 2, save = True, figure_filename=f"run_{time.time()}.png")
+    params = {
+        'data_path': './data/shakespeare.txt',
+        'hidden_size': 256,
+        'seq_length': 100,
+        'learning_rate': 0.001,
+        }
+    rnn = RNN(**params)
+    rnn.run(64, 50, 5, optimizer="adam", save = True, figure_filename=f"run_{time.time()}.png")
 ###############
