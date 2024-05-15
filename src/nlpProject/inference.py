@@ -9,10 +9,10 @@ from nlpProject.make_data import DataMaker
 from nlpProject.rnn_baseline import RNN
 from nlpProject.utils import get_metrics_n, get_bleu
 
-def synthesize_seq_lstm1(model, h_t, c_t, x0, length = 1000):
+def synthesize_seq_lstm1(model, data_path, h_t, c_t, x0, length = 1000):
     indexes = []
     with torch.no_grad():
-        data_maker = DataMaker()
+        data_maker = DataMaker(data_path)
         x_input = x0.reshape(-1, 1, 1)
         t = 0
         while t < length:

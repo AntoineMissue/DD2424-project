@@ -2,26 +2,32 @@ import torch
 import torch.nn as nn
 
 class LSTM1(nn.Module):
-    def __init__(self, input_size, seq_len, hidden_size, output_size):
+    def __init__(self, input_size, hidden_size, output_size):
         super(LSTM1, self).__init__()
         self.hidden_size = hidden_size
-        self.seq_len = seq_len
         self.input_size = input_size
 
-        self.Wf = nn.Parameter(torch.randn(hidden_size, input_size, dtype=torch.double))
-        self.Wi = nn.Parameter(torch.randn(hidden_size, input_size, dtype=torch.double))
-        self.Wo = nn.Parameter(torch.randn(hidden_size, input_size, dtype=torch.double))
-        self.Wc = nn.Parameter(torch.randn(hidden_size, input_size, dtype=torch.double))
-        self.Uf = nn.Parameter(torch.randn(hidden_size, hidden_size, dtype=torch.double))
-        self.Ui = nn.Parameter(torch.randn(hidden_size, hidden_size, dtype=torch.double))
-        self.Uo = nn.Parameter(torch.randn(hidden_size, hidden_size, dtype=torch.double))
-        self.Uc = nn.Parameter(torch.randn(hidden_size, hidden_size, dtype=torch.double))
+        self.Wf = nn.Parameter(torch.empty(hidden_size, input_size, dtype=torch.double))
+        self.Wi = nn.Parameter(torch.empty(hidden_size, input_size, dtype=torch.double))
+        self.Wo = nn.Parameter(torch.empty(hidden_size, input_size, dtype=torch.double))
+        self.Wc = nn.Parameter(torch.empty(hidden_size, input_size, dtype=torch.double))
+        self.Uf = nn.Parameter(torch.empty(hidden_size, hidden_size, dtype=torch.double))
+        self.Ui = nn.Parameter(torch.empty(hidden_size, hidden_size, dtype=torch.double))
+        self.Uo = nn.Parameter(torch.empty(hidden_size, hidden_size, dtype=torch.double))
+        self.Uc = nn.Parameter(torch.empty(hidden_size, hidden_size, dtype=torch.double))
         self.bf = nn.Parameter(torch.zeros(hidden_size, dtype=torch.double))
         self.bi = nn.Parameter(torch.zeros(hidden_size, dtype=torch.double))
         self.bo = nn.Parameter(torch.zeros(hidden_size, dtype=torch.double))
         self.bc = nn.Parameter(torch.zeros(hidden_size, dtype=torch.double))
 
         self.fc = nn.Linear(hidden_size, output_size, dtype=torch.double)
+
+        self.init_weights()
+
+    def init_weights(self):
+        for param in self.parameters():
+            if len(param.shape) > 1:
+                nn.init.xavier_normal_(param)
 
     def forward(self, X, init_states=None):
         _, seq_len, batch_size = X.size()
