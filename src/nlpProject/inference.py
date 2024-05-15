@@ -127,4 +127,4 @@ def compare(data_path, lstm1_filename, rnn_filename, tries = 10):
 if __name__ == '__main__':
     data_path = './data/shakespeare.txt'
 
-    compare(data_path, "lstm1_256_100_1_64_0.001.pt", "rnn_adagrad_test.pickle", tries = 3)
+    compare(data_path, "lstm1_256_100_50_64_0.001.pt", "rnn_adagrad_test.pickle", tries = 3)
