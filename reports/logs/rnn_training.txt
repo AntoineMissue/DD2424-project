@@ -1,0 +1,222 @@
+Epoch 1/50 - Step 1
+	 * Smooth loss: 405.6402
+Epoch 2/50 - Step 175
+	 * Smooth loss: 389.6689
+Epoch 3/50 - Step 349
+	 * Smooth loss: 368.1844
+Epoch 4/50 - Step 523
+	 * Smooth loss: 346.8273
+Epoch 5/50 - Step 697
+	 * Smooth loss: 327.0227
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+OG uplue home som cronet! I'll will en theursed woreer bpint.
+
+BARCOI
+:
+O: whave hatessinhe bithin:
+mo hirnt rrey theal bendEest, and.
+Ard, ir thang anghe reso ad gnote's
+Tme chon wall of beive;
+And
+----------------------------------------------------------------------------------------------------
+Epoch 6/50 - Step 871
+	 * Smooth loss: 308.9948
+Epoch 7/50 - Step 1045
+	 * Smooth loss: 292.7131
+Epoch 8/50 - Step 1219
+	 * Smooth loss: 278.0486
+Epoch 9/50 - Step 1393
+	 * Smooth loss: 264.8739
+Epoch 10/50 - Step 1567
+	 * Smooth loss: 253.0678
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+
+O; not loks not resesp oot not not sen,
+And that thin thus for a
+marpue, the Minder broved onf Hin ttinn'st cave my being wallan promady,
+shear dienes, bo cen ange;
+Than she sulleal in and his:
+Sor f
+----------------------------------------------------------------------------------------------------
+Epoch 11/50 - Step 1741
+	 * Smooth loss: 242.5085
+Epoch 12/50 - Step 1915
+	 * Smooth loss: 233.0870
+Epoch 13/50 - Step 2089
+	 * Smooth loss: 224.6832
+Epoch 14/50 - Step 2263
+	 * Smooth loss: 217.1882
+Epoch 15/50 - Step 2437
+	 * Smooth loss: 210.4982
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+What is as boon my mord.
+
+LEDRICHARTAUTIO:
+Youg in tHe terse;
+
+KANCIO:
+Hore in to
+By ginp scouncelf
+Badione it waste come nifer,
+You, s'end stines
+Citel:
+I she muse it is the eage
+Ow mys:
+Being serp
+----------------------------------------------------------------------------------------------------
+Epoch 16/50 - Step 2611
+	 * Smooth loss: 204.5231
+Epoch 17/50 - Step 2785
+	 * Smooth loss: 199.1825
+Epoch 18/50 - Step 2959
+	 * Smooth loss: 194.4090
+Epoch 19/50 - Step 3133
+	 * Smooth loss: 190.1249
+Epoch 20/50 - Step 3307
+	 * Smooth loss: 186.3003
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Didst me, madring a meait;
+Tuke a would,
+That time,
+That I was Juse thes! Y thought hime; for the clam of laning, father be not theevisain:
+What yet pre
+In fast of sugster.
+
+BUSTUS:
+O, there for spe
+----------------------------------------------------------------------------------------------------
+Epoch 21/50 - Step 3481
+	 * Smooth loss: 182.8573
+Epoch 22/50 - Step 3655
+	 * Smooth loss: 179.7698
+Epoch 23/50 - Step 3829
+	 * Smooth loss: 176.9896
+Epoch 24/50 - Step 4003
+	 * Smooth loss: 174.4892
+Epoch 25/50 - Step 4177
+	 * Smooth loss: 172.2271
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+And to him; sise a seedly best the bead not hour fellow.
+
+BUCKaNGA:
+Now when I weath'd dake
+Becour vest there? I lese that once or frie office at vistand;
+And there blough tiffivi!
+Made is dome:
+And
+----------------------------------------------------------------------------------------------------
+Epoch 26/50 - Step 4351
+	 * Smooth loss: 170.1907
+Epoch 27/50 - Step 4525
+	 * Smooth loss: 168.3369
+Epoch 28/50 - Step 4699
+	 * Smooth loss: 166.6591
+Epoch 29/50 - Step 4873
+	 * Smooth loss: 165.1359
+Epoch 30/50 - Step 5047
+	 * Smooth loss: 163.7421
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Ash pard necelios him heart?
+
+QUEEL:
+I listarref will but the beat to 'twerent that I dreamose thee!
+My lord; but denentwoud faults; live Penger: of Greing mady.
+
+PETRUCHIO:
+O will see, achoue persu
+----------------------------------------------------------------------------------------------------
+Epoch 31/50 - Step 5221
+	 * Smooth loss: 162.4736
+Epoch 32/50 - Step 5395
+	 * Smooth loss: 161.3155
+Epoch 33/50 - Step 5569
+	 * Smooth loss: 160.2505
+Epoch 34/50 - Step 5743
+	 * Smooth loss: 159.2683
+Epoch 35/50 - Step 5917
+	 * Smooth loss: 158.3575
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+In shiping. What yet gentlema:
+And that his day.
+
+LUCENTIO:
+I nonk winmer, hanginen be stir; this sceat;
+Which out that Katione waysh! His tumbit.
+Signing here will speak undin,
+We have sap yen mady
+----------------------------------------------------------------------------------------------------
+Epoch 36/50 - Step 6091
+	 * Smooth loss: 157.5185
+Epoch 37/50 - Step 6265
+	 * Smooth loss: 156.7421
+Epoch 38/50 - Step 6439
+	 * Smooth loss: 156.0211
+Epoch 39/50 - Step 6613
+	 * Smooth loss: 155.3529
+Epoch 40/50 - Step 6787
+	 * Smooth loss: 154.7310
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Whis, in her now, brother thoughts that that those must you do your commistress shames twitt his hither Sumphing great As such of from thosaccood lew man so heaving let she sheetly.
+
+TRANIO:
+Kill he
+----------------------------------------------------------------------------------------------------
+Epoch 41/50 - Step 6961
+	 * Smooth loss: 154.1493
+Epoch 42/50 - Step 7135
+	 * Smooth loss: 153.6003
+Epoch 43/50 - Step 7309
+	 * Smooth loss: 153.0864
+Epoch 44/50 - Step 7483
+	 * Smooth loss: 152.6027
+Epoch 45/50 - Step 7657
+	 * Smooth loss: 152.1379
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+And by the boy or compose't. Have think keep of gentter!
+
+BURKINGHAMSANUS:
+Who' thunks away wears thee thousand water.
+Nother withday for my crome, but myself.
+
+ANGELO:
+Woush ID nor than executioled
+----------------------------------------------------------------------------------------------------
+Epoch 46/50 - Step 7831
+	 * Smooth loss: 151.7006
+Epoch 47/50 - Step 8005
+	 * Smooth loss: 151.2956
+Epoch 48/50 - Step 8179
+	 * Smooth loss: 150.9177
+Epoch 49/50 - Step 8353
+	 * Smooth loss: 150.5565
+Epoch 50/50 - Step 8527
+	 * Smooth loss: 150.2113
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+!
+What is her house his worth he;
+I come, sir, my desm,
+What much innirst flen her be ridently, that recuralurance, if he doou to the nuph cien.
+
+DUKE VINCENTIO:
+Had tongue be in Podsition
+Since, and 
+----------------------------------------------------------------------------------------------------
+Time elapsed (64 samples per batch, 50 epochs): 961.6 seconds.
