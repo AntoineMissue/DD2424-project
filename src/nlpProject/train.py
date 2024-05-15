@@ -1,5 +1,6 @@
 import torch
 import matplotlib.pyplot as plt
+import time
 
 from nlpProject.one_layer_lstm import LSTM1
 from nlpProject.make_data import DataMaker
@@ -18,6 +19,7 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
                       torch.zeros(model.hidden_size, batch_size, dtype=torch.double))
 
     model.train()
+    start_time = time.time()
     while epoch < n_epochs:
         X_batch = []
         Y_batch = []
@@ -67,6 +69,14 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
         else:
             h_prev.detach_()
             c_prev.detach_()
+    end_time = time.time()
+    duration = end_time - start_time
+    _, s_lsyn = synthesize_seq_lstm1(model, data_path, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 5000)
+    print("-" * 100)
+    print(f"Benchmark synthesized sequence: \n{s_lsyn}")
+    print("-" * 100)
+    print(f'No. of steps: {step + 1}.')
+    print(f'Time elapsed ({batch_size} samples per batch, {n_epochs} epochs): {(end_time - start_time):.1f} seconds.')
 
     plt.figure()
     plt.plot(losses)
@@ -80,4 +90,4 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
         plt.show()
 
 if __name__ == '__main__':
-    train_lstm1('./data/shakespeare.txt', 5, 100, 25, 2, 0.01, './reports/figures/lstm_1_layer_test')
+    train_lstm1('./data/shakespeare.txt', 50, 256, 100, 64, 0.001, './reports/figures/lstm_1_layer_test')
