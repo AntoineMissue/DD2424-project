@@ -76,9 +76,6 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
         plt.show()
 
 if __name__ == '__main__':
-    import cProfile, pstats
-    profiler = cProfile.Profile()
-    profiler.enable()
     params = {
         'data_path': './data/shakespeare.txt',
         'n_epochs': 50,
@@ -91,6 +88,3 @@ if __name__ == '__main__':
     train_lstm1(**params,
                 model_savepath=f'./models/LSTM/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.pt',
                 fig_savepath=f'./reports/figures/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.png')
-    profiler.disable()
-    stats = pstats.Stats(profiler).sort_stats('tottime')
-    stats.print_stats()
