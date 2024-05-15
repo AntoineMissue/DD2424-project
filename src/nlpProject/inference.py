@@ -128,3 +128,5 @@ if __name__ == '__main__':
     data_path = './data/shakespeare.txt'
 
     compare(data_path, "lstm1_256_100_50_64_0.001.pt", "rnn_adam_256_100_50_64_0.001.pickle", tries = 3)
+    #model_metrics(data_path, "lstm1", "lstm1_256_100_50_64_0.001.pt", grams = 1, length = 10000, T = 0.7, clean = False)
+    #model_metrics(data_path, "rnn", "rnn_adam_256_100_50_64_0.001.pickle", grams = 1, length = 10000, T = 0.7, clean = False)
