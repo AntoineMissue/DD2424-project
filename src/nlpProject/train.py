@@ -75,15 +75,34 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
     else:
         plt.show()
 
+def grid_search_lstm1(data_path, grid, n_epochs, synth_interval):
+    for hidden in grid['hidden_size']:
+        for seq_l in grid['seq_length']:
+            for batch_s in grid['batch_size']:
+                for lr in grid['learning_rate']:
+                    params = {
+                        'data_path': data_path,
+                        'n_epochs': n_epochs,
+                        'hidden_size': hidden,
+                        'seq_length': seq_l,
+                        'batch_size': batch_s,
+                        'learning_rate': lr,
+                        'synth_interval': synth_interval,
+                        }
+                    train_lstm1(**params,
+                        model_savepath=f'./models/LSTM/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.pt',
+                        fig_savepath=f'./reports/figures/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.png')
+
+
 if __name__ == '__main__':
     params = {
         'data_path': './data/shakespeare.txt',
-        'n_epochs': 100,
-        'hidden_size': 256,
+        'n_epochs': 40,
+        'hidden_size': 1024,
         'seq_length': 100,
         'batch_size': 64,
         'learning_rate': 0.001,
-        'synth_interval': 5,
+        'synth_interval': 10,
         }
     train_lstm1(**params,
                 model_savepath=f'./models/LSTM/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.pt',

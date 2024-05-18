@@ -1,0 +1,336 @@
+Epoch 1/40 - Step 1
+	 * Smooth loss: 398.5596
+Epoch 2/40 - Step 175
+	 * Smooth loss: 370.8327
+Epoch 3/40 - Step 349
+	 * Smooth loss: 344.4628
+Epoch 4/40 - Step 523
+	 * Smooth loss: 319.9964
+Epoch 5/40 - Step 697
+	 * Smooth loss: 297.5903
+Epoch 6/40 - Step 871
+	 * Smooth loss: 277.2553
+Epoch 7/40 - Step 1045
+	 * Smooth loss: 258.9049
+Epoch 8/40 - Step 1219
+	 * Smooth loss: 242.4306
+Epoch 9/40 - Step 1393
+	 * Smooth loss: 227.6933
+Epoch 10/40 - Step 1567
+	 * Smooth loss: 214.5276
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Brang, as my man mas' dang. Steel home,
+And ther, she kind of death.
+
+PETRUCHIO:
+What then I will: there's not stimms of the know,
+Thou donthin lead in the leaves. of, thou, Ayborn, I cruak?
+
+KATHAR
+----------------------------------------------------------------------------------------------------
+Epoch 11/40 - Step 1741
+	 * Smooth loss: 202.7496
+Epoch 12/40 - Step 1915
+	 * Smooth loss: 192.1835
+Epoch 13/40 - Step 2089
+	 * Smooth loss: 182.6582
+Epoch 14/40 - Step 2263
+	 * Smooth loss: 174.0802
+Epoch 15/40 - Step 2437
+	 * Smooth loss: 166.3290
+Epoch 16/40 - Step 2611
+	 * Smooth loss: 159.2598
+Epoch 17/40 - Step 2785
+	 * Smooth loss: 152.7923
+Epoch 18/40 - Step 2959
+	 * Smooth loss: 146.8697
+Epoch 19/40 - Step 3133
+	 * Smooth loss: 141.4658
+Epoch 20/40 - Step 3307
+	 * Smooth loss: 136.5491
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+: Gover be a sweft to save
+Ay, and this night.
+
+TRANIO:
+Civin sund, I shall we me trumpst's sould;
+But even in this apperit.
+Mistress!
+For widding,
+Yet let ut else this nature unto her brother;
+
+GROMI
+----------------------------------------------------------------------------------------------------
+Epoch 21/40 - Step 3481
+	 * Smooth loss: 132.0210
+Epoch 22/40 - Step 3655
+	 * Smooth loss: 127.8618
+Epoch 23/40 - Step 3829
+	 * Smooth loss: 123.9958
+Epoch 24/40 - Step 4003
+	 * Smooth loss: 120.3659
+Epoch 25/40 - Step 4177
+	 * Smooth loss: 116.9072
+Epoch 26/40 - Step 4351
+	 * Smooth loss: 113.6322
+Epoch 27/40 - Step 4525
+	 * Smooth loss: 110.5230
+Epoch 28/40 - Step 4699
+	 * Smooth loss: 107.5715
+Epoch 29/40 - Step 4873
+	 * Smooth loss: 104.7678
+Epoch 30/40 - Step 5047
+	 * Smooth loss: 102.0248
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+No marry, Sistancl, he dutl the edient; and therefore, gitly
+let that they die: and I
+I me no way is that hath made a purpos'd with
+The sea-neast that made it such picking, sight our gentrels all.
+
+
+----------------------------------------------------------------------------------------------------
+Epoch 31/40 - Step 5221
+	 * Smooth loss: 99.3553
+Epoch 32/40 - Step 5395
+	 * Smooth loss: 96.8169
+Epoch 33/40 - Step 5569
+	 * Smooth loss: 94.3417
+Epoch 34/40 - Step 5743
+	 * Smooth loss: 91.9351
+Epoch 35/40 - Step 5917
+	 * Smooth loss: 89.5669
+Epoch 36/40 - Step 6091
+	 * Smooth loss: 87.3218
+Epoch 37/40 - Step 6265
+	 * Smooth loss: 85.1126
+Epoch 38/40 - Step 6439
+	 * Smooth loss: 82.9491
+Epoch 39/40 - Step 6613
+	 * Smooth loss: 80.8785
+Epoch 40/40 - Step 6787
+	 * Smooth loss: 78.8486
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+:
+Were I abroathought the king's.
+His napkin murdered morestule,
+Luke at, and afternoon; sir. he'll mare thee strange.
+Before thie I meantimen?
+
+First Citizen:
+Let them have overword. What felaves, I 
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+:
+Lare const, to hear Bolst, and in complexion they
+From the collch is drimmorrater:
+And letters to a cause to more
+So spank come. peace lette of thyself.
+Said but here's ty all suit itiest,--a destruction-lcome,
+Happily ten thous.
+
+SLY:
+to my hende tenterons.
+
+MARCIUS:
+You have not fetchal'd what offence of death!
+Here's sometimes I am a gentleman of clorne
+All to the prince all goodnd then thus direclet.
+
+BIONDELLO:
+The sensely shall make: Norty Romeo's hand on any old
+Tire---couching to court hor: then he will not have leaves;
+Because she's deadinedalthes--
+
+Second Lurdere:
+Nay, then I'll the word? it may be regrich.
+
+PRINCE EDWARD IV:
+But sir, harms your nescreation are not you out,
+But in the city 'takity. And think so ind.
+
+CAPULET:
+To-morrow morning of it in these several throns.
+Groals were I
+am a penite, which thou must be mather of judgment bard remiss;
+How nurs, have between' of four deposed
+My hand and like as diceful.
+That's all my socredy, you are masscless wondroved at anguls; which hath ta'en out obey?
+whom of glossis in the vewar mestly where: he
+woo well.
+I will provose
+The valaa tate of thy absand wive madnens.
+
+DUKE VINCENTIO:
+I'll glatlers him.
+
+BRUTUS:
+Fair and nind Mantage!
+
+Padain!
+Then she did seek Romeover cannot choose
+brieving harmony:
+And I shall abse those whitencess? I think,
+Molentig and things; for who's before
+I home sinct how to bring it.
+
+GRUMIO:
+Kill our prison:
+Now, for my life is true; it's flutter than thy blood,
+With bursten'd, and tell him 'Hray 'twernip.
+
+LADY-GREME:
+Hark! he thy fatter in this spiest.
+
+ANGELO:
+How now, kille! Rall, like a holy mad.
+is it not that we have to put for froth, contunting metherms,
+Take me advave thy thee, good Cyrthou awne;
+My business is not for me.
+
+Provost:
+you, and a mottant on on foot
+desire shall warm.
+
+ANGELO:
+It is fould tall me comfortable.
+
+GRUMIO:
+My sacred hate, provouts commanted with the sustes! vooural victory! Prit, Perr; sias,
+And so fartlemat thy master's earant did Pita' mercy; then at
+The other shiding besodescall, mernin
+The hat for inted manamptop to Pagamine: Parman thou this haMmney
+Would injury wonthy sire,
+Or else be hanged Kingrouse, pardon.
+March, soundly, garlack, fare you well.
+I have confism them with her, to jesting my old
+Partable.
+Farewell, if he sporif left her sis you to el?
+
+DUKE VINCENTIO:
+Bilk away, it is gold to divise in hation,
+Give thy distabce, timour noble sliepes? harkly, cast is the day-man his stond.
+
+PETRUCHIO:
+O county Paris is me not then,
+Say you first, and thou you have maded.
+
+DUKE VINCENTIO:
+Sir, my hard, how! Padeation go sperather to came
+Tit blestinge again.
+
+PETRUCHIO:
+Father, good George, both CAMILLO:
+Sir, head; surpless those words.
+
+KINANDELA:
+You have made goodless is worthy plain, I would
+An hour before his !
+
+BAPTISTA:
+What fir the beasts of door of London,
+I leasth me soodly do,
+And labies me
+And crodinn to your accusationallyour place.
+First, hear me speak.
+
+QUEEN ELIZABETH:
+Thou fort in word, that signister was the first
+What twenty this slace,
+I mean, thy name, i' the first darced thee
+Warmiked Lewes,--
+
+CLAUDIO:
+Most holy sir, my lord, my lord.
+
+PETRUCHIO:
+How hast thou then his worthiently resolut;
+Or such a
+parell heidlive of Claudio's, so would de
+Their very health of my great'd black foolish;
+The which stakes as I tilling to his majesty?
+
+HORTENSIO:
+I thought upon him with all, give me leave,
+I'll take a death.
+
+BRUTUS:
+Hardly and will not.
+
+PETRUCHIO:
+Pompey.
+
+Messenger:
+You have made a file to tave my life,
+Proclaim her besh-weaking, as yourself,
+You speak a warrant, firely liestake daughter,
+In she you fift thy sisterhe divers find it gain.
+
+BUCKINGHAM:
+Unswarre
+I do beseech you?
+
+PETRUCHIO:
+Worth here, to Warwick, he has betternession's cheeks,
+And be So, some in us, our throne is all.
+Have we pottetle: give my piTHer truth,
+That thou she God--all; and those thou art
+not children.
+
+Second Servant:
+You shame.
+
+ANGELO:
+Manger stalls you croved.
+
+PRINCERES:
+Mark'd lord Claudio
+As not a mantle be not sto;
+To friar, the bills worse.
+
+HERMENSIO:
+I think she'll way.
+Hill a since upon thee, Cat ybu bedied,
+To answer in request;
+And if you faintle me lord.
+
+BRUTUS:
+Great home, to warr.
+
+DUKE VINCENTIO:
+So then it shame. You have shaltly thing sleeper.
+
+DUKE VINCENTIO:
+Tell thee, I'll cuttempt have made to counsel,
+Upon him, served you one, where is your sirtles;
+For you and your destroyally.
+
+BRAKEO:
+There have you hurried with my soul, he hath come ered;
+Proclaim against the cause, when man enter the worst.
+
+HERMIONE:
+I will not have them hard; Lord Hastings to our words.
+
+PETRUCHIO:
+Well, he't hit father, and white rass it Signior Lucentio with thee,
+Bans and to London, with thLOf Evil but
+sir, i' the lawent to see your kindness,
+How to, what marrioly letters, wear for you.
+
+KATHARINA:
+I disiring and wife like sizen?
+Have you a flight my mother. Was the whit to end in
+Marious will not bid thee play the weart.
+
+ANTONIO:
+The gallant of your darth excepience to you, f
+----------------------------------------------------------------------------------------------------
+No. of steps: 6961.
+Time elapsed (64 samples per batch, 40 epochs): 40874.1 seconds.

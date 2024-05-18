@@ -1,0 +1,20 @@
+Evaluating the RNN model...
+Try 1 - Precision: 85.91% - Recall: 84.34% - F-measure: 85.12% - BLEU: 7.39%
+Try 2 - Precision: 85.66% - Recall: 83.88% - F-measure: 84.76% - BLEU: 6.76%
+Try 3 - Precision: 85.72% - Recall: 83.68% - F-measure: 84.69% - BLEU: 7.29%
+----------------------------------------------------
+Precision - Mean: 85.76% ; Standard deviation: 0.11%
+Recall - Mean: 83.96% ; Standard deviation: 0.28%
+F-measure - Mean: 84.85% ; Standard deviation: 0.19%
+BLEU - Mean: 7.15% ; Standard deviation: 0.27%
+----------------------------------------------------
+Evaluating the LSTM model...
+Try 1 - Precision: 82.26% - Recall: 76.12% - F-measure: 79.07% - BLEU: 8.90%
+Try 2 - Precision: 82.31% - Recall: 76.50% - F-measure: 79.30% - BLEU: 9.48%
+Try 3 - Precision: 82.22% - Recall: 76.30% - F-measure: 79.15% - BLEU: 9.50%
+----------------------------------------------------
+Precision - Mean: 82.26% ; Standard deviation: 0.03%
+Recall - Mean: 76.31% ; Standard deviation: 0.15%
+F-measure - Mean: 79.17% ; Standard deviation: 0.09%
+BLEU - Mean: 9.29% ; Standard deviation: 0.28%
+----------------------------------------------------

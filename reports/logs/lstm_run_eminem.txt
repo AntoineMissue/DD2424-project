@@ -1,0 +1,498 @@
+Epoch 1/100 - Step 1
+	 * Smooth loss: 283.8484
+Epoch 2/100 - Step 223
+	 * Smooth loss: 258.8082
+Epoch 3/100 - Step 445
+	 * Smooth loss: 236.4471
+Epoch 4/100 - Step 667
+	 * Smooth loss: 217.3011
+Epoch 5/100 - Step 889
+	 * Smooth loss: 201.0633
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+o fut your blof to plytersmeze)
+And ut ware the whrn'm fack, the know the mane You danf here gink you cond It't's sponeaked time to gon to tim youn wath they
+Thit's but wo cluse, Go hater thit thetrre
+----------------------------------------------------------------------------------------------------
+Epoch 6/100 - Step 1111
+	 * Smooth loss: 187.3423
+Epoch 7/100 - Step 1333
+	 * Smooth loss: 175.7405
+Epoch 8/100 - Step 1555
+	 * Smooth loss: 165.9146
+Epoch 9/100 - Step 1777
+	 * Smooth loss: 157.5777
+Epoch 10/100 - Step 1999
+	 * Smooth loss: 150.4838
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hen way my shollat neld I love a justin'
+But I grever bud holl in up, hed Mumpor
+Suters are when wh the plofectew 
+Unther, bef gut oftygla
+A-d-w]
+(I'm theo gon Back)
+Fuck le plos 
+I'cing I'm sipside s
+----------------------------------------------------------------------------------------------------
+Epoch 11/100 - Step 2221
+	 * Smooth loss: 144.4252
+Epoch 12/100 - Step 2443
+	 * Smooth loss: 139.2263
+Epoch 13/100 - Step 2665
+	 * Smooth loss: 134.7431
+Epoch 14/100 - Step 2887
+	 * Smooth loss: 130.8567
+Epoch 15/100 - Step 3109
+	 * Smooth loss: 127.4687
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+he kert this is to be you'se the back ang-youd sty terlds
+Uncory next fird an ittirots,, hopes you got a phere, let
+It's Quingin aso numes of the mornicale
+So Doricested for and be turdes
+The fuck it 
+----------------------------------------------------------------------------------------------------
+Epoch 16/100 - Step 3331
+	 * Smooth loss: 124.4971
+Epoch 17/100 - Step 3553
+	 * Smooth loss: 121.8728
+Epoch 18/100 - Step 3775
+	 * Smooth loss: 119.5398
+Epoch 19/100 - Step 3997
+	 * Smooth loss: 117.4537
+Epoch 20/100 - Step 4219
+	 * Smooth loss: 115.5761
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+rumb to reveloct up in this lit
+The sick the been in "Hahas and sheess yearl my rissed* And -cee, sengers? them it's brakes here, right dy orolling
+I'm your blabey hand he walks off of rets
+It you're 
+----------------------------------------------------------------------------------------------------
+Epoch 21/100 - Step 4441
+	 * Smooth loss: 113.8771
+Epoch 22/100 - Step 4663
+	 * Smooth loss: 112.3281
+Epoch 23/100 - Step 4885
+	 * Smooth loss: 110.9099
+Epoch 24/100 - Step 5107
+	 * Smooth loss: 109.6027
+Epoch 25/100 - Step 5329
+	 * Smooth loss: 108.3943
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hen I'm boon a tolk your breyned of frowned
+It's going these hogser
+Got oncess, wha more that she smeckey
+Get it in the mind, then Eminem]
+Some hits heady window you ade bether see the lagerpin't flag
+----------------------------------------------------------------------------------------------------
+Epoch 26/100 - Step 5551
+	 * Smooth loss: 107.2725
+Epoch 27/100 - Step 5773
+	 * Smooth loss: 106.2290
+Epoch 28/100 - Step 5995
+	 * Smooth loss: 105.2562
+Epoch 29/100 - Step 6217
+	 * Smooth loss: 104.3469
+Epoch 30/100 - Step 6439
+	 * Smooth loss: 103.4945
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hool I don't wanna be alright?
+Shorto
+It's just to full of sulough I can be a blast for the fuck?
+
+[Ohoog] UK)
+Cause though breagh
+Shit the oope, when I go not piss down
+There's for the slack from the
+----------------------------------------------------------------------------------------------------
+Epoch 31/100 - Step 6661
+	 * Smooth loss: 102.6934
+Epoch 32/100 - Step 6883
+	 * Smooth loss: 101.9378
+Epoch 33/100 - Step 7105
+	 * Smooth loss: 101.2239
+Epoch 34/100 - Step 7327
+	 * Smooth loss: 100.5472
+Epoch 35/100 - Step 7549
+	 * Smooth loss: 99.9120
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+o swill that Decople we're on like the clib ba-take Rotth it em
+And with these clay stare think ob sidety like the jock on your eyesideesn to
+His rock it, relain'
+You hear tham smotter, did fige-hole
+
+----------------------------------------------------------------------------------------------------
+Epoch 36/100 - Step 7771
+	 * Smooth loss: 99.2934
+Epoch 37/100 - Step 7993
+	 * Smooth loss: 98.6949
+Epoch 38/100 - Step 8215
+	 * Smooth loss: 98.1186
+Epoch 39/100 - Step 8437
+	 * Smooth loss: 97.5666
+Epoch 40/100 - Step 8659
+	 * Smooth loss: 97.0322
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+o shoulda
+Jey-rugga!!!"
+Wherevat D-M-Le
+Keep club, strangles at Lowarrasteting crazy
+Emenetick tlister, I with the bent, you'd feel
+But it's mot expect tack lead spt's feft
+What you swear to the only 
+----------------------------------------------------------------------------------------------------
+Epoch 41/100 - Step 8881
+	 * Smooth loss: 96.5217
+Epoch 42/100 - Step 9103
+	 * Smooth loss: 96.0329
+Epoch 43/100 - Step 9325
+	 * Smooth loss: 95.5737
+Epoch 44/100 - Step 9547
+	 * Smooth loss: 95.1322
+Epoch 45/100 - Step 9769
+	 * Smooth loss: 94.7011
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hit of wrynoges with a how,
+
+It sayd through her mant the good ass and floors
+Vig Conncan:]
+Don't you atencoom Fever when I so much you're going crazy (Yeah)
+Doab
+She's to live me smiletood me
+'Cause 
+----------------------------------------------------------------------------------------------------
+Epoch 46/100 - Step 9991
+	 * Smooth loss: 94.2879
+Epoch 47/100 - Step 10213
+	 * Smooth loss: 93.8996
+Epoch 48/100 - Step 10435
+	 * Smooth loss: 93.5321
+Epoch 49/100 - Step 10657
+	 * Smooth loss: 93.1781
+Epoch 50/100 - Step 10879
+	 * Smooth loss: 92.8572
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+here's so laught with the inderes
+And it's two e the tape er my he kicked too fall, you have and lond you waunt
+Sick the black with the streep drive motherfuckers el's Mchopic
+But you can terrilarng a
+----------------------------------------------------------------------------------------------------
+Epoch 51/100 - Step 11101
+	 * Smooth loss: 92.5612
+Epoch 52/100 - Step 11323
+	 * Smooth loss: 92.2543
+Epoch 53/100 - Step 11545
+	 * Smooth loss: 91.9328
+Epoch 54/100 - Step 11767
+	 * Smooth loss: 91.6063
+Epoch 55/100 - Step 11989
+	 * Smooth loss: 91.2765
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+here's I get hott me my white blastrone..... if I place, time to re come bead of your ass
+Through allug shit hops, what's the club
+I make you get 'til the future boint to say
+
+[Eminem]
+I got a shits s
+----------------------------------------------------------------------------------------------------
+Epoch 56/100 - Step 12211
+	 * Smooth loss: 90.9549
+Epoch 57/100 - Step 12433
+	 * Smooth loss: 90.6418
+Epoch 58/100 - Step 12655
+	 * Smooth loss: 90.3381
+Epoch 59/100 - Step 12877
+	 * Smooth loss: 90.0332
+Epoch 60/100 - Step 13099
+	 * Smooth loss: 89.7545
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hought Marshitll, give me a nin't bomb, Your dun
+And grab a fucking greet (Cho pey-Blew
+you can't scream alone him clearing
+I thought about (Clur you've been walking, chooby Bob Slim
+So yboden, do you
+----------------------------------------------------------------------------------------------------
+Epoch 61/100 - Step 13321
+	 * Smooth loss: 89.4844
+Epoch 62/100 - Step 13543
+	 * Smooth loss: 89.2393
+Epoch 63/100 - Step 13765
+	 * Smooth loss: 89.0533
+Epoch 64/100 - Step 13987
+	 * Smooth loss: 88.8420
+Epoch 65/100 - Step 14209
+	 * Smooth loss: 88.6336
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hey say through the battlegion on 'em
+And drip melyse to just venius genemments
+Everywhere then streadon
+Look hy ples corls she'll never stop I get a buna?
+My completion:]
+Steck to it, these launtrise
+----------------------------------------------------------------------------------------------------
+Epoch 66/100 - Step 14431
+	 * Smooth loss: 88.4307
+Epoch 67/100 - Step 14653
+	 * Smooth loss: 88.2483
+Epoch 68/100 - Step 14875
+	 * Smooth loss: 88.0797
+Epoch 69/100 - Step 15097
+	 * Smooth loss: 87.9185
+Epoch 70/100 - Step 15319
+	 * Smooth loss: 87.7647
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+rutthe fuck better, I think y'all show that
+Come banemats, bubl the things
+I made you I gathandware thinge should get cumped
+Oh my God donglow (mys), Hownd dount?)
+You're one what I may gave a sheap a
+----------------------------------------------------------------------------------------------------
+Epoch 71/100 - Step 15541
+	 * Smooth loss: 87.5953
+Epoch 72/100 - Step 15763
+	 * Smooth loss: 87.3957
+Epoch 73/100 - Step 15985
+	 * Smooth loss: 87.2005
+Epoch 74/100 - Step 16207
+	 * Smooth loss: 87.0248
+Epoch 75/100 - Step 16429
+	 * Smooth loss: 86.8316
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hey will go get in fast too
+I'm so was it, you hated me arejules
+I said black son letter, so fuck the floou sintles little listle
+The hour as we got me see a shoe, ello
+She loves me the doors want for
+----------------------------------------------------------------------------------------------------
+Epoch 76/100 - Step 16651
+	 * Smooth loss: 86.6264
+Epoch 77/100 - Step 16873
+	 * Smooth loss: 86.4314
+Epoch 78/100 - Step 17095
+	 * Smooth loss: 86.2454
+Epoch 79/100 - Step 17317
+	 * Smooth loss: 86.0696
+Epoch 80/100 - Step 17539
+	 * Smooth loss: 85.9219
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hough, brekers hurt
+[Eminem]
+Under heard, let you gets with hapin they
+When they ain't sid swick hand
+But she knows ohes is tank
+Thuts we string shit, is romels this is just set
+Am Pet, of the own kno
+----------------------------------------------------------------------------------------------------
+Epoch 81/100 - Step 17761
+	 * Smooth loss: 85.7756
+Epoch 82/100 - Step 17983
+	 * Smooth loss: 85.6670
+Epoch 83/100 - Step 18205
+	 * Smooth loss: 85.5703
+Epoch 84/100 - Step 18427
+	 * Smooth loss: 85.4917
+Epoch 85/100 - Step 18649
+	 * Smooth loss: 85.4211
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+here's no wonder how not gotta
+[Denautjaste, we're in matter
+And it's murder, I forgot there rung, I do and you to the stear I wish
+Sead with high and burry, drup they walk
+And we're say I love ome, s
+----------------------------------------------------------------------------------------------------
+Epoch 86/100 - Step 18871
+	 * Smooth loss: 85.3577
+Epoch 87/100 - Step 19093
+	 * Smooth loss: 85.2777
+Epoch 88/100 - Step 19315
+	 * Smooth loss: 85.1721
+Epoch 89/100 - Step 19537
+	 * Smooth loss: 85.0370
+Epoch 90/100 - Step 19759
+	 * Smooth loss: 84.9311
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hat's as is olled they might what I'd explode (Owen I was foundo (thein' our you eat "This!")
+But in your mother leaven with weety!
+I never ent you was slosed to be bye nows
+Let more out of you! I'd c
+----------------------------------------------------------------------------------------------------
+Epoch 91/100 - Step 19981
+	 * Smooth loss: 84.8006
+Epoch 92/100 - Step 20203
+	 * Smooth loss: 84.6502
+Epoch 93/100 - Step 20425
+	 * Smooth loss: 84.5059
+Epoch 94/100 - Step 20647
+	 * Smooth loss: 84.3705
+Epoch 95/100 - Step 20869
+	 * Smooth loss: 84.2419
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+hat mike my life babe you stand his a was such a a slappin'
+You wake ip My like run of seds to glad hinds and get to be a bat bitthay
+Anoths I realid in an actually better say much got a pinn-wich dui
+----------------------------------------------------------------------------------------------------
+Epoch 96/100 - Step 21091
+	 * Smooth loss: 84.1226
+Epoch 97/100 - Step 21313
+	 * Smooth loss: 84.0088
+Epoch 98/100 - Step 21535
+	 * Smooth loss: 83.8830
+Epoch 99/100 - Step 21757
+	 * Smooth loss: 83.7619
+Epoch 100/100 - Step 21979
+	 * Smooth loss: 83.6656
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ is you wouldads with the she'd yark you touched with a bunch of donats
+And through the souts piss and clust, cause he's your lunds couldn't even lis the Drunkla ne
+The scare whites we be the more out
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+o walk
+Like me?
+They got, I'll ask million for me to rap these President
+Just keep like candy My and who
+I might mint put me takes,
+Come on, they can always thinking share your type of hip they knew
+
+We're damn naking wouldn't to the sid
+But I was start cause verres, 'fore I spray my head
+Neck up on fire
+Holdin Kadie nerven to see reary to the crey We give her some in the bed I can be it!
+You dier cobdy
+But 'em like I'm cap, it were saying?
+Suck a metatrong compare of gre time you become some deep
+Look not rapper dean your danch MC was you rear and different me of the dance for us?
+And my pain
+I've been with the moninn from me, this is the rain alone
+
+Cause I make the with' babbler ourseles to swit down all so opplains do this
+Every did thensity get cissom ovell
+She juck like a spif ice pain
+Perfor and I'll fin
+Look at Divy, you ain't won't never ir the Eart Dis or
+She was lived the sow scash a letter his pet
+AlBut winder, fight,, uses a gew leave
+Mais Keasoly, befeep (Hoy, he was a wilk)
+Pure
+So they start a show on everybody knows we done, that when I was Owhheroes shatch and do is your scusagions
+Nar broed, on these (Bedger fasture
+And it's just side the shut of a bet murde
+Hourn ey to the demon live it used to be her focling to hord walk agouss me
+I spit smoke my son yeal rysalet
+TRIt's see
+These fuckin': Dragaming Crotter wheel
+My mind as I wanna drop the pollt
+A palks? (Largning)
+
+Fuck your bagdly, thing, it
+F
+It's boy, I wouldn't, I saw the world
+When I'm back and all I doo-sho
+Girl, I thought they justs you diear wee move as his beat of daughters
+Women soou can a pull that's sald that I'll be the lights you do with Herse Par"
+Rine Regue Swifty body us and see a funch
+And Buzz I get hard-you
+I had a brain year ain't even plastin they shoke for these whoef
+
+Cousersisin' tack
+Cainie
+That give me the bar good bad eas me
+There's been to ask it out
+So quit too of you ight in hell be so ear we re-y-K-E-I
+Nasi make you purup again intely spraying?
+Gard enter I die a shit (StHap 'em a mind, you flie we scared back them pretey to be brohe tape why do the lights as some of us.. that we prove you to lea these piece (Do)
+Dick, yo levat
+
+[Eminem:]
+I'm staying "Run," Dah, My rapped gere-on
+
+'Cause I fourd, let you walk about my throw smell but there's so hard, and try to do this is a mick?
+I have wouldn't feel firs best all in these figh
+
+[Eminem:] Sait 'til your beezet: my darlwas
+Phong of you
+I sure that so beat plumijer
+The medilin' is jeys girl
+Lust take this Pen so eethout a shoes
+I snay lat we won't give you use)
+
+[Bebush -'Xt:]
+It's Syr his himseld so in the bass? ()
+You and I feel sing atong
+We call nevel the shit you ere shoot by
+Pleaning p actest, yeah, you and I don't explain a sweeping rag dewing your fue why day-'96
+
+[Chorus - Kou Royne
+"Lea)
+Yo, beer e, Nigrer Mase
+
+I just wanna fuck this fee all firy
+[Chorus:]
+(Kuttho new head)
+I already so I twirls
+And there's a callawhere hore seen ton
+And hold a rather in a fucking expect
+Waiting with thest
+I wope's quit coming to flipped a fuck neitheil I can cles to B-De
+No more I do it wheneven if I sayies:], than, I can with the songs more responsibll
+Look at how much we reall do this I can't be your head it for me
+You were trying to keep jokebly when one, y'all bent I was doy do have makip
+How could I didry myself spitting writes
+Even (I do!"
+[Rielu hommook you awjorus just give a fuck say my more murder outhout a
+Let back and uped me on the throne of my hair rappers
+And a than anybum could got a tearout go better were say is I know you're seery are 'cause my and till to so soul an ever de as putsost it up to again
+Father
+I feel like a joing cold win not like me of maries
+Earing you tryna depton on six on
+Eickin pick:]
+And swit, ncisten blood agmine
+Maybe I think be a killer to say I would rather second off, do (Evil gete"
+My boys of why the fur hate me through the spalet rubber's twe body, she wants me to be his bad
+Quit be at my feel with his blood hand I know she (no long)
+That's what do-shit you
+Reery Come Kigg with Vid or the has been days just use I never mean to get nodolation stop fear
+Fuck the last spalls
+brewzing of awh at the miller and bleed
+She suck still slup in it were say?
+I I'll just twour sound me
+Best works in the tenly represent just like my head
+Wat my sen again I was so Krutty)
+
+[Dr. Dre]
+Afuced the fuck you damn (shit in a target Lollers (B tough)
+Mooma degrose me to set
+Told me to you there is nothin' with a rent, ever one gales
+I the fell em's down
+Shit fuck you I'll hold you a molike this circle your is my lyrical like the house we don't keep it
+Joatch clashtcher then go where I do on you talk his sollive
+Wh weatter me at leave said
+It are five me and his reason rongtered and come high Pap With this boads
+Lood at her jail we were screty
+K-y- to be flower for reverve a lir bit sleep
+Did they goaz a coupla the energots get worth (hehoo she)
+See shoolmer to resely,
+Ah matt thorul, goodbye to Kendry
+Tayner fall my relamalings, else an a
+----------------------------------------------------------------------------------------------------
+No. of steps: 22201.
+Time elapsed (64 samples per batch, 100 epochs): 3270.4 seconds.

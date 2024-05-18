@@ -1,0 +1,626 @@
+Epoch 1/100 - Step 1
+	 * Smooth loss: 825.9099
+Epoch 2/100 - Step 88
+	 * Smooth loss: 803.2720
+Epoch 3/100 - Step 175
+	 * Smooth loss: 777.1712
+Epoch 4/100 - Step 262
+	 * Smooth loss: 750.9531
+Epoch 5/100 - Step 349
+	 * Smooth loss: 725.5459
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ be comen, joof ay to Ther boon ald goed my menb: you dell mathem
+:or wan wild.
+
+
+AAOKCSORUEP:
+A Viig to wamr
+ard mat and thou hfore; aet-heno shis foriodf,
+TiG lowked you wwarn of I totmes rilfaem?
+L
+----------------------------------------------------------------------------------------------------
+Epoch 6/100 - Step 436
+	 * Smooth loss: 701.1960
+Epoch 7/100 - Step 523
+	 * Smooth loss: 677.9640
+Epoch 8/100 - Step 610
+	 * Smooth loss: 655.8566
+Epoch 9/100 - Step 697
+	 * Smooth loss: 634.8786
+Epoch 10/100 - Step 784
+	 * Smooth loss: 615.0179
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+es Orighton forterestar bean
+Tetst-moun canered, whirnl ther surt, inus rinsted.
+
+BwAMDI:
+
+or how! Hes briy tine poinos,
+by this gronsidxtancus to is swa;
+This r arnem'd how and hatherp porat!
+Tha big
+----------------------------------------------------------------------------------------------------
+Epoch 11/100 - Step 871
+	 * Smooth loss: 596.2318
+Epoch 12/100 - Step 958
+	 * Smooth loss: 578.4961
+Epoch 13/100 - Step 1045
+	 * Smooth loss: 561.7582
+Epoch 14/100 - Step 1132
+	 * Smooth loss: 545.9521
+Epoch 15/100 - Step 1219
+	 * Smooth loss: 531.0256
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ing ford your notherrs grod with Reach!
+
+BENTIO:
+I came: I know's thish powtethe th your platosi.
+
+HARANIO:
+I have priget tee he wat he suby
+You have sold am Incase: sur abath, berars.
+Thou camess to 
+----------------------------------------------------------------------------------------------------
+Epoch 16/100 - Step 1306
+	 * Smooth loss: 516.9320
+Epoch 17/100 - Step 1393
+	 * Smooth loss: 503.6322
+Epoch 18/100 - Step 1480
+	 * Smooth loss: 491.0871
+Epoch 19/100 - Step 1567
+	 * Smooth loss: 479.2570
+Epoch 20/100 - Step 1654
+	 * Smooth loss: 468.0983
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ent is cause it that, to deasry:
+I this sing is the weth of Rocexidy
+'y they disting's: then that Lordsom,
+Down onou give to be tI brot my. 
+fit, gan! dome she kind Have doues,
+Takeow' you heord's lat
+----------------------------------------------------------------------------------------------------
+Epoch 21/100 - Step 1741
+	 * Smooth loss: 457.5711
+Epoch 22/100 - Step 1828
+	 * Smooth loss: 447.6370
+Epoch 23/100 - Step 1915
+	 * Smooth loss: 438.2622
+Epoch 24/100 - Step 2002
+	 * Smooth loss: 429.4128
+Epoch 25/100 - Step 2089
+	 * Smooth loss: 421.0565
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+and in sor sweet word from hinge.
+
+Secand Lerse:
+The sid, I prigoing with the mosting sbart.:
+I dame hour of detticoming and this pase of
+That-had to nog.
+
+AUTOLYCUS:
+A, shrow you seak?
+
+LUCHETS:
+I vi
+----------------------------------------------------------------------------------------------------
+Epoch 26/100 - Step 2176
+	 * Smooth loss: 413.1658
+Epoch 27/100 - Step 2263
+	 * Smooth loss: 405.7144
+Epoch 28/100 - Step 2350
+	 * Smooth loss: 398.6771
+Epoch 29/100 - Step 2437
+	 * Smooth loss: 392.0292
+Epoch 30/100 - Step 2524
+	 * Smooth loss: 385.7470
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ind, and brother will rack a deppieatly
+Manning bean that to im.
+
+PAULThat God give gals-vearty,
+Fare you more thie doump'd, by give, beactest
+To dasper a conness,' by dosk none.
+
+AUTOLYCUS:
+This do h
+----------------------------------------------------------------------------------------------------
+Epoch 31/100 - Step 2611
+	 * Smooth loss: 379.8071
+Epoch 32/100 - Step 2698
+	 * Smooth loss: 374.1872
+Epoch 33/100 - Step 2785
+	 * Smooth loss: 368.8658
+Epoch 34/100 - Step 2872
+	 * Smooth loss: 363.8231
+Epoch 35/100 - Step 2959
+	 * Smooth loss: 359.0413
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ing mean all the mides.
+
+First Firemman:
+And shall have
+'Til. bein be none.
+
+CHARIONA:
+He dayst daced for arm sheo made as not
+the wixt his toward will heart my so.
+
+AUTENWAUS:
+To mysech no marraed fr
+----------------------------------------------------------------------------------------------------
+Epoch 36/100 - Step 3046
+	 * Smooth loss: 354.5039
+Epoch 37/100 - Step 3133
+	 * Smooth loss: 350.1956
+Epoch 38/100 - Step 3220
+	 * Smooth loss: 346.1020
+Epoch 39/100 - Step 3307
+	 * Smooth loss: 342.2106
+Epoch 40/100 - Step 3394
+	 * Smooth loss: 338.5087
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+sher than be so eab,
+In bear; And I was mickless that a cann,
+That I thou to co'll that you are is
+bodist overmorwiness pardon.
+
+SAMIOLAs:
+So from mistress to canout detals,
+A greature few!
+
+ilva thea
+----------------------------------------------------------------------------------------------------
+Epoch 41/100 - Step 3481
+	 * Smooth loss: 334.9856
+Epoch 42/100 - Step 3568
+	 * Smooth loss: 331.6307
+Epoch 43/100 - Step 3655
+	 * Smooth loss: 328.4357
+Epoch 44/100 - Step 3742
+	 * Smooth loss: 325.3911
+Epoch 45/100 - Step 3829
+	 * Smooth loss: 322.4893
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ disquice, him never die Mancas
+'in styell's lad patt be crack?
+
+AULOLUS:
+I clumbern Cleatule; Frow him
+I being a give, and said: his brand, hy lask,
+Bilihed in our love that heach me neish.
+A more wi
+----------------------------------------------------------------------------------------------------
+Epoch 46/100 - Step 3916
+	 * Smooth loss: 319.7214
+Epoch 47/100 - Step 4003
+	 * Smooth loss: 317.0801
+Epoch 48/100 - Step 4090
+	 * Smooth loss: 314.5579
+Epoch 49/100 - Step 4177
+	 * Smooth loss: 312.1485
+Epoch 50/100 - Step 4264
+	 * Smooth loss: 309.8453
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+'d me hat.
+I promight to pertarncely: no cafe:
+I have shall bare o'ld die. must craplial one.
+
+ISABELLA:
+I thought--
+BRUTUS:
+Perchare! him in this wills, I, none: intwam to kill.
+
+ROMIO:
+Were, trock'd
+----------------------------------------------------------------------------------------------------
+Epoch 51/100 - Step 4351
+	 * Smooth loss: 307.6443
+Epoch 52/100 - Step 4438
+	 * Smooth loss: 305.5374
+Epoch 53/100 - Step 4525
+	 * Smooth loss: 303.5203
+Epoch 54/100 - Step 4612
+	 * Smooth loss: 301.5869
+Epoch 55/100 - Step 4699
+	 * Smooth loss: 299.7362
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ thine own leave: for me, the Our once remond god.
+
+PETRUCHIO:
+So, that shall I come most for!
+And by swif; fired Lirst, indectanded:
+I have can bottry home.
+
+POMPEY: Haft? you do you have your
+nather
+----------------------------------------------------------------------------------------------------
+Epoch 56/100 - Step 4786
+	 * Smooth loss: 297.9692
+Epoch 57/100 - Step 4873
+	 * Smooth loss: 296.2860
+Epoch 58/100 - Step 4960
+	 * Smooth loss: 294.6721
+Epoch 59/100 - Step 5047
+	 * Smooth loss: 293.1136
+Epoch 60/100 - Step 5134
+	 * Smooth loss: 291.6202
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+itable place. Lightous 'than verish thou have
+nages, we prayers, or else heard the mind,
+Of her compament adm'cle; for thou desire not forward.
+
+PAULINA:
+I hove, the thiggraits it honouralless
+For thy
+----------------------------------------------------------------------------------------------------
+Epoch 61/100 - Step 5221
+	 * Smooth loss: 290.1855
+Epoch 62/100 - Step 5308
+	 * Smooth loss: 288.8004
+Epoch 63/100 - Step 5395
+	 * Smooth loss: 287.4627
+Epoch 64/100 - Step 5482
+	 * Smooth loss: 286.1698
+Epoch 65/100 - Step 5569
+	 * Smooth loss: 284.9206
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+itizensid: but thenry fientle stad,
+Was break off the ent; to draw ond early
+And then in mine orst ruth and scope
+And mapter, tend me as myself-lear,
+In neary wife?
+
+CBARDICAS:
+Hord, my gaunt did prop
+----------------------------------------------------------------------------------------------------
+Epoch 66/100 - Step 5656
+	 * Smooth loss: 283.7138
+Epoch 67/100 - Step 5743
+	 * Smooth loss: 282.5454
+Epoch 68/100 - Step 5830
+	 * Smooth loss: 281.4147
+Epoch 69/100 - Step 5917
+	 * Smooth loss: 280.3171
+Epoch 70/100 - Step 6004
+	 * Smooth loss: 279.2537
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ thy bit her, him, thou cannot but once.
+The visor on I pay then conourd an express
+Is the bandage of him ton us an all.
+
+KING EDWARD IV:
+Why, my friends you here; Pasting gogum;
+And Lap his fire
+To l
+----------------------------------------------------------------------------------------------------
+Epoch 71/100 - Step 6091
+	 * Smooth loss: 278.2214
+Epoch 72/100 - Step 6178
+	 * Smooth loss: 277.2202
+Epoch 73/100 - Step 6265
+	 * Smooth loss: 276.2475
+Epoch 74/100 - Step 6352
+	 * Smooth loss: 275.3039
+Epoch 75/100 - Step 6439
+	 * Smooth loss: 274.3970
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+iding min?
+There's they are adain. I'll were boy. 
+JULIET:
+Fiven you, sir:
+Past here; for an cover his horses? that'elst thou?
+
+DUKE OF SURENTY:
+Syall,
+Let out your sade, buth die we he; we that-rignt
+----------------------------------------------------------------------------------------------------
+Epoch 76/100 - Step 6526
+	 * Smooth loss: 273.5333
+Epoch 77/100 - Step 6613
+	 * Smooth loss: 272.6900
+Epoch 78/100 - Step 6700
+	 * Smooth loss: 271.8585
+Epoch 79/100 - Step 6787
+	 * Smooth loss: 271.0406
+Epoch 80/100 - Step 6874
+	 * Smooth loss: 270.2387
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ice of mine ansue, and most welcome there, thereat made wish;
+There's a knight and mordarenns of him: he's susting me.
+
+CAPUSET:
+Mate noth him. Then noy thy name of men.
+
+GRUMIO:
+She she, father, you 
+----------------------------------------------------------------------------------------------------
+Epoch 81/100 - Step 6961
+	 * Smooth loss: 269.4639
+Epoch 82/100 - Step 7048
+	 * Smooth loss: 268.7021
+Epoch 83/100 - Step 7135
+	 * Smooth loss: 267.9446
+Epoch 84/100 - Step 7222
+	 * Smooth loss: 267.2119
+Epoch 85/100 - Step 7309
+	 * Smooth loss: 266.4793
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+ conclume to march him objecten this
+pherowants that as yourse here oat and ask'd
+Take atterment: may,
+His growscaxisidesty.
+
+CLAUDIO:
+Near, thom, some your widdom can command.
+
+Mibbard:
+I am good not
+----------------------------------------------------------------------------------------------------
+Epoch 86/100 - Step 7396
+	 * Smooth loss: 265.7646
+Epoch 87/100 - Step 7483
+	 * Smooth loss: 265.0602
+Epoch 88/100 - Step 7570
+	 * Smooth loss: 264.3660
+Epoch 89/100 - Step 7657
+	 * Smooth loss: 263.6871
+Epoch 90/100 - Step 7744
+	 * Smooth loss: 263.0180
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+irito the Tetrunt of the mind.
+
+KATHARINA:
+I was the false steeds. nay I planted.
+Now swoundes and bloody, maists sumpose,
+Thou art the gods, I love thee to whom whom they was the state: we
+pursting i
+----------------------------------------------------------------------------------------------------
+Epoch 91/100 - Step 7831
+	 * Smooth loss: 262.3624
+Epoch 92/100 - Step 7918
+	 * Smooth loss: 261.7154
+Epoch 93/100 - Step 8005
+	 * Smooth loss: 261.0881
+Epoch 94/100 - Step 8092
+	 * Smooth loss: 260.4737
+Epoch 95/100 - Step 8179
+	 * Smooth loss: 259.8778
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+saliance and bravers, none both
+mastarciant. BI not Warwire, butthery,
+No, go: yet lies thee that way; therefore, feen!
+Sir, I thus our knibed,--thes' love betwesty,
+But she art too, danger, which I'l
+----------------------------------------------------------------------------------------------------
+Epoch 96/100 - Step 8266
+	 * Smooth loss: 259.2979
+Epoch 97/100 - Step 8353
+	 * Smooth loss: 258.7470
+Epoch 98/100 - Step 8440
+	 * Smooth loss: 258.2243
+Epoch 99/100 - Step 8527
+	 * Smooth loss: 257.7330
+Epoch 100/100 - Step 8614
+	 * Smooth loss: 257.2558
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+idence to wout there, a rightnes.
+
+CAMILLO:
+A, as we are distress, in Here-says vain
+Found not in the strange. -e'er like you,
+Whereyore's
+That shall still'd in many life, and stay 'twixt you.
+So care
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+ure the queen had weep the suity of it?
+Though her come hope in gates: I play the clamon
+To make for this name flouting thith call the
+Assues of justice, dread put aspirance.
+
+LUCENTIO:
+Methire my lady's highess; why, the trankless stone?
+
+BISHussa daughter
+Madam, I again a bandal; whose course us
+And all my firte ear the streating to our but thee by your matter whoreman
+Into castred as rash in Baggara,
+May ne'er sad too so; sound, let's see the woken,
+But speak that bees an illy service,
+Shall frown anony; for what dares?
+
+CAMILLO:
+As it then, of my son?
+
+JULIET:
+I'll you yet from my daughter.
+Provost, to-morrow:
+And flanss, the oft sign furton;
+The man is impossition d need.
+
+PROSPERO:
+So hatemfarr's torture of blood,
+Withis me before him. As it self?
+All things seems, to winter 'good.
+
+ARI LINGBEOS:
+And this I fool the worp of and his
+heald of dare so plant, sirs, gave womer even so:
+Thou go come, so seal; Boonder, come. But, orage for my wind?
+
+KING EDWARD IV:
+What, many what did hence but know, Deady me one last!
+
+KATHARINA:
+As trouch torture of fleeder! burn, if the king?
+Forgen the worst; thou art perised's boy?
+wed in me, dede about a shamel? There's a letter; set,
+Blood for the duke than a woman: you'rg a brothers I;
+Here is ut is see anarmners;
+Morn: year the angs encepts.
+
+Clown:
+
+ISABELLA:
+I pray my company: I live; here's the matk,
+And up the people in was remain,
+Will I dapus the witnesses. His it caused!
+Kath these deserves you half an ops, our ladiers deat,
+I mean to glasur, as to glas of men ins:
+And I'll not fear thee, gave; I have no wine:
+Alas, by thus adwick, thy heads, imfortate mine,
+foul any battle, thine own every palin:
+To-morrow, sir, the Launt I love'd attorance substed awhile;
+If it now be hap to come.
+
+HENRY PELIU:
+My Lord Clitin him, cousin, how now, my lied?
+
+TRANIO:
+Why shall we pride! O, till here is I beseem
+Not honour and under the treasures youch
+leash? And not what precious emites, thou still
+hath mathed you sinest as Drewat of he.
+
+SLY:
+Alous some, true keep will tell death, do to see: he had
+not call them of YorK:
+Meghaly is not bid the god of half
+Arm ours of good:
+If any this is this? I stas thee?
+
+GRUMIO:
+Hell store.
+
+GREMIO:
+A prince: Sime Nollow has not knowled--
+Furst, here's no mad.
+And wilt thou, she hath? Athands agowarns oft
+Is much of me.
+
+PAULINA:
+I lay out such damn, a strungesty him that
+Exbles means to me atimush me tilld I have
+By son of merits. But yet we werr I will
+
+BAPLAUTI:
+Yet not our a sour one my corsee, or given,
+Sir Margaret'? any to't!
+
+PERCI:
+He shills, sir? know, I pourage, not
+been are the appatation.
+
+POMPEY:
+Sir, I shall some up; on Any hat did within being.
+There is now Romeo, what would a sirion--
+Pomer fiemer our execker rid as night.
+
+FRIAR PETRUCHIOld Henrethers?
+
+YORK:
+Pethuch you, sir;
+That he had choach with friendful heads, but did Istrut.
+
+Nurse:
+Ay, har I would have church'd all, paunt and beast;
+But stay.
+
+PRINCE EDWARDIAR:
+Ay, if thou darest of thee that trumy
+Moke not to come the old slipy from you?
+
+ROMEO:
+Is left thee, great mistress.
+
+BAPTISTA:
+Till I know her onf head?
+
+LUCENTIO:
+Hark, I frombly stood redeited how lost shrickes
+To yer, if thou liest. You like is noble throus.
+But, you may time stands, to what come to she say!
+Masters, not o'erchase them be your hurthes,
+Lest that may stry a souling as you are son
+To emse instructlinonct.
+
+TYBULE:
+What would have,' the earth's extreme to God,
+Make the tongue-s fool diggity return's of sean,
+Wrom the magic gamn to starks the rivinessel
+Stand but, a other's shame; another coming here.
+
+DUKE VINCENTIO:
+I can see housation, how he'll be to three,
+But all this sun the world: he had batters all she's none and before.
+
+AUTOLYCUS:
+Even and I had, sir; 'twere A salf,--
+All here had 'er, sir; 'Twark's tall. But
+Heapfal me all deess! you are a punityce is the king:
+Do you all; he backs was, I have not I read.
+
+LADY Cactianner:
+
+JULIET:
+Tughty?
+Call me the villains fouls or us. But! the virte, York,
+Where is this cast, without knith arthing love
+Tybout let's; never my shomion good,
+Stand my respent to be of nothing Aufidning,
+What he shall not wakin thy nothing of some tears:
+Sory casses be a point of it is no sime,
+With the housles childings.
+
+KING EDWARD IV:
+While you credit of George!
+
+BRUTUS:
+And, Edswia 'RENCHADD'He he made cuse of the advice.
+
+BRAMAS:
+You-wrangligity, tark of peace;
+It yet a cert, thine enequence inted to us,
+And she hothan forber that his brother in the
+rest, or call it honour: mercies, I am toot be mather.
+
+EScALUS:
+First, this exemer mavins your shame and good fortune:
+I am the will speak sour love! Even o'erthed;
+Whom it is power and to my hour take our heads,
+His that meat, I hope
+The great point; ever I in best Pamis.
+Ay, sirraO, then were sir, stely citizens
+Ah, To go wone that that wilt heat to him.
+
+Second:
+O come that easy in a kind of Marginer,
+In the despenat of my tenghtoot know
+Shall make not yet dares so I am.
+
+AUTOLYCUS:
+If thus: let him surel
+----------------------------------------------------------------------------------------------------
+No. of steps: 8701.
+Time elapsed (64 samples per batch, 100 epochs): 3644.8 seconds.
