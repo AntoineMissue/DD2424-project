@@ -76,7 +76,7 @@ def rnn_generate(rnn_filename, first_char = ' ', length = 10000, T = 1.0):
     sequence = first_char + s_t
     return sequence
 
-def model_metrics(data_path, validation_path, model_code, model_filename,grams = 1, length = 10000, T = 1.0, clean = True):
+def model_metrics(data_path, validation_path, model_code, model_filename, grams = 1, length = 10000, T = 1.0, clean = True):
     if model_code == "lstm1":
         text = lstm1_generate(model_filename, data_path, length=length, T = T)
     elif model_code == "rnn":

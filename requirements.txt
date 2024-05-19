@@ -5,6 +5,7 @@
 flake8
 numpy
 matplotlib
+pandas
 ipykernel
 torch
 setuptools

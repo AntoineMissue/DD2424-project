@@ -2,11 +2,12 @@ import torch
 import matplotlib.pyplot as plt
 import time
 import tqdm
+import pandas as pd
 
 from nlpProject.one_layer_lstm import LSTM1
 from nlpProject.make_data import DataMaker
 from nlpProject.utils import compute_loss, make_dataloader
-from nlpProject.inference import synthesize_seq_lstm1
+from nlpProject.inference import synthesize_seq_lstm1, model_evaluation
 
 def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learning_rate, synth_interval = 5, model_savepath = None, fig_savepath = None):
     losses = []
@@ -54,7 +55,7 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
             print("-" * 100)
 
     end_time = time.time()
-    _, s_lsyn = synthesize_seq_lstm1(model, data_maker, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 5000)
+    _, s_lsyn = synthesize_seq_lstm1(model, data_maker, h_prev[:, 0:1], c_prev[:, 0:1], X_train[:, 0, 0], 1000)
     print("-" * 100)
     print(f"Benchmark synthesized sequence: \n{s_lsyn}")
     print("-" * 100)
@@ -74,8 +75,18 @@ def train_lstm1(data_path, n_epochs, hidden_size, seq_length, batch_size, learni
         plt.savefig(fig_savepath)
     else:
         plt.show()
-
-def grid_search_lstm1(data_path, grid, n_epochs, synth_interval):
+    plt.close()
+def grid_search_lstm1(data_path, validation_path, grid, n_epochs, synth_interval):
+    results = {
+        'hidden_size': [], 
+        'seq_length': [], 
+        'batch_size': [], 
+        'learning_rate': [],
+        'precision': [],
+        'recall': [],
+        'f-measure': [],
+        'BLEU': []
+    }
     for hidden in grid['hidden_size']:
         for seq_l in grid['seq_length']:
             for batch_s in grid['batch_size']:
@@ -89,13 +100,28 @@ def grid_search_lstm1(data_path, grid, n_epochs, synth_interval):
                         'learning_rate': lr,
                         'synth_interval': synth_interval,
                         }
+                    print(f"--- Hidden: {hidden} - Seq Length: {seq_l} - Batch Size: {batch_s} - Learning Rate: {lr} ---")
+                    model_savepath = f'./models/LSTM/grid_search/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.pt'
+                    model_filename = f'grid_search/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.pt'
                     train_lstm1(**params,
-                        model_savepath=f'./models/LSTM/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.pt',
-                        fig_savepath=f'./reports/figures/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.png')
+                        model_savepath=model_savepath,
+                        fig_savepath=f'./reports/figures/grid_search/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.png')
+                    _, metrics, _ = model_evaluation(data_path, validation_path, "lstm1", model_filename, 1, 200000, 0.7, True)
+                    results['hidden_size'].append(hidden)
+                    results['seq_length'].append(seq_l)
+                    results['batch_size'].append(batch_s)
+                    results['learning_rate'].append(lr)
+                    results['precision'].append(metrics['precision'])
+                    results['recall'].append(metrics['recall'])
+                    results['f-measure'].append(metrics['fmeasure'])
+                    results['BLEU'].append(metrics['bleu'])
+    result_df = pd.DataFrame.from_dict(results)
+    result_df.to_csv('./reports/logs/grid_search.csv')
+    return result_df
 
 
 if __name__ == '__main__':
-    params = {
+    """ params = {
         'data_path': './data/shakespeare.txt',
         'n_epochs': 40,
         'hidden_size': 1024,
@@ -106,4 +132,7 @@ if __name__ == '__main__':
         }
     train_lstm1(**params,
                 model_savepath=f'./models/LSTM/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.pt',
-                fig_savepath=f'./reports/figures/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.png')
+                fig_savepath=f'./reports/figures/lstm1_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.png') """
+    
+    grid = {'hidden_size': [256], 'seq_length': [50, 100, 400], 'batch_size': [32], 'learning_rate': [0.005, 0.01]}
+    print(grid_search_lstm1('./data/shakespeare.txt', './data/shakespeare_220k.txt', grid, n_epochs=20, synth_interval=22))

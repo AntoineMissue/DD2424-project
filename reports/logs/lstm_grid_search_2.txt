@@ -1,0 +1,524 @@
+--- Hidden: 256 - Seq Length: 50 - Batch Size: 32 - Learning Rate: 0.005 ---
+Epoch 1/20 - Step 1
+	 * Smooth loss: 156.6893
+Epoch 2/20 - Step 698
+	 * Smooth loss: 120.4285
+Epoch 3/20 - Step 1395
+	 * Smooth loss: 99.4106
+Epoch 4/20 - Step 2092
+	 * Smooth loss: 87.2922
+Epoch 5/20 - Step 2789
+	 * Smooth loss: 80.2172
+Epoch 6/20 - Step 3486
+	 * Smooth loss: 75.9651
+Epoch 7/20 - Step 4183
+	 * Smooth loss: 73.3212
+Epoch 8/20 - Step 4880
+	 * Smooth loss: 71.6229
+Epoch 9/20 - Step 5577
+	 * Smooth loss: 70.4323
+Epoch 10/20 - Step 6274
+	 * Smooth loss: 69.5858
+Epoch 11/20 - Step 6971
+	 * Smooth loss: 68.9287
+Epoch 12/20 - Step 7668
+	 * Smooth loss: 68.4427
+Epoch 13/20 - Step 8365
+	 * Smooth loss: 68.0213
+Epoch 14/20 - Step 9062
+	 * Smooth loss: 67.6764
+Epoch 15/20 - Step 9759
+	 * Smooth loss: 67.3980
+Epoch 16/20 - Step 10456
+	 * Smooth loss: 67.1488
+Epoch 17/20 - Step 11153
+	 * Smooth loss: 66.9556
+Epoch 18/20 - Step 11850
+	 * Smooth loss: 66.7546
+Epoch 19/20 - Step 12547
+	 * Smooth loss: 66.5712
+Epoch 20/20 - Step 13244
+	 * Smooth loss: 66.4011
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+urst and hudar
+We marry at the grief
+Is not sed the suppliant blow-I, my beauteng
+That are that ride the prison thee strive at Clarence;
+And when ys welcome, the courtesoment campollon'd grief, I would be:
+So pleast thee from my win,
+I'll the rest and death should made a young Axenion of the was
+As would no mooned. But, sit should be so
+NCANTI:
+Thy meats had rather pursures.
+
+MIRANDA:
+O Doub,
+Were an ee too: he shall be slaves
+And heart, but from my body of the oath
+But, but appresirent not see it
+You say you.
+Watchinso the gh, sent them.
+
+GONZALO:
+That's the royal fair Lepp'd,
+When we praise our tuth; come and to my knop!
+Woo was, or have no more no much pair;
+And what of your daughter are,--some arty?
+
+SICINIUS:
+When it not, my moved indagio.
+How come undaring was n.
+
+BIANCA:
+My lord But, so thou art paks an houndleads,
+The dispatch the fast the field and bits upon in our daughter.
+
+SEBASTIAN:
+No; I did ever place!-Hont, and thus great where he was in spirit!
+
+MIRANDA:
+Good, sir, fir
+----------------------------------------------------------------------------------------------------
+No. of steps: 13941.
+Time elapsed (32 samples per batch, 20 epochs): 892.4 seconds.
+Try 1 - Precision: 86.37% - Recall: 82.42% - F-measure: 84.35% - BLEU: 6.05%
+--- Hidden: 256 - Seq Length: 50 - Batch Size: 32 - Learning Rate: 0.01 ---
+Epoch 1/20 - Step 1
+	 * Smooth loss: 152.1512
+Epoch 2/20 - Step 698
+	 * Smooth loss: 115.6859
+Epoch 3/20 - Step 1395
+	 * Smooth loss: 95.5661
+Epoch 4/20 - Step 2092
+	 * Smooth loss: 84.5506
+Epoch 5/20 - Step 2789
+	 * Smooth loss: 78.4565
+Epoch 6/20 - Step 3486
+	 * Smooth loss: 74.9544
+Epoch 7/20 - Step 4183
+	 * Smooth loss: 72.8457
+Epoch 8/20 - Step 4880
+	 * Smooth loss: 71.5322
+Epoch 9/20 - Step 5577
+	 * Smooth loss: 70.6384
+Epoch 10/20 - Step 6274
+	 * Smooth loss: 69.9964
+Epoch 11/20 - Step 6971
+	 * Smooth loss: 69.5104
+Epoch 12/20 - Step 7668
+	 * Smooth loss: 69.1477
+Epoch 13/20 - Step 8365
+	 * Smooth loss: 68.7887
+Epoch 14/20 - Step 9062
+	 * Smooth loss: 68.5150
+Epoch 15/20 - Step 9759
+	 * Smooth loss: 68.3229
+Epoch 16/20 - Step 10456
+	 * Smooth loss: 68.1157
+Epoch 17/20 - Step 11153
+	 * Smooth loss: 67.9333
+Epoch 18/20 - Step 11850
+	 * Smooth loss: 67.7266
+Epoch 19/20 - Step 12547
+	 * Smooth loss: 67.5767
+Epoch 20/20 - Step 13244
+	 * Smooth loss: 67.4403
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+ld.
+
+GONZALO:
+Which, the shumble, not make, to leave the worst
+And thereto, affections home before this?
+
+
+Widow:
+Would ever, to grosbes might be gone:
+And good measure I may provisious right and peacefue. A rich:
+Mistakests for thy outst have see them mine owings to.
+
+YORK:
+But I have frown, fellow, bow, is my devil,
+And unparhing his state, of ligas
+Than married piking crupper! Signior Tranio, but here I to smead thee racked up livedabms, we did, sir. You mine them.
+Weel upon mine name!
+Or afearing, the lime hollooker o' the ground; strict self
+And like the mother, but holy the
+sea,
+In all your hangial is ace:
+I will thus words was sleep,
+Revenged.
+
+LORIO:
+A man out with mine own sighs: till these persons of son:
+Barke, my lord,
+Prove anto soul'd pate to hard the worst! It was thee;
+Because a point-to mine own great woman's threat
+As the father come-businard disease. Pray,
+Testhou villain,
+Is the gain, as we-sirt too! hark me but inceptes the pressish and gone for not at you so my tu
+----------------------------------------------------------------------------------------------------
+No. of steps: 13941.
+Time elapsed (32 samples per batch, 20 epochs): 999.3 seconds.
+Try 1 - Precision: 87.02% - Recall: 83.27% - F-measure: 85.11% - BLEU: 6.02%
+--- Hidden: 256 - Seq Length: 100 - Batch Size: 32 - Learning Rate: 0.005 ---
+Epoch 1/20 - Step 1
+	 * Smooth loss: 365.2163
+Epoch 2/20 - Step 349
+	 * Smooth loss: 311.5316
+Epoch 3/20 - Step 697
+	 * Smooth loss: 269.1764
+Epoch 4/20 - Step 1045
+	 * Smooth loss: 236.3044
+Epoch 5/20 - Step 1393
+	 * Smooth loss: 211.1925
+Epoch 6/20 - Step 1741
+	 * Smooth loss: 192.1383
+Epoch 7/20 - Step 2089
+	 * Smooth loss: 177.7126
+Epoch 8/20 - Step 2437
+	 * Smooth loss: 166.7717
+Epoch 9/20 - Step 2785
+	 * Smooth loss: 158.3925
+Epoch 10/20 - Step 3133
+	 * Smooth loss: 151.9548
+Epoch 11/20 - Step 3481
+	 * Smooth loss: 147.0151
+Epoch 12/20 - Step 3829
+	 * Smooth loss: 143.1084
+Epoch 13/20 - Step 4177
+	 * Smooth loss: 140.0519
+Epoch 14/20 - Step 4525
+	 * Smooth loss: 137.6482
+Epoch 15/20 - Step 4873
+	 * Smooth loss: 135.7584
+Epoch 16/20 - Step 5221
+	 * Smooth loss: 134.2756
+Epoch 17/20 - Step 5569
+	 * Smooth loss: 133.0793
+Epoch 18/20 - Step 5917
+	 * Smooth loss: 132.0449
+Epoch 19/20 - Step 6265
+	 * Smooth loss: 131.1587
+Epoch 20/20 - Step 6613
+	 * Smooth loss: 130.3899
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+march'd widdlents the world,
+And tONUENIN:
+Belike a contenters, trive in how
+If you jeck it, tylums I have by Katharica;
+Clowes
+That do he's abput aboring farmion within
+Hist your tis mistings! pound those fiege, give my crown!
+
+BIONDELLO:
+There's every mind how they are my heart
+But a hugord, or to me.
+
+Pedant:
+God forten your Vincente to me,--
+'Tis he mays for peace: in thes
+When thy travels of poor weap not, stand to him and
+the master had here arm ere thou yields:
+If that by my scouclor and married they thread
+Where frown and man those over and write cure of it.
+
+First Begon; what thou stand upon gentle of the rock,
+His displeavorial too, a horse hath cundings
+A woman arrived from the and
+be furing my dist nothing
+To cry; when the Bies of him out.
+
+KATHARINA:
+What's trouring, we will not
+To stay with noble wantur.
+
+ASTIELA:
+Thou dost begot deposse; being it not so becomerble my stranged. Whichs thou!
+
+PROSPERO:
+What werther, Kate! but we shall be so,
+An hour duke, evil reproof.
+
+BI
+----------------------------------------------------------------------------------------------------
+No. of steps: 6961.
+Time elapsed (32 samples per batch, 20 epochs): 1080.1 seconds.
+Try 1 - Precision: 85.76% - Recall: 80.93% - F-measure: 83.28% - BLEU: 6.61%
+--- Hidden: 256 - Seq Length: 100 - Batch Size: 32 - Learning Rate: 0.01 ---
+Epoch 1/20 - Step 1
+	 * Smooth loss: 360.9083
+Epoch 2/20 - Step 349
+	 * Smooth loss: 305.6322
+Epoch 3/20 - Step 697
+	 * Smooth loss: 262.3455
+Epoch 4/20 - Step 1045
+	 * Smooth loss: 229.4777
+Epoch 5/20 - Step 1393
+	 * Smooth loss: 204.8137
+Epoch 6/20 - Step 1741
+	 * Smooth loss: 186.4155
+Epoch 7/20 - Step 2089
+	 * Smooth loss: 172.7103
+Epoch 8/20 - Step 2437
+	 * Smooth loss: 162.4603
+Epoch 9/20 - Step 2785
+	 * Smooth loss: 154.8696
+Epoch 10/20 - Step 3133
+	 * Smooth loss: 149.2060
+Epoch 11/20 - Step 3481
+	 * Smooth loss: 145.0243
+Epoch 12/20 - Step 3829
+	 * Smooth loss: 141.8805
+Epoch 13/20 - Step 4177
+	 * Smooth loss: 139.4198
+Epoch 14/20 - Step 4525
+	 * Smooth loss: 137.5732
+Epoch 15/20 - Step 4873
+	 * Smooth loss: 136.1274
+Epoch 16/20 - Step 5221
+	 * Smooth loss: 135.0603
+Epoch 17/20 - Step 5569
+	 * Smooth loss: 133.9803
+Epoch 18/20 - Step 5917
+	 * Smooth loss: 133.0218
+Epoch 19/20 - Step 6265
+	 * Smooth loss: 132.2952
+Epoch 20/20 - Step 6613
+	 * Smooth loss: 131.7497
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+libertal neglor of him!
+Come, drumber stoges her ere.
+
+PROSPERO:
+What news? say 'nothing?
+Take him sometime: how now down the first and
+worldness of the cold meeted--
+
+MIRANDA:
+Portended! where's the sout three ask here,
+And my new-r spirit!
+
+
+KING LEWIS XI:
+You have hence. Where comes then, Most wench!
+And the world pleased me tending this carel
+As the rest;
+We must contentioned power:
+Then thou wearing and riddler of thy so field, with point.
+
+SEBASTIAN:
+Let thee can at hollo:'d nothing.
+
+DUKE VINCENTIO:
+Nursem simple ar ask your good Claudio.
+
+BIRCAND:
+Come, behind, Petruchio, air, poor Lady she shall not bed.
+
+PROSPERO:
+I can a sew, A
+when you not writoushest her, howlident, Julietrs.
+
+KATHARINA:
+What!
+
+PROSPERO:
+Morrow that yours.
+
+TIZALARD:
+But you see anormen both
+To bless thee that blasthess' younger
+of the drunkard is sooner, say it,
+Ignient, and your host-hearting is not
+that servants of my father's alliance?
+
+BIONDELLO:
+O, these weak the or mischief, sir!
+
+CURTIS:
+Go. Go we 
+----------------------------------------------------------------------------------------------------
+No. of steps: 6961.
+Time elapsed (32 samples per batch, 20 epochs): 1040.7 seconds.
+Try 1 - Precision: 85.77% - Recall: 80.19% - F-measure: 82.88% - BLEU: 5.70%
+--- Hidden: 256 - Seq Length: 400 - Batch Size: 32 - Learning Rate: 0.005 ---
+Epoch 1/20 - Step 1
+	 * Smooth loss: 1638.1876
+Epoch 2/20 - Step 88
+	 * Smooth loss: 1578.4137
+Epoch 3/20 - Step 175
+	 * Smooth loss: 1516.1371
+Epoch 4/20 - Step 262
+	 * Smooth loss: 1454.1915
+Epoch 5/20 - Step 349
+	 * Smooth loss: 1393.9138
+Epoch 6/20 - Step 436
+	 * Smooth loss: 1335.8902
+Epoch 7/20 - Step 523
+	 * Smooth loss: 1280.4394
+Epoch 8/20 - Step 610
+	 * Smooth loss: 1227.7646
+Epoch 9/20 - Step 697
+	 * Smooth loss: 1177.9820
+Epoch 10/20 - Step 784
+	 * Smooth loss: 1131.0978
+Epoch 11/20 - Step 871
+	 * Smooth loss: 1087.0387
+Epoch 12/20 - Step 958
+	 * Smooth loss: 1045.7315
+Epoch 13/20 - Step 1045
+	 * Smooth loss: 1007.0441
+Epoch 14/20 - Step 1132
+	 * Smooth loss: 970.8896
+Epoch 15/20 - Step 1219
+	 * Smooth loss: 937.1187
+Epoch 16/20 - Step 1306
+	 * Smooth loss: 905.6255
+Epoch 17/20 - Step 1393
+	 * Smooth loss: 876.2541
+Epoch 18/20 - Step 1480
+	 * Smooth loss: 848.8944
+Epoch 19/20 - Step 1567
+	 * Smooth loss: 823.4331
+Epoch 20/20 - Step 1654
+	 * Smooth loss: 799.7926
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+ile no life-cloat: I have bear
+death's to horse from the blotdens withis
+chowning of a sistard child.
+
+Shepherd:
+I joy for more of you? ere I think
+But thus forniale shell mesil'
+Some pleasure, whist, Corsel's of yourself, why,
+Thou hast nothing pluckly and fires.
+
+Clown:
+'Tis no man most six; but lice for husband.
+
+GRUMIO:
+Who out and spittem, proy exile,
+Without the right with the cloam; but he is free feplain to him
+A scold.
+O hiar!
+
+Prunce:
+Selve this hatness twandst thou know?
+And why well as true to rashel angny
+Edward, I fill me in their common verved,
+Or pase you, if the world father Angelo.
+Go with thy rest, with regived their fellow,
+I'll have the worrn that Are hither
+To whet I stiff,' thougand spohar.
+Unless affection of flay,
+I wouldst thou citizant, if thou a words shaple set these rathmen,
+And made the second and halfures' course,
+And draw you in the most put.
+
+AUGBLOTAUGEd
+Y leting poor humble crimd.'
+My hair
+Botaking-cortedge, heaven'd: or to see:
+Biendy, he is about.
+
+----------------------------------------------------------------------------------------------------
+No. of steps: 1741.
+Time elapsed (32 samples per batch, 20 epochs): 1946.1 seconds.
+Try 1 - Precision: 86.35% - Recall: 83.86% - F-measure: 85.08% - BLEU: 6.89%
+--- Hidden: 256 - Seq Length: 400 - Batch Size: 32 - Learning Rate: 0.01 ---
+Epoch 1/20 - Step 1
+	 * Smooth loss: 1625.2355
+Epoch 2/20 - Step 88
+	 * Smooth loss: 1558.5384
+Epoch 3/20 - Step 175
+	 * Smooth loss: 1489.8900
+Epoch 4/20 - Step 262
+	 * Smooth loss: 1422.4187
+Epoch 5/20 - Step 349
+	 * Smooth loss: 1357.4751
+Epoch 6/20 - Step 436
+	 * Smooth loss: 1295.6516
+Epoch 7/20 - Step 523
+	 * Smooth loss: 1237.2229
+Epoch 8/20 - Step 610
+	 * Smooth loss: 1182.3267
+Epoch 9/20 - Step 697
+	 * Smooth loss: 1130.9975
+Epoch 10/20 - Step 784
+	 * Smooth loss: 1083.1235
+Epoch 11/20 - Step 871
+	 * Smooth loss: 1038.6501
+Epoch 12/20 - Step 958
+	 * Smooth loss: 997.3407
+Epoch 13/20 - Step 1045
+	 * Smooth loss: 959.0254
+Epoch 14/20 - Step 1132
+	 * Smooth loss: 923.5167
+Epoch 15/20 - Step 1219
+	 * Smooth loss: 890.5990
+Epoch 16/20 - Step 1306
+	 * Smooth loss: 860.0987
+Epoch 17/20 - Step 1393
+	 * Smooth loss: 831.9462
+Epoch 18/20 - Step 1480
+	 * Smooth loss: 805.9995
+Epoch 19/20 - Step 1567
+	 * Smooth loss: 782.0211
+Epoch 20/20 - Step 1654
+	 * Smooth loss: 759.8912
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+ilest'd:
+A knee-whis. The briat two dost unto oftentare,
+As manes at unking by him all.
+And you are cunt, sir, when all the skin
+And she sends? my mastand! let it not, But therefore, not
+ingent us too.
+This way and name, and trust she should do
+this natural knows you bettle, good wife!
+
+First Let:
+Pray now, sir, let us sun
+Another; or all; sincy she die.
+
+HASTINGS:
+You than gentle monoth, a go to Francm, why happy mutual-damb,
+And got it, I thank it fine.
+
+CLAUDIO:
+Being inkSectaget.
+Know me answer them with thee?
+
+Shevein:
+Then, with a natute for a grave?
+
+KATHARINA:
+Why, 'liat, So this company with you all own sovereise slitus-tilless
+A bide thou hast ratmer inhappy too;
+behold a bank, they so merr.
+3 forced, this is some featly kiss me?
+
+Messenger:
+And finest an out to thy windows, and sweet Byine:
+Incamioun a stills, methinks me my cousin,
+And in this seoul hat very patient night,
+Madam, and like a credit, and notly weed of grot his consent,
+To make your friends, sir, and A kind wo
+----------------------------------------------------------------------------------------------------
+No. of steps: 1741.
+Time elapsed (32 samples per batch, 20 epochs): 1135.6 seconds.
+Try 1 - Precision: 88.18% - Recall: 85.75% - F-measure: 86.95% - BLEU: 8.13%
+   hidden_size  seq_length  batch_size  ...     recall  f-measure      BLEU
+0          256          50          32  ...  82.422821  84.349229  6.053371
+1          256          50          32  ...  83.272801  85.105944  6.017132
+2          256         100          32  ...  80.929681  83.275804  6.613508
+3          256         100          32  ...  80.185634  82.883400  5.695898
+4          256         400          32  ...  83.855428  85.082915  6.885257
+5          256         400          32  ...  85.752119  86.947293  8.132453
+
+[6 rows x 8 columns]

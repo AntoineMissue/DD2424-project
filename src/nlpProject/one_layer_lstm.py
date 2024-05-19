@@ -27,7 +27,7 @@ class LSTM1(nn.Module):
     def init_weights(self):
         for param in self.parameters():
             if len(param.shape) > 1:
-                nn.init.xavier_normal_(param)
+                nn.init.xavier_normal_(param, generator=torch.Generator().manual_seed(42))
 
     def forward(self, X, init_states=None, T = 1.0):
         _, seq_len, batch_size = X.size()
