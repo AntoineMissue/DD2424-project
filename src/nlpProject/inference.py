@@ -103,9 +103,9 @@ def model_evaluation(data_path, validation_path, model_code, model_filename, tri
     mean_prec, mean_rec, mean_fm, mean_bleu, std_prec, std_rec, std_fm, std_bleu = precs.mean(), recs.mean(), fms.mean(), bleus.mean(), precs.std(), recs.std(), fms.std(), bleus.std()
     return {'precision': precs, 'recall': recs, 'fmeasure': fms, 'bleu': bleus}, {'precision': mean_prec, 'recall': mean_rec, 'fmeasure': mean_fm, 'bleu': mean_bleu}, {'precision': std_prec, 'recall': std_rec, 'fmeasure': std_fm, 'bleu': std_bleu}
 
-def compare(data_path, validation_path, lstm1_filename, rnn_filename, tries = 10):
+def compare(data_path, validation_path, lstm1_filename, rnn_filename, tries = 10, length = 200000, T = 1.0, clean = True):
     print(f"Evaluating the RNN model...")
-    _, mean, std = model_evaluation(data_path, validation_path, "rnn",rnn_filename, tries)
+    _, mean, std = model_evaluation(data_path, validation_path, "rnn",rnn_filename, tries, length, T, clean)
 
     print("----------------------------------------------------")
     print(f"Precision - Mean: {mean['precision']:.2f}% ; Standard deviation: {std['precision']:.2f}%")
@@ -115,7 +115,7 @@ def compare(data_path, validation_path, lstm1_filename, rnn_filename, tries = 10
     print("----------------------------------------------------")
     
     print(f"Evaluating the LSTM model...")
-    _, mean, std = model_evaluation(data_path, validation_path, "lstm1", lstm1_filename, tries)
+    _, mean, std = model_evaluation(data_path, validation_path, "lstm1", lstm1_filename, tries, length, T, clean)
     
     print("----------------------------------------------------")
     print(f"Precision - Mean: {mean['precision']:.2f}% ; Standard deviation: {std['precision']:.2f}%")
