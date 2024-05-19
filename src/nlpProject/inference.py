@@ -8,7 +8,7 @@ import os
 from nlpProject.make_data import DataMaker
 from nlpProject.rnn_baseline import RNN
 from nlpProject.one_layer_lstm import LSTM1
-from nlpProject.utils import get_metrics_n, get_bleu
+from nlpProject.utils import get_metrics_n, get_bleu, compute_loss
 
 def synthesize_seq_lstm1(model, data_maker, h_t, c_t, x0, length = 1000, T = 1.0):
     indexes = []
@@ -128,6 +128,6 @@ if __name__ == '__main__':
     data_path = './data/shakespeare.txt'
     validation_path = './data/shakespeare_220k.txt'
 
-    compare(data_path, validation_path, "lstm1_256_100_100_64_0.001.pt", "rnn_adam_256_100_100_64_0.001.pickle", tries = 3)
+    compare(data_path, validation_path, "lstm1_256_400_100_32_0.01.pt", "rnn_adam_256_100_100_64_0.001.pickle", tries = 3)
     #model_metrics(data_path, "lstm1", "lstm1_256_100_100_64_0.001.pt", grams = 1, length = 10000, T = 0.7, clean = False)
     #model_metrics(data_path, "rnn", "rnn_adam_256_100_100_64_0.001.pickle", grams = 1, length = 10000, T = 0.7, clean = False)

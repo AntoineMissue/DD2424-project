@@ -1,0 +1,446 @@
+Epoch 1/100 - Step 1
+	 * Smooth loss: 1633.5293
+Epoch 2/100 - Step 88
+	 * Smooth loss: 1566.4637
+Epoch 3/100 - Step 175
+	 * Smooth loss: 1497.2697
+Epoch 4/100 - Step 262
+	 * Smooth loss: 1429.2268
+Epoch 5/100 - Step 349
+	 * Smooth loss: 1363.8494
+Epoch 6/100 - Step 436
+	 * Smooth loss: 1301.7374
+Epoch 7/100 - Step 523
+	 * Smooth loss: 1243.0696
+Epoch 8/100 - Step 610
+	 * Smooth loss: 1188.0028
+Epoch 9/100 - Step 697
+	 * Smooth loss: 1136.5043
+Epoch 10/100 - Step 784
+	 * Smooth loss: 1088.5067
+Epoch 11/100 - Step 871
+	 * Smooth loss: 1043.8441
+Epoch 12/100 - Step 958
+	 * Smooth loss: 1002.3547
+Epoch 13/100 - Step 1045
+	 * Smooth loss: 963.9301
+Epoch 14/100 - Step 1132
+	 * Smooth loss: 928.3507
+Epoch 15/100 - Step 1219
+	 * Smooth loss: 895.4051
+Epoch 16/100 - Step 1306
+	 * Smooth loss: 864.9082
+Epoch 17/100 - Step 1393
+	 * Smooth loss: 836.7854
+Epoch 18/100 - Step 1480
+	 * Smooth loss: 810.9309
+Epoch 19/100 - Step 1567
+	 * Smooth loss: 787.0233
+Epoch 20/100 - Step 1654
+	 * Smooth loss: 764.9032
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+etian. Myself, and hid since anothing withen more.
+
+PAULINA:
+It the croth what stain, this that hath been,
+To yield urrent combly be--love I being like southment
+Till good sin to in my time with child
+----------------------------------------------------------------------------------------------------
+Epoch 21/100 - Step 1741
+	 * Smooth loss: 744.3650
+Epoch 22/100 - Step 1828
+	 * Smooth loss: 725.4568
+Epoch 23/100 - Step 1915
+	 * Smooth loss: 707.9262
+Epoch 24/100 - Step 2002
+	 * Smooth loss: 691.6124
+Epoch 25/100 - Step 2089
+	 * Smooth loss: 676.5030
+Epoch 26/100 - Step 2176
+	 * Smooth loss: 662.5558
+Epoch 27/100 - Step 2263
+	 * Smooth loss: 649.6578
+Epoch 28/100 - Step 2350
+	 * Smooth loss: 637.7845
+Epoch 29/100 - Step 2437
+	 * Smooth loss: 626.9372
+Epoch 30/100 - Step 2524
+	 * Smooth loss: 616.8727
+Epoch 31/100 - Step 2611
+	 * Smooth loss: 607.4332
+Epoch 32/100 - Step 2698
+	 * Smooth loss: 598.6400
+Epoch 33/100 - Step 2785
+	 * Smooth loss: 590.4115
+Epoch 34/100 - Step 2872
+	 * Smooth loss: 582.7806
+Epoch 35/100 - Step 2959
+	 * Smooth loss: 575.7773
+Epoch 36/100 - Step 3046
+	 * Smooth loss: 569.2669
+Epoch 37/100 - Step 3133
+	 * Smooth loss: 563.1878
+Epoch 38/100 - Step 3220
+	 * Smooth loss: 557.5288
+Epoch 39/100 - Step 3307
+	 * Smooth loss: 552.1573
+Epoch 40/100 - Step 3394
+	 * Smooth loss: 547.1515
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+etly gates me in blood;
+And how here goes that by called tell; I con, they weep,
+Swit will be gone, who would have been aside.
+
+PETRUCHIO:
+No, Kate, and go witned to fear little exact,
+I will grant an
+----------------------------------------------------------------------------------------------------
+Epoch 41/100 - Step 3481
+	 * Smooth loss: 542.5261
+Epoch 42/100 - Step 3568
+	 * Smooth loss: 538.1977
+Epoch 43/100 - Step 3655
+	 * Smooth loss: 534.2864
+Epoch 44/100 - Step 3742
+	 * Smooth loss: 530.5686
+Epoch 45/100 - Step 3829
+	 * Smooth loss: 527.1983
+Epoch 46/100 - Step 3916
+	 * Smooth loss: 524.0403
+Epoch 47/100 - Step 4003
+	 * Smooth loss: 521.0458
+Epoch 48/100 - Step 4090
+	 * Smooth loss: 518.1455
+Epoch 49/100 - Step 4177
+	 * Smooth loss: 515.3440
+Epoch 50/100 - Step 4264
+	 * Smooth loss: 512.7686
+Epoch 51/100 - Step 4351
+	 * Smooth loss: 510.3780
+Epoch 52/100 - Step 4438
+	 * Smooth loss: 508.1126
+Epoch 53/100 - Step 4525
+	 * Smooth loss: 505.9862
+Epoch 54/100 - Step 4612
+	 * Smooth loss: 504.0976
+Epoch 55/100 - Step 4699
+	 * Smooth loss: 502.7183
+Epoch 56/100 - Step 4786
+	 * Smooth loss: 501.1288
+Epoch 57/100 - Step 4873
+	 * Smooth loss: 499.4294
+Epoch 58/100 - Step 4960
+	 * Smooth loss: 497.7942
+Epoch 59/100 - Step 5047
+	 * Smooth loss: 496.2616
+Epoch 60/100 - Step 5134
+	 * Smooth loss: 494.8885
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+et was in our maid?
+
+MIRANDA:
+Tullew for a brave Warwick I might will hook your house,
+Come his supple, as he was berul chewn with that
+Which once my heart why, as the prayer we will twone masqued,
+sh
+----------------------------------------------------------------------------------------------------
+Epoch 61/100 - Step 5221
+	 * Smooth loss: 493.5512
+Epoch 62/100 - Step 5308
+	 * Smooth loss: 492.2292
+Epoch 63/100 - Step 5395
+	 * Smooth loss: 490.9427
+Epoch 64/100 - Step 5482
+	 * Smooth loss: 489.8125
+Epoch 65/100 - Step 5569
+	 * Smooth loss: 488.8554
+Epoch 66/100 - Step 5656
+	 * Smooth loss: 487.9112
+Epoch 67/100 - Step 5743
+	 * Smooth loss: 486.9250
+Epoch 68/100 - Step 5830
+	 * Smooth loss: 487.4619
+Epoch 69/100 - Step 5917
+	 * Smooth loss: 493.1350
+Epoch 70/100 - Step 6004
+	 * Smooth loss: 495.3917
+Epoch 71/100 - Step 6091
+	 * Smooth loss: 496.2389
+Epoch 72/100 - Step 6178
+	 * Smooth loss: 496.2610
+Epoch 73/100 - Step 6265
+	 * Smooth loss: 502.0571
+Epoch 74/100 - Step 6352
+	 * Smooth loss: 504.2352
+Epoch 75/100 - Step 6439
+	 * Smooth loss: 504.6736
+Epoch 76/100 - Step 6526
+	 * Smooth loss: 504.1914
+Epoch 77/100 - Step 6613
+	 * Smooth loss: 503.1661
+Epoch 78/100 - Step 6700
+	 * Smooth loss: 501.8480
+Epoch 79/100 - Step 6787
+	 * Smooth loss: 500.3309
+Epoch 80/100 - Step 6874
+	 * Smooth loss: 498.7763
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+end on my womb!' will do't.
+
+VIRGILIA:
+Tuts, thou must give us the morning, steadheme;
+That looks might extre thick. I count empty, horse
+Tuandle yet but flatter no faith, prove the colds of man,
+Sing
+----------------------------------------------------------------------------------------------------
+Epoch 81/100 - Step 6961
+	 * Smooth loss: 497.2064
+Epoch 82/100 - Step 7048
+	 * Smooth loss: 495.7164
+Epoch 83/100 - Step 7135
+	 * Smooth loss: 494.1440
+Epoch 84/100 - Step 7222
+	 * Smooth loss: 492.5383
+Epoch 85/100 - Step 7309
+	 * Smooth loss: 491.1911
+Epoch 86/100 - Step 7396
+	 * Smooth loss: 489.8106
+Epoch 87/100 - Step 7483
+	 * Smooth loss: 488.3730
+Epoch 88/100 - Step 7570
+	 * Smooth loss: 486.9453
+Epoch 89/100 - Step 7657
+	 * Smooth loss: 485.7448
+Epoch 90/100 - Step 7744
+	 * Smooth loss: 484.7925
+Epoch 91/100 - Step 7831
+	 * Smooth loss: 484.6547
+Epoch 92/100 - Step 7918
+	 * Smooth loss: 484.5674
+Epoch 93/100 - Step 8005
+	 * Smooth loss: 483.7229
+Epoch 94/100 - Step 8092
+	 * Smooth loss: 482.5854
+Epoch 95/100 - Step 8179
+	 * Smooth loss: 481.3829
+Epoch 96/100 - Step 8266
+	 * Smooth loss: 480.1104
+Epoch 97/100 - Step 8353
+	 * Smooth loss: 479.9399
+Epoch 98/100 - Step 8440
+	 * Smooth loss: 479.2755
+Epoch 99/100 - Step 8527
+	 * Smooth loss: 478.6325
+Epoch 100/100 - Step 8614
+	 * Smooth loss: 477.6897
+----------------------------------------------------------------------------------------------------
+Synthesized sequence: 
+en you undertake to't.
+
+YORK:
+Now, my lord.
+
+KING III:
+Be patch, sir, as I have advised. 
+ROMEO:
+Then got writ, sooth, if I should not live.
+
+that's such gentle unto nos,
+To answer, the youngest gentl
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence: 
+enship at leased by all.
+Thy sensible order, and it be conveyance; he
+that I am she potiting remembracors: perhaps say it
+become their father of the king.
+
+HENRY PERCY:
+Not he comes, and she hath past them well.
+
+ANGELO:
+Is it cost the heavens, the moon doth leave
+Her and company on thee.
+
+LADY CAPULET:
+She his south of Bushy, and hardly did not bring you.
+A friint, my lord, I supposs, and good my lord,
+Who crushing foul one defended house: bid, that's so.
+How such her, sir, stands, she is behence is: I here
+tickle to be most extremes fax, or capaivest noble!
+Procures on the deep four one depury were true?
+
+ESCALUS:
+I hope she thinks, must he mastew him not
+To be fourteen, we should have been wore;
+Why, then, sir, with contracted favour for him;
+So, like to faired us, that for quickly,
+To make a command affite ado all
+tormentent raised-hard hours.
+
+LUCIO:
+But let ye play the papery; he shall yet heard Kate;
+Or, ellow, walks.
+
+KING RICHARD III:
+Must
+I know not in made the people.
+
+PAULINA:
+I am procure, prisoners and another
+Than night shall find the offences below this night
+he came against the field, I can.
+
+ANGELO:
+She shall tell years she may not be call'd,
+Great omity.
+
+POMPEY:
+Prince, but be Vince, and signifried and
+the dagger of that offew, signify, and threems live.
+
+ALONSO:
+Go, say 'twas braved for Lord Eagarish lawful accuse.
+
+PRINCE EDWARD:
+What, not for fare throat.
+
+CORIOLANUS:
+Vison. Lords,
+Too such endersall fetch unto their judge!
+
+HORTENSIO:
+Believe me? can you so?
+'Tis told me her actary, Lady
+Angelf the number to a fault, how lie thyself
+Is not them come to close to, on you outed,
+'Tip the ancient; but did yet her answer good
+Will never let's fine the came: believe
+To talk of unwill and packed luck,
+To, provost, my lord.
+
+LUCIO:
+Never.
+
+ESCALUS:
+Ay, and my sister makes my tale?
+
+Shepherd:
+Rather? 'Tis Dougted states sapet the sweet pertymen
+To weep me overportunet, who'e told,
+Magian to rid us that you cannot be
+angry o'er the body that deserved Clifford, send thee,
+To prove my wisder man and far swore.
+
+JULINA:
+I thought he I know herself: the frowns.
+
+WAll Kmend-me not thou art nothing.
+
+KING RICHARD II:
+I did could we murder nature for you left have plainly absolves.
+Good through; as thou livest or your court? thou didst have
+wrong'd the law with the own land of him: down,
+Whom I know the word we should knock him saw.
+
+PETRUCHIO:
+I warrant you, father; made her sad will be married
+Then
+Depose is a great face?
+
+ANGELO:
+Well, for my gracious seratce? fifther not,
+Do with the life to shake you on you touch
+My oath, or by, I know 'tis no tenthe:
+If this, come, I know not, foolish, though 'Will we meet me what:
+What sayest chance, Irefus, sir: this approaches?
+
+First Murderer:
+No Coventinencite, a tender fight:
+Good master has metrents here? Whate! 
+PERDITA:
+And, let's come to our friar, sir, 'tis offended:
+Rescued and vow'd here be roared trust,
+The villaine, that passion 'min track,
+Shall yet may be but any horses were come,
+That you love the countenance, I am all oce
+musiniaing as sirrah, belike at them;
+God-den, my sovereignty: geit! Our friend,
+Nor any one seest he blame the earth.
+
+JULIET:
+A'sh o' the accents: how day, fie!
+
+Nur own promise, he's watch'd,
+That make hangs that obefity of you a
+racking throat dideals perpetual tongue were my
+knows to entiel accect to Bret of my wondrance
+Too would that piace the book, subjects.
+
+FLORIZEL:
+I know whatet not gazn a power?
+
+RICHARD:
+Now, come this an eyes marry gan than the while?
+
+Aly, mortal looks are to her.
+
+PETRUCHIO:
+Wencoued news of Atrizn by that sir;
+But then give me thine? many say my father
+Shall have you sent bound to answer'd;
+For 'tis my sisterness of my steel?
+
+PAULINA:
+And let us here
+Destrous more naterity,
+As they turn to take friend full of his
+aims. Masterh, like cloaks?
+
+KING EDWARD IV:
+Nay, by Bolingbroke, my lord, you need
+lies; and now in Pisa is it draws stranger, and teurterching so!
+
+DUKE VINCENTIO:
+Happy, good father, for I shall be more,
+You may do so farthers that caused a so that is well.
+The more servants whet? we then she know,
+And make himself: petture and word with daughter,
+Withal is presently he comes,
+And linker word oun; to fest.
+
+DUKE VINCENTIO:
+Pray you now your hand, I am glad I am equal onalt,
+And thy life,
+Stand of him an acus wish me to't:
+I'ld be fearster'd, misdress hath meet--
+that gale naked as fled, look and waged:
+Your clouds as fast! Dalks to sin to have beel,--
+
+ANGELO:
+
+GONZALO:
+A comfort, askances him to all to make heaved:
+That, swear in sightage, Pompey, I can;
+One duke was a wonfurs, or else the adornts
+As I wish you about me and to Juliet,
+Which he may meet upon thy wealthy.
+
+DUKE VINCENTIO:
+Let him, good sir, let me thank you; believe,
+I will convey no thing yourself as reign.
+
+GLOUCESTER:
+Here comes you most of those, ever
+From the fairies' same wife make us
+sent falls and tame and so were ton by the death,
+That the case;
+But let me stay without a hair redemired,
+I was touching h
+----------------------------------------------------------------------------------------------------
+No. of steps: 8701.
+Time elapsed (32 samples per batch, 100 epochs): 5602.2 seconds.
