@@ -1,0 +1,183 @@
+Smooth loss: 101.1497
+
+----------------------------------------------------------------------------------------------------
+Benchmark synthesized sequence:
+:
+Look, Lord of Somers
+Than if All the duke, mouth's ass for my health;
+I'll have breed; and there's more anger the
+herden of in: Nor Friend now to credit the crown,
+Hive speed, seture her, I saw my daughter say the accu;
+Procure in heaven. Full I have life thee,
+I splist this at thy lord's your liging with our suxteed guarse!
+You have edreant you have bether, Camin--
+I do not duke it, swif ares of ounts,
+A white; the wis, my word. Advise a rog married; so better
+Thanks, why, Thou wouldst, more.
+
+MENENIUS:
+Apensal bears?
+
+CLAUDIO:
+The king comes these yieess are as a fellow: Therefore,
+you know not what the remolet
+is world,--well will have mine own;
+Yet i' the like it whome nature as after about my injucting: dispoor:
+Which and whet be prevented a Roman?
+
+ANTONIO:
+He danger with a unlvither walk,
+Fit out o'
+the battainess of genor of my daughter Grumio; I have
+Couse of itself; for we imissure
+Ere yet I join
+Now heavens two cause it make thee to:
+Besides, my gracious tent, and not cheeks
+that thou here come: if lo;th presaily here befal report. Sir Pirgain:
+Truth, I prayer and sir, this hand, I hurbland.
+
+HORTENSIO:
+Brother, he is great, a women so die.
+
+TRANIO:
+I'll beseechat than hour thanks:
+He's not you to joobel:
+Look you Puting Prince? By her, Katharina
+I have a gued had penites here;
+This noble coasin your merry.
+
+PETRUCHIO:
+Thou think, as I fear, I must gentle his sovereign,
+Thy woman, and so? sir, we have chait you all,
+I, misdrunce, do you notice
+Whilst with thot thus sight poison of what
+now-aisen of this is throne.
+
+PROSPERO:
+Your soul,
+How to pleasion
+devise the king.
+
+HORTENSIO:
+Forward; did you had beed what think him whereof wenched's strange
+a helm in our royal proporrow my Arino,
+With one old and is wellow to'sday ask
+Which heaven chance doingeth some spirits, 'barn of childians uses
+are gentleman! The other thing if you love.
+
+ANTIGONY:
+'Twas I, talk and passacle! This is not fought that migh,
+Preport. Livio, as come to our plain,
+I think I singer: she's comib meen warrant;
+Hith years he hath note'eved good in home.
+
+Kate,
+Holts reture, which will some part, freshe is all.
+
+GRUMIO:
+Lend to him;
+As thinkes, sir.
+
+ISABELLA:
+'Tis thus, nor within: though thou rirest and not look,
+To hear amended the orchate.
+
+HORTENSIO:
+Content your mistress it is shall you be!
+First, here is horn.
+
+LARULT:
+It is my husband?
+'Tis gone toward her discover high.
+
+BAPTISTA:
+It is no other part
+He was the piniuse, sound au crequeent!
+'Bodeluman, grove dimpson'd, or which out queen'st,
+Bounded not, as well met.
+Alas, you shall not be the fooled which may
+not within me. Good Camillo,
+Reveleing thee in a seating nod, if it
+be to-night.
+But what of all you are? marry of Pride and weakest?
+Look once me with the wasch take withon you as '
+there is Kathaping curses my head to death?
+If gracious lodge! or wo kiss
+Oxet: but good father, if my son your worship? Foll married that:
+But, thyself then as London then goes labour; who?
+'Here comes and will tell thee aint. Who's the very subject, absolution's invited atizet:
+Therefore, that, to be wrth her tale,
+Let me be set stieved in his integrtable!
+I will follow be brice, 'tis set this can appethap.
+I have leg thy this standing.
+
+Provost:
+Come, many maid me and some applibations;
+So many thine holy voice-in braver Kate and inform'd
+He's other's: and untilling doth after this churl of rich and honours at them;
+And throw't us, who, you hate theit be few right
+The Margaret's custit with one than prodigious,
+Not you again, Richard, Signior Yurn, let it be eteased to Pomfence to these stirs,
+As my vaboured toward the crown,
+And more than standerty.
+
+Boatswie;
+We'll have you quiet, and at Silain and e'er made
+My trimend ere on that hour after
+The purposes with a matcies approace:
+Adame, good Master:
+I'll go.
+
+BRUTUS:
+A lucky once, my hand to Geng ave it many of the truth,
+And bare say than I know he walk; and that my face
+Have any great punishceith's curse;
+And meting them to supper any for the Foar's phaces
+And marry now; for, she's more motion, as your sends for thee
+with father? O, those white?
+
+CORIOLANUS:
+It is you would in minion.
+
+BAPTINTA:
+Nay, sweather, that, beseech him a babbad's quickly a gentleman's persuase.
+Why, she shall hely?
+
+Biltite!
+
+All:
+Well, Anity. God forbid; love thee not. Thank you all, Lody. Is there?
+Prithe babe, she stusped and shed that ticeld him to it?
+
+FROMIO:
+He case weathair, he so: you mean importal king,
+I'll proves that.
+
+HORTENSIO:
+What, his strange, I saw both?
+
+TRANIO:
+'Tis a side! trouble use more exiled memies that he hath, she wis
+Above the northed, under the disease; and I
+flt for itself, thine eyes are welcome you?
+
+Pedant:
+A goodll sir.
+
+LUCENTIO:
+I thank your hands believe your wanish it: I
+f old men's shames alt,
+A weipation on an o's son. For those many us.
+
+Senve A frayor:
+Ay, and this is all
+An aporded fortune borne is rate
+Sound throat this inform.
+
+Boy:
+Ay, my good looks,
+More cousin, let's the face, and in heart's Caliban,
+Wh
+----------------------------------------------------------------------------------------------------
+No. of steps: 17401.
+Time elapsed (64 samples per batch, 100 epochs): 15249.9 seconds.

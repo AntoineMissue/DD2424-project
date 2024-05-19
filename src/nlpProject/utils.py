@@ -20,6 +20,13 @@ def compute_loss(Y, P):
     loss = cross_entropy / batch_size
     return loss
 
+def compute_loss_lstm2(Y, P):
+    batch_size = Y.shape[0]
+    log_probs = torch.log(P)
+    cross_entropy = -torch.sum(Y * log_probs)
+    loss = cross_entropy / batch_size
+    return loss
+
 def process_word(word):
     word = word.replace('.', '')
     word = word.replace(':', '')

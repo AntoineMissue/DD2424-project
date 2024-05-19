@@ -1,0 +1,94 @@
+import torch
+import matplotlib.pyplot as plt
+import time
+import tqdm
+
+from nlpProject.two_layers_lstm import LSTM2  
+from nlpProject.make_data import DataMaker
+from nlpProject.utils import compute_loss_lstm2, make_dataloader
+from nlpProject.inference import synthesize_seq_lstm2  
+
+def train_lstm2(data_path, n_epochs, hidden_size, seq_length, batch_size, learning_rate, synth_interval=5, model_savepath=None, fig_savepath=None):
+    losses = []
+    step = 0
+    smooth_loss = 0
+    data_maker = DataMaker(data_path)
+    _, input_size, _, _ = data_maker.make_charmap()
+    model = LSTM2(input_size, hidden_size, input_size)
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    dataloader = make_dataloader(data_maker, seq_length, batch_size)
+
+    model.train()
+    start_time = time.time()
+    for epoch in range(n_epochs):
+        print(f"Epoch {epoch+1}/{n_epochs} - Step {step + 1}")
+        h_prev1, c_prev1 = (torch.zeros(1, batch_size, hidden_size, dtype=torch.double),
+                            torch.zeros(1, batch_size, hidden_size, dtype=torch.double))
+        h_prev2, c_prev2 = (torch.zeros(1, batch_size, hidden_size, dtype=torch.double),
+                            torch.zeros(1, batch_size, hidden_size, dtype=torch.double))
+
+        for X_train, Y_train in tqdm.tqdm(dataloader, desc="Processing batches"):
+            X_train = X_train.double()  
+            Y_train = Y_train.double()  
+            
+            P_train, ((h_prev1, c_prev1), (h_prev2, c_prev2)) = model(X_train, ((h_prev1, c_prev1), (h_prev2, c_prev2)))
+            loss = compute_loss_lstm2(Y_train, P_train)
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
+
+            if step == 0:
+                smooth_loss = loss.item()
+            else:
+                smooth_loss = 0.999 * smooth_loss + 0.001 * loss.item()
+            losses.append(smooth_loss)
+
+            h_prev1.detach_()
+            c_prev1.detach_()
+            h_prev2.detach_()
+            c_prev2.detach_()
+
+            step += 1
+            
+        print(f"\t * Smooth loss: {smooth_loss:.4f}")
+        if (epoch + 1) % synth_interval == 0:
+            _, s_syn = synthesize_seq_lstm2(model, data_maker, h_prev1[:, 0:1], c_prev1[:, 0:1], h_prev2[:, 0:1], c_prev2[:, 0:1], X_train[0, 0, :], 200)
+            print("-" * 100)
+            print(f"Synthesized sequence: \n{s_syn}")
+            print("-" * 100)
+
+    end_time = time.time()
+    _, s_lsyn = synthesize_seq_lstm2(model, data_maker, h_prev1[:, 0:1], c_prev1[:, 0:1], h_prev2[:, 0:1], c_prev2[:, 0:1], X_train[0, 0, :], 5000)
+    print("-" * 100)
+    print(f"Benchmark synthesized sequence: \n{s_lsyn}")
+    print("-" * 100)
+    print(f'No. of steps: {step + 1}.')
+    print(f'Time elapsed ({batch_size} samples per batch, {n_epochs} epochs): {(end_time - start_time):.1f} seconds.')
+
+    if model_savepath:
+        torch.save(model.state_dict(), model_savepath)
+
+    plt.figure()
+    plt.plot(losses)
+    plt.xlabel('Steps')
+    plt.ylabel('Smooth loss')
+    plt.title(f'eta: {learning_rate} - seq_len: {seq_length} - m: {hidden_size} - epochs: {n_epochs} - batch_size: {batch_size}')
+    plt.grid(True)
+    if fig_savepath:
+        plt.savefig(fig_savepath)
+    else:
+        plt.show()
+
+if __name__ == '__main__':
+    params = {
+        'data_path': './data/shakespeare.txt',
+        'n_epochs': 100,
+        'hidden_size': 256,
+        'seq_length': 100,
+        'batch_size': 64,
+        'learning_rate': 0.001,
+        'synth_interval': 5,
+    }
+    train_lstm2(**params,
+                model_savepath=f'./models/LSTM/lstm2_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.pt',
+                fig_savepath=f'./reports/figures/lstm2_{params["hidden_size"]}_{params["seq_length"]}_{params["n_epochs"]}_{params["batch_size"]}_{params["learning_rate"]}.png')

@@ -38,6 +38,38 @@ def synthesize_seq_lstm1(model, data_maker, h_t, c_t, x0, length = 1000, T = 1.0
             s += data_maker.ind_to_char[idx]
     return Y, s
 
+def synthesize_seq_lstm2(model, data_maker, h_t1, c_t1, h_t2, c_t2, x0, length=1000, T=1.0):
+    indexes = []
+    with torch.no_grad():
+        x_input = x0.view(1, 1, -1).double()  # Reshape input to match model's input shape
+        t = 0
+        while t < length:
+            P, ((h_t1, c_t1), (h_t2, c_t2)) = model(x_input, ((h_t1, c_t1), (h_t2, c_t2)), T)
+            CP = torch.cumsum(P, dim=2)
+            a = torch.rand(1)
+            ixs = torch.where(CP - a > 0)
+            ii = ixs[-1][0].item()
+            indexes.append(ii)
+            xt = torch.zeros((1, 1, x_input.size(2)), dtype=torch.double)
+            xt[0, 0, ii] = 1
+            x_input = xt
+            t += 1
+
+        Y = []
+        for idx in indexes:
+            oh = [0] * x_input.size(2)
+            oh[idx] = 1
+            Y.append(oh)
+        Y = torch.tensor(Y).t()
+
+        s = ''
+        for i in range(Y.shape[1]):
+            idx = torch.where(Y[:, i] == 1)[0].item()
+            s += data_maker.ind_to_char[idx]
+
+    return Y, s
+
+
 def lstm1_generate(lstm_filename, data_path, first_char = ' ', length = 10000, T = 1.0):
     data_maker = DataMaker(data_path)
     state_dict = torch.load(Path(f'./models/LSTM/{lstm_filename}'))
