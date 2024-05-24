@@ -1,6 +1,7 @@
 # Deep Learning Project
 
 A deep learning project to learn NLP methods and LSTM neural networks. Made as part of the course DD2424: Deep Learning in Data Science at KTH, Stockholm.
+We uppgaded the RNN netowrk and build LSTM network, both one layer and two layer
 
 ## Quickstart
 ### Pre-requisites
